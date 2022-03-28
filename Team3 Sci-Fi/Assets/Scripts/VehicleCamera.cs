@@ -7,17 +7,22 @@ public class VehicleCamera : MonoBehaviour
 
     [SerializeField] private Vector3 offset;
     [SerializeField] private Transform objectToFollow;
-    [SerializeField] private float followSpeed;
-    [SerializeField] private float rotationSpeed;
+    private float followSpeed = 0f;
+    //[SerializeField] private float rotationSpeed;
+
+    private Vector3 velocity = Vector3.one;
     
  
-    void Update()
+    void LateUpdate()
     {
         Vector3 targetPosition = objectToFollow.TransformPoint(offset);
-        transform.position = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
+        // Vector3 targetPosition = objectToFollow.position + (objectToFollow.rotation * offset);
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity,followSpeed);
 
-        var direction = objectToFollow.position - transform.position;
-        var rotation = Quaternion.LookRotation(direction, Vector3.up);
-        transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
+        transform.LookAt(objectToFollow, objectToFollow.up);
+        
+        // var direction = objectToFollow.position - transform.position;
+        // var rotation = Quaternion.LookRotation(direction, Vector3.up);
+        // transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
     }
 }
