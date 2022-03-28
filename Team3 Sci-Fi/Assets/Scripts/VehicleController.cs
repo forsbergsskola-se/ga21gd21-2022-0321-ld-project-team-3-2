@@ -15,6 +15,11 @@ public class VehicleController : MonoBehaviour
     [SerializeField] private WheelCollider frontRightCollider;
     [SerializeField] private WheelCollider backLeftCollider;
     [SerializeField] private WheelCollider backRightCollider;
+    
+    [SerializeField] private Transform frontLeftTransform;
+    [SerializeField] private Transform frontRightTransform;
+    [SerializeField] private Transform backLeftTransform;
+    [SerializeField] private Transform backRightTransform;
 
     [SerializeField] private float speed;
     [SerializeField] private float brakeForce;
@@ -40,5 +45,19 @@ public class VehicleController : MonoBehaviour
         currentSteerAngle = maxSteeringAngle * horizontalInput;
         frontLeftCollider.steerAngle = currentSteerAngle;
         frontRightCollider.steerAngle = currentSteerAngle;
+        
+        UpdateSingleWheel(frontLeftCollider, frontLeftTransform);
+        UpdateSingleWheel(frontRightCollider, frontRightTransform);
+        UpdateSingleWheel(backRightCollider, backRightTransform);
+        UpdateSingleWheel(backLeftCollider, backLeftTransform);
+    }
+
+    private void UpdateSingleWheel(WheelCollider wheelCollider, Transform wheelTransform)
+    {
+        Vector3 position;
+        Quaternion rotation;
+        wheelCollider.GetWorldPose(out position, out rotation);
+        wheelTransform.rotation = rotation;
+        wheelTransform.position = position;
     }
 }
