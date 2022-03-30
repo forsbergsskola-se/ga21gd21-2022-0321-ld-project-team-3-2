@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour {
     public Animator animator;
 
     private Queue<string> sentences;
+    
+    public bool isInDialogue = false;
 
     // Use this for initialization
     void Start () {
@@ -65,6 +67,7 @@ public class DialogueManager : MonoBehaviour {
         //Time.timeScale = 1;
         animator.SetBool("IsOpen", false);
         FindObjectOfType<DialogueTrigger>().face.SetActive(false);
+        isInDialogue = false;
     }
 
 }

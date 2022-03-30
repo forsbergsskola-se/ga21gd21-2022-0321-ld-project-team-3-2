@@ -8,22 +8,23 @@ public class DialogueTrigger : MonoBehaviour {
     public GameObject face;
     [SerializeField] private float dialogueRange = 10f;
     private bool isInDialogueRange;
+    
 
     private void Update()
     {
         isInDialogueRange = Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer);
 
-        if (isInDialogueRange && Input.GetKey(KeyCode.F))
+        if (isInDialogueRange && !FindObjectOfType<DialogueManager>().isInDialogue && Input.GetKeyDown(KeyCode.F))
         {
+            FindObjectOfType<DialogueManager>().isInDialogue = true;
             TriggerDialogue();
         }
-
-        if (isInDialogueRange && Input.GetKeyDown(KeyCode.E))
+        else if (FindObjectOfType<DialogueManager>().isInDialogue && Input.GetKeyDown(KeyCode.F))
         {
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
         }
 
-      
+
     }
 
     private void TriggerDialogue ()

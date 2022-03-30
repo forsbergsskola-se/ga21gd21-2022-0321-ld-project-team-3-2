@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class VehicleController : MonoBehaviour
 {
+    [SerializeField] private EnterOrExitVehicle enterOrExitScript;
+    
     private float horizontalInput;
     private float verticalInput;
     private bool isBrakeing;
@@ -27,14 +29,24 @@ public class VehicleController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-        isBrakeing = Input.GetKey(KeyCode.LeftControl);
-
+        if (enterOrExitScript.inCar)
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+            verticalInput = Input.GetAxis("Vertical");
+            isBrakeing = Input.GetKey(KeyCode.LeftControl);
+        }
+        
         frontLeftCollider.motorTorque = verticalInput * speed;
         frontRightCollider.motorTorque = verticalInput * speed;
 
-        currentBrakeForce = isBrakeing ? brakeForce : 0f;
+        if (!enterOrExitScript.inCar)
+        {
+            currentBrakeForce = brakeForce;
+        }
+        else
+        {
+            currentBrakeForce = isBrakeing ? brakeForce : 0f;
+        }
         
         frontRightCollider.brakeTorque = currentBrakeForce;
         frontLeftCollider.brakeTorque = currentBrakeForce;
