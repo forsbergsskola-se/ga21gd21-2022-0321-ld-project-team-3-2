@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4424746033166525697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ui/conting
-  m_EditorClassIdentifier: 
-  Path: event:/Ui/conting
-  Guid:
-    Data1: 1330224783
-    Data2: 1146925739
-    Data3: 1626862253
-    Data4: 1518333792
-  Banks:
-  - {fileID: 7406883278445640313}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,14 +16,41 @@ MonoBehaviour:
   - {fileID: 6696032226977692486}
   - {fileID: 7406883278445640313}
   EditorEvents:
-  - {fileID: -4424746033166525697}
+  - {fileID: 6510549659592783134}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7406883278445640313}
   StringsBanks:
   - {fileID: 6696032226977692486}
-  cacheTime: 637841527983885852
+  cacheTime: 637843325724652647
   cacheVersion: 10
+--- !u!114 &6510549659592783134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Items/Pen
+  m_EditorClassIdentifier: 
+  Path: event:/Items/Pen
+  Guid:
+    Data1: 743308520
+    Data2: 1190560261
+    Data3: -735678788
+    Data4: 2080639400
+  Banks:
+  - {fileID: 7406883278445640313}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6696032226977692486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,10 +66,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637841527983885852
+  lastModified: 637843325724652647
   FileSizes:
   - Name: Desktop
-    Value: 760
+    Value: 758
   Exists: 1
 --- !u!114 &7406883278445640313
 MonoBehaviour:
@@ -86,8 +86,8 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637841527983885852
+  lastModified: 637843325724642210
   FileSizes:
   - Name: Desktop
-    Value: 1104224
+    Value: 162848
   Exists: 1
