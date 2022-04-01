@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,20 +9,29 @@ public class DialogueTrigger : MonoBehaviour {
     public GameObject face;
     [SerializeField] private float dialogueRange = 10f;
     private bool isInDialogueRange;
-    
+    private DialogueManager dialogueManager;
+
+    private void Start()
+    {
+        dialogueManager = FindObjectOfType<DialogueManager>();
+    }
 
     private void Update()
     {
+        if (!Input.GetKeyDown(KeyCode.F))
+        {
+            return;
+        }
         isInDialogueRange = Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer);
 
-        if (isInDialogueRange && !FindObjectOfType<DialogueManager>().isInDialogue && Input.GetKeyDown(KeyCode.F))
+        if (isInDialogueRange && !dialogueManager.isInDialogue)
         {
-            FindObjectOfType<DialogueManager>().isInDialogue = true;
+            dialogueManager.isInDialogue = true;
             TriggerDialogue();
         }
-        else if (FindObjectOfType<DialogueManager>().isInDialogue && Input.GetKeyDown(KeyCode.F))
+        else if (dialogueManager.isInDialogue && !dialogueManager.inChoice)
         {
-            FindObjectOfType<DialogueManager>().DisplayNextSentence();
+            dialogueManager.DisplayNextSentence();
         }
 
 
@@ -29,7 +39,7 @@ public class DialogueTrigger : MonoBehaviour {
 
     private void TriggerDialogue ()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        dialogueManager.StartDialogue(dialogue);
         face.SetActive(true);
     }
 

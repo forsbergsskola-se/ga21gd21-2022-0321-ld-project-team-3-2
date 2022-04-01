@@ -8,31 +8,51 @@ public class DialogueManager : MonoBehaviour {
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
+    public GameObject continueText;
+    public TextMeshProUGUI answer1Text;
+    public TextMeshProUGUI answer2Text;
 
     public Animator animator;
+    public GameObject choices;
 
     private Queue<string> sentences;
+    private Queue<string> altSentences;
+    private Queue<bool> choiceTriggers;
     
-    public bool isInDialogue = false;
-
+    public bool isInDialogue;
+    private bool isThisAnswer1 = true;
+    public bool inChoice;
     // Use this for initialization
     void Start () {
         sentences = new Queue<string>();
+        altSentences = new Queue<string>();
+        choiceTriggers = new Queue<bool>();
     }
 
     public void StartDialogue (Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
-
+        continueText.SetActive(true);
         nameText.text = dialogue.name;
+        answer1Text.text = dialogue.answer1;
+        answer2Text.text = dialogue.answer2;
 
-        //Time.timeScale = 0;
-
+        isThisAnswer1 = true;
         sentences.Clear();
+        choiceTriggers.Clear();
+        altSentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
+        }
+        foreach (var sentence in dialogue.answer2Sentences)
+        {
+            altSentences.Enqueue(sentence);
+        }
+        foreach (var choice in dialogue.multipleChoiceTriggers)
+        {
+            choiceTriggers.Enqueue(choice);
         }
 
         DisplayNextSentence();
@@ -45,10 +65,29 @@ public class DialogueManager : MonoBehaviour {
             EndDialogue();
             return;
         }
-
+        
         string sentence = sentences.Dequeue();
+        string sentenceAlt = altSentences.Dequeue();
+        bool isChoice = choiceTriggers.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        
+        if (!isThisAnswer1)
+        {
+            StartCoroutine(TypeSentence(sentenceAlt));
+        }
+        else
+        {
+            StartCoroutine(TypeSentence(sentence));
+        }
+        
+        if (isChoice)
+        {
+            continueText.SetActive(false);
+            inChoice = true;
+            choices.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            FindObjectOfType<MouseLook>().enabled = false;
+        }
     }
 
     IEnumerator TypeSentence (string sentence)
@@ -58,16 +97,37 @@ public class DialogueManager : MonoBehaviour {
         {
             dialogueText.text += letter;
             yield return null;
-            //yield return new WaitForSeconds(typingSpeed);
         }
     }
 
     public void EndDialogue()
     {
-        //Time.timeScale = 1;
         animator.SetBool("IsOpen", false);
         FindObjectOfType<DialogueTrigger>().face.SetActive(false);
         isInDialogue = false;
+        continueText.SetActive(false);
+    }
+
+    public void Answer1()
+    {
+        isThisAnswer1 = true;
+        continueText.SetActive(true);
+        inChoice = false;
+        choices.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        FindObjectOfType<MouseLook>().enabled = true;
+        DisplayNextSentence();
+    }
+
+    public void Answer2()
+    {
+        isThisAnswer1 = false;
+        continueText.SetActive(true);
+        inChoice = false;
+        choices.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
+        FindObjectOfType<MouseLook>().enabled = true;
+        DisplayNextSentence();
     }
 
 }
