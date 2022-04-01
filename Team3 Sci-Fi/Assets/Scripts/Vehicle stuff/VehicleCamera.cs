@@ -7,7 +7,7 @@ public class VehicleCamera : MonoBehaviour
 
     [SerializeField] private Vector3 offset;
     [SerializeField] private Transform objectToFollow;
-    private float followSpeed = 0f;
+    [SerializeField] private float followSpeed = 0f;
     //[SerializeField] private float rotationSpeed;
 
     private Vector3 velocity = Vector3.one;

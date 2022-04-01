@@ -1433,8 +1433,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 9000
-    damper: 9000
+    spring: 35000
+    damper: 4500
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -1445,13 +1445,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.8
     m_AsymptoteValue: 0.5
-    m_Stiffness: 0.3
+    m_Stiffness: 1
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 0.3
+    m_Stiffness: 1
   m_Enabled: 1
 --- !u!1 &519173429
 GameObject:
@@ -2137,8 +2137,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 9000
-    damper: 9000
+    spring: 35000
+    damper: 4500
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -2149,13 +2149,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.8
     m_AsymptoteValue: 0.5
-    m_Stiffness: 0.3
+    m_Stiffness: 1
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 0.3
+    m_Stiffness: 1
   m_Enabled: 1
 --- !u!1 &885209270
 GameObject:
@@ -2379,8 +2379,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e94b5661b6f23ab41847ea710820d916, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 6, z: -8}
+  offset: {x: 0, y: 5, z: -10}
   objectToFollow: {fileID: 1527286295}
+  followSpeed: 0
 --- !u!1 &940740482
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,8 +2771,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 9000
-    damper: 9000
+    spring: 35000
+    damper: 4500
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -2782,13 +2783,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.8
     m_AsymptoteValue: 0.5
-    m_Stiffness: 0.3
+    m_Stiffness: 1
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 0.3
+    m_Stiffness: 1
   m_Enabled: 1
 --- !u!4 &1031904295
 Transform:
@@ -3906,7 +3907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580f1bb26affe694a8f84b7367dd31f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  centerOfMass2: {x: 0, y: -2.37, z: 0}
+  centerOfMass2: {x: 0, y: -1.5, z: 0}
   isAwake: 0
 --- !u!114 &1527286297
 MonoBehaviour:
@@ -4282,8 +4283,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 9000
-    damper: 9000
+    spring: 35000
+    damper: 4500
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -4294,13 +4295,13 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.8
     m_AsymptoteValue: 0.5
-    m_Stiffness: 0.3
+    m_Stiffness: 1
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
     m_AsymptoteSlip: 0.5
     m_AsymptoteValue: 0.75
-    m_Stiffness: 0.3
+    m_Stiffness: 1
   m_Enabled: 1
 --- !u!1 &1607671403
 GameObject:
