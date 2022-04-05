@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
+  m_IndirectSpecularColor: {r: 262.05444, g: 324.66895, b: 429.71777, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -457,6 +457,7 @@ GameObject:
   - component: {fileID: 144235616}
   - component: {fileID: 144235615}
   - component: {fileID: 144235614}
+  - component: {fileID: 144235618}
   m_Layer: 3
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -542,6 +543,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 66.11, y: 0, z: 0}
+--- !u!114 &144235618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144235613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 743308520
+      Data2: 1190560261
+      Data3: -735678788
+      Data4: 2080639400
+    Path: event:/Items/Pen
+  Event: 
+  PlayEvent: 7
+  StopEvent: 8
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &154105059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1210,7 @@ GameObject:
   - component: {fileID: 401232378}
   - component: {fileID: 401232377}
   - component: {fileID: 401232381}
+  - component: {fileID: 401232382}
   m_Layer: 0
   m_Name: Npc
   m_TagString: Untagged
@@ -1207,6 +1239,10 @@ MonoBehaviour:
     - "hahahahha\t"
     - HAHAHAHAH
     - "\xC4GD"
+    answer2Sentences: []
+    multipleChoiceTriggers: 
+    answer1: 
+    answer2: 
   face: {fileID: 223074248}
   dialogueRange: 10
 --- !u!136 &401232378
@@ -1257,6 +1293,36 @@ MonoBehaviour:
     m_Bits: 64
   interactionBox: {fileID: 2104488656}
   interactionRange: 10
+--- !u!114 &401232382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401232376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 743308520
+      Data2: 1190560261
+      Data3: -735678788
+      Data4: 2080639400
+    Path: event:/Items/Pen
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &433800664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,7 +2374,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885209270}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &885209273
 Camera:
   m_ObjectHideFlags: 0
@@ -2381,6 +2447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 6, z: -8}
   objectToFollow: {fileID: 1527286295}
+  followSpeed: 0
 --- !u!1 &940740482
 GameObject:
   m_ObjectHideFlags: 0
@@ -4550,8 +4617,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1124479845}
   dialogueText: {fileID: 1906012220}
+  continueText: {fileID: 0}
+  answer1Text: {fileID: 0}
+  answer2Text: {fileID: 0}
   animator: {fileID: 940740484}
+  choices: {fileID: 0}
   isInDialogue: 0
+  inChoice: 0
 --- !u!4 &1807020205
 Transform:
   m_ObjectHideFlags: 0
@@ -5509,6 +5581,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7270844398288721822}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2127110950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127110949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 2127110949}
+  ListenerNumber: -1
 --- !u!1 &2133057724
 GameObject:
   m_ObjectHideFlags: 0
