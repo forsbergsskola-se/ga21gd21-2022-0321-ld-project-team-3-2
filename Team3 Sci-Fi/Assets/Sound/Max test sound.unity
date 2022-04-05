@@ -3851,7 +3851,7 @@ GameObject:
   - component: {fileID: 1487937090}
   - component: {fileID: 1487937089}
   m_Layer: 0
-  m_Name: Cube (7)
+  m_Name: Sound Cube zone1
   m_TagString: Sound Zone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
