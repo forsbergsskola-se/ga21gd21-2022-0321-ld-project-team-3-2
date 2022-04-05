@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 3
-  m_FollowOffset: {x: 0, y: 3, z: -17}
+  m_FollowOffset: {x: 0, y: 2.405948, z: -16.86615}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 3
-  m_FollowOffset: {x: 0, y: 3, z: -17}
+  m_FollowOffset: {x: 0, y: 2.405948, z: -16.86615}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -434,6 +434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6142928771057384957}
   - component: {fileID: 6142928771057384946}
+  - component: {fileID: 1256796870}
   m_Layer: 0
   m_Name: Camera controller
   m_TagString: Untagged
@@ -537,9 +538,9 @@ MonoBehaviour:
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
     m_InvertInput: 0
-    m_MinValue: -45
-    m_MaxValue: 45
-    m_Wrap: 1
+    m_MinValue: -60
+    m_MaxValue: 60
+    m_Wrap: 0
     m_Recentering:
       m_enabled: 0
       m_WaitTime: 1
@@ -556,7 +557,7 @@ MonoBehaviour:
     m_RecenteringTime: 2
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
-  m_BindingMode: 3
+  m_BindingMode: 1
   m_SplineCurvature: 0.2
   m_Orbits:
   - m_Height: 8
@@ -570,6 +571,36 @@ MonoBehaviour:
   - {fileID: 6142928772309266358}
   - {fileID: 6142928770284141538}
   - {fileID: 6142928770905317408}
+--- !u!114 &1256796870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6142928771057384947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CollideAgainst:
+    serializedVersion: 2
+    m_Bits: 8
+  m_IgnoreTag: 
+  m_TransparentLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_MinimumDistanceFromTarget: 0.1
+  m_AvoidObstacles: 1
+  m_DistanceLimit: 0
+  m_MinimumOcclusionTime: 0
+  m_CameraRadius: 0.1
+  m_Strategy: 1
+  m_MaximumEffort: 4
+  m_SmoothingTime: 0
+  m_Damping: 0
+  m_DampingWhenOccluded: 0
+  m_OptimalTargetDistance: 0
 --- !u!1 &6142928771946921599
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 3
-  m_FollowOffset: {x: 0, y: 3, z: -17}
+  m_FollowOffset: {x: 0, y: 2.405948, z: -16.86615}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
