@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3956945328359202119
+--- !u!114 &-5072994666820224665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 45039503
     Data4: 853185920
   Banks:
-  - {fileID: 7406883278445640313}
+  - {fileID: 851592598875442860}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -27,6 +27,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 34555
+--- !u!114 &-1234142488811823581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.strings.bank
+  Name: Desktop/Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637847734027041175
+  FileSizes:
+  - Name: 
+    Value: 812
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,23 +60,37 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 6696032226977692486}
-  - {fileID: 7406883278445640313}
+  - {fileID: -1234142488811823581}
+  - {fileID: 851592598875442860}
   EditorEvents:
-  - {fileID: 6510549659592783134}
-  - {fileID: -3956945328359202119}
+  - {fileID: -5072994666820224665}
+  - {fileID: 6328779858881159716}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 7406883278445640313}
+  - {fileID: 851592598875442860}
   StringsBanks:
-  - {fileID: 6696032226977692486}
-<<<<<<< Updated upstream
-  cacheTime: 637843441717010029
-=======
-  cacheTime: 637847726498341792
->>>>>>> Stashed changes
+  - {fileID: -1234142488811823581}
+  cacheTime: 637847734027041175
   cacheVersion: 10
---- !u!114 &6510549659592783134
+--- !u!114 &851592598875442860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 637847734027018809
+  FileSizes: []
+  Exists: 1
+--- !u!114 &6328779858881159716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,7 +109,7 @@ MonoBehaviour:
     Data3: -735678788
     Data4: 2080639400
   Banks:
-  - {fileID: 7406883278445640313}
+  - {fileID: 851592598875442860}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -83,49 +117,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &6696032226977692486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Desktop/Master.strings.bank
-  Name: Desktop/Master.strings
-  StudioPath: bank:/Master.strings
-<<<<<<< Updated upstream
-  lastModified: 637843441717010029
-=======
-  lastModified: 637847726498341792
->>>>>>> Stashed changes
-  FileSizes:
-  - Name: 
-    Value: 812
-  Exists: 1
---- !u!114 &7406883278445640313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Desktop/Master.bank
-  Name: Desktop/Master
-  StudioPath: bank:/Master
-<<<<<<< Updated upstream
-  lastModified: 637843441716980348
-=======
-  lastModified: 637847726498324008
->>>>>>> Stashed changes
-  FileSizes: []
-  Exists: 1
