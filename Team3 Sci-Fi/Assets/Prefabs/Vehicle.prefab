@@ -905,7 +905,7 @@ MonoBehaviour:
   backLeftTransform: {fileID: 5233811308588702372}
   backRightTransform: {fileID: 5233811308164970036}
   speed: 2000
-  brakeForce: 3500
+  brakeForce: 4500
   maxSteeringAngle: 30
 --- !u!114 &5233811308373684842
 MonoBehaviour:
@@ -1131,7 +1131,7 @@ WheelCollider:
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
+    m_AsymptoteSlip: 0.2
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
@@ -1945,7 +1945,7 @@ WheelCollider:
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
+    m_AsymptoteSlip: 0.2
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
@@ -2007,7 +2007,7 @@ WheelCollider:
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
+    m_AsymptoteSlip: 0.2
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
@@ -2457,7 +2457,7 @@ WheelCollider:
   m_SidewaysFriction:
     m_ExtremumSlip: 0.2
     m_ExtremumValue: 1
-    m_AsymptoteSlip: 0.5
+    m_AsymptoteSlip: 0.2
     m_AsymptoteValue: 0.75
     m_Stiffness: 1
   m_Enabled: 1
