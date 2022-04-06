@@ -48,7 +48,7 @@ public class PlayerHealthManager : MonoBehaviour
     public void Death()
     {
         isDead = true;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         isDead = false;
     }
 
