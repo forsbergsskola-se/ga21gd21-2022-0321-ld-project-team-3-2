@@ -5,6 +5,10 @@ using UnityEngine;
 public class VehicleCamera : MonoBehaviour
 {
 
+    [Header("This script does not currently have a use, leave it turned off")]
+    [Header("It might be repurposed to shoot cinematic sequences")]
+    [Header("")]
+    
     [SerializeField] private Vector3 offset;
     [SerializeField] private Transform objectToFollow;
     [SerializeField] private float followSpeed = 0f;
