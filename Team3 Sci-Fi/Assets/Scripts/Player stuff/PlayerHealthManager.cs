@@ -7,10 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealthManager : MonoBehaviour
 {
+    
+    [Header("This script should not be attached to the player prefab")]
+    [Header("")]
+    
     public float maxHealth = 100f;
     private bool isTakingDamage;
     public float healthRegenSpeed;
-
+    
     public bool isDead
     {
         get;
@@ -22,6 +26,8 @@ public class PlayerHealthManager : MonoBehaviour
         private set;
     }
 
+    
+    
     private void Start()
     {
         currentHealth = maxHealth;

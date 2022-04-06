@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8897131837978101611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: parameter:/Elevation Y axen
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-6398342721721276515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/zone1/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 10
+  Default: 0
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-5072994666820224665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23,9 +71,10 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  Parameters:
+  - {fileID: -6398342721721276515}
+  MinDistance: 0
+  MaxDistance: 850
   Length: 34555
 --- !u!114 &-1234142488811823581
 MonoBehaviour:
@@ -42,10 +91,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637847800164140289
+  lastModified: 637848603140436718
   FileSizes:
   - Name: 
-    Value: 812
+    Value: 1008
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -65,12 +114,14 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -5072994666820224665}
   - {fileID: 6328779858881159716}
-  EditorParameters: []
+  EditorParameters:
+  - {fileID: -8897131837978101611}
+  - {fileID: 5949760344786461721}
   MasterBanks:
   - {fileID: 851592598875442860}
   StringsBanks:
   - {fileID: -1234142488811823581}
-  cacheTime: 637847800164140289
+  cacheTime: 637848603140436718
   cacheVersion: 10
 --- !u!114 &851592598875442860
 MonoBehaviour:
@@ -87,8 +138,32 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637847800164130320
+  lastModified: 637848603140426738
   FileSizes: []
+  Exists: 1
+--- !u!114 &5949760344786461721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RPM
+  m_EditorClassIdentifier: 
+  Name: RPM
+  StudioPath: parameter:/Vehicle/RPM
+  Min: 0
+  Max: 8000
+  Default: 0
+  ID:
+    data1: 1019152161
+    data2: 988637408
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &6328779858881159716
 MonoBehaviour:
