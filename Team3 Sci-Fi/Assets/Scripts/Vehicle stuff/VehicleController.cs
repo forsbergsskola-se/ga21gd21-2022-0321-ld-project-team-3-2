@@ -27,11 +27,6 @@ public class VehicleController : MonoBehaviour
     [SerializeField] private float brakeForce;
     [SerializeField] private float maxSteeringAngle;
 
-
-    //SOUND LOGIC
-    private bool carSoundActive = false;
-    private float carSpeed = 0f;
-
     private void FixedUpdate()
     {
         if (enterOrExitScript.inCar)
@@ -39,20 +34,6 @@ public class VehicleController : MonoBehaviour
             horizontalInput = Input.GetAxis("Horizontal");
             verticalInput = Input.GetAxis("Vertical");
             isBrakeing = Input.GetKey(KeyCode.LeftControl);
-
-            if (!carSoundActive)
-            {
-                Debug.Log("Start car sound event");
-                carSpeed = GetComponent<Rigidbody>().velocity.magnitude;
-                Debug.Log("Car Speed Param " + carSpeed);
-            }
-        }
-        else
-        {
-            if (carSoundActive)
-            {
-                Debug.Log("Stop car sound event");
-            }
         }
         
         frontLeftCollider.motorTorque = verticalInput * speed;
