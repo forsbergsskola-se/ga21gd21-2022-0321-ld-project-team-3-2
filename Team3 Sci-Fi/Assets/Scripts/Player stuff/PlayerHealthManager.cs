@@ -2,13 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 public class PlayerHealthManager : MonoBehaviour
 {
-    public float maxHealth;
+    
+    [Header("This script should not be attached to the player prefab")]
+    [Header("")]
+    
+    public float maxHealth = 100f;
     private bool isTakingDamage;
-
+    public float healthRegenSpeed;
+    
     public bool isDead
     {
         get;
@@ -20,24 +26,24 @@ public class PlayerHealthManager : MonoBehaviour
         private set;
     }
 
+    
+    
     private void Start()
     {
         currentHealth = maxHealth;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (currentHealth >= 0) 
+        if (currentHealth <= 0) 
         {
             Death();
         }
         RegenerateHealth();
-    }
-
-    private void LateUpdate()
-    {
         isTakingDamage = false;
     }
+
+    
 
     public void TakeDamage(float damage)
     {
@@ -48,15 +54,15 @@ public class PlayerHealthManager : MonoBehaviour
     public void Death()
     {
         isDead = true;
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         isDead = false;
     }
 
     private void RegenerateHealth()
     {
-        if (!isDead && !isTakingDamage)
+        if (!isDead && !isTakingDamage && currentHealth < 100f)
         {
-            currentHealth += maxHealth / 10f * Time.deltaTime;
+            currentHealth += maxHealth * (healthRegenSpeed / 1000f);
         }
     }
 }
