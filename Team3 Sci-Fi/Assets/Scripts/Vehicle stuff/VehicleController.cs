@@ -15,6 +15,8 @@ public class VehicleController : MonoBehaviour
     
     //Den här siffran kommer vi ge ett värde längre ner
     public float currentMotorTorque;
+    private FMOD.Studio.EventInstance motorSound;
+
     
     [SerializeField] private WheelCollider frontLeftCollider;
     [SerializeField] private WheelCollider frontRightCollider;
@@ -29,6 +31,12 @@ public class VehicleController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float brakeForce;
     [SerializeField] private float maxSteeringAngle;
+
+    private void Start()
+    {
+        motorSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vehicle/Motor");
+
+    }
 
     private void FixedUpdate()
     {
@@ -46,6 +54,9 @@ public class VehicleController : MonoBehaviour
         //currentMotorTorque den här siffran kan vi använda som en parameter för motorljud osv
         currentMotorTorque = (frontRightCollider.motorTorque + frontLeftCollider.motorTorque) / 2f;
 
+        
+        
+        motorSound.setParameterByName("RPM", currentMotorTorque);
         
         if (!enterOrExitScript.inCar)
         {

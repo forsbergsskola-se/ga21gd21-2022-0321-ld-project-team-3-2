@@ -39,7 +39,7 @@ MonoBehaviour:
   Name: RPM
   StudioPath: 
   Min: 0
-  Max: 8000
+  Max: 2000
   Default: 0
   ID:
     data1: 1019152161
@@ -313,7 +313,7 @@ MonoBehaviour:
   - {fileID: 851592598875442860}
   StringsBanks:
   - {fileID: -1234142488811823581}
-  cacheTime: 637849341499236066
+  cacheTime: 637849383445532553
   cacheVersion: 10
 --- !u!114 &600557650524340202
 MonoBehaviour:
@@ -357,7 +357,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637849341499216132
+  lastModified: 637849383445532553
   FileSizes: []
   Exists: 1
 --- !u!114 &2045462086642774846
@@ -423,7 +423,7 @@ MonoBehaviour:
   Name: RPM
   StudioPath: parameter:/Vehicle/RPM
   Min: 0
-  Max: 8000
+  Max: 2000
   Default: 0
   ID:
     data1: 1019152161

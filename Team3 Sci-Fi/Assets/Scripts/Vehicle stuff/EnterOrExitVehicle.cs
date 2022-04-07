@@ -10,6 +10,8 @@ public class EnterOrExitVehicle : MonoBehaviour
     [SerializeField] private float carEnterRange = 10f;
     [SerializeField] private Vector3 exitCarPosition;
     
+    private FMOD.Studio.EventInstance motorSound;
+    
     private Transform playerTransform;
     public LayerMask PlayerLayer;
     public bool inCar;
@@ -17,6 +19,7 @@ public class EnterOrExitVehicle : MonoBehaviour
     void Start()
     {
         playerTransform = player.GetComponent<Transform>();
+        motorSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vehicle/Motor");
     }
 
     private void Update()
@@ -47,9 +50,9 @@ public class EnterOrExitVehicle : MonoBehaviour
         vehicleCamera.SetActive(true);
         
         
-        // Här kan man köra vehicle start ljud
-        
-        
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Enter");
+        motorSound.start();
+
     }
 
     private void ExitCar()
@@ -59,8 +62,8 @@ public class EnterOrExitVehicle : MonoBehaviour
         player.SetActive(true);
         
         
-        // Här kan man köra vad man vill göra när man går ut ur bilen
-        
-        
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Exit");
+        motorSound.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
     }
 }
