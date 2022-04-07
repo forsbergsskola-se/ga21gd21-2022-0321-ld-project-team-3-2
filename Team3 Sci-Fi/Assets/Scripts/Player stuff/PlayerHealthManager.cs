@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerHealthManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlayerHealthManager : MonoBehaviour
     public float maxHealth = 100f;
     private bool isTakingDamage;
     public float healthRegenSpeed;
+    [SerializeField] private Image healthIndicator;
     
     public bool isDead
     {
@@ -38,6 +40,19 @@ public class PlayerHealthManager : MonoBehaviour
         if (currentHealth <= 0) 
         {
             Death();
+        }
+
+        if (currentHealth > maxHealth * 0.67f)
+        {
+            healthIndicator.color = Color.cyan;
+        }
+        else if (currentHealth > maxHealth * 0.34f && currentHealth < maxHealth * 0.67f)
+        {
+            healthIndicator.color = Color.yellow;
+        }
+        else
+        {
+            healthIndicator.color = Color.red;
         }
         RegenerateHealth();
         isTakingDamage = false;
