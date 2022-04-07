@@ -21,7 +21,7 @@
     // Update is called once per frame
    // void Update()
     //{
-        //och när man gasar så ska parameter RPM
+        // och när man gasar så ska parameter RPM
         // gå upp den har ett värde på 0 till 80000
 
        // FMODUnity.

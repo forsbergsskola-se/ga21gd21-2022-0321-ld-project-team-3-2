@@ -13,6 +13,9 @@ public class VehicleController : MonoBehaviour
     private float currentBrakeForce;
     private float currentSteerAngle;
     
+    //Den här siffran kommer vi ge ett värde längre ner
+    public float currentMotorTorque;
+    
     [SerializeField] private WheelCollider frontLeftCollider;
     [SerializeField] private WheelCollider frontRightCollider;
     [SerializeField] private WheelCollider backLeftCollider;
@@ -38,7 +41,12 @@ public class VehicleController : MonoBehaviour
         
         frontLeftCollider.motorTorque = verticalInput * speed;
         frontRightCollider.motorTorque = verticalInput * speed;
+        
+        
+        //currentMotorTorque den här siffran kan vi använda som en parameter för motorljud osv
+        currentMotorTorque = (frontRightCollider.motorTorque + frontLeftCollider.motorTorque) / 2f;
 
+        
         if (!enterOrExitScript.inCar)
         {
             currentBrakeForce = brakeForce;

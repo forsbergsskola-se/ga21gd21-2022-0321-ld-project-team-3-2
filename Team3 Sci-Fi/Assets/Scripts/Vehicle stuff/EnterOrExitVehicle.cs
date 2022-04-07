@@ -9,16 +9,14 @@ public class EnterOrExitVehicle : MonoBehaviour
     [SerializeField] private GameObject vehicleCamera;
     [SerializeField] private float carEnterRange = 10f;
     [SerializeField] private Vector3 exitCarPosition;
-    //private VehicleController vehicleController;
+    
     private Transform playerTransform;
     public LayerMask PlayerLayer;
     public bool inCar;
     private bool isInCarRange;
-    
     void Start()
     {
         playerTransform = player.GetComponent<Transform>();
-        //vehicleController = GetComponent<VehicleController>();
     }
 
     private void Update()
@@ -43,17 +41,26 @@ public class EnterOrExitVehicle : MonoBehaviour
 
     private void EnterCar()
     {
+        
         inCar = true;
         player.SetActive(false);
         vehicleCamera.SetActive(true);
-        //vehicleController.enabled = true;
+        
+        
+        // Här kan man köra vehicle start ljud
+        
+        
     }
 
     private void ExitCar()
     {
         inCar = false;
         vehicleCamera.SetActive(false);
-        //vehicleController.enabled = false;
         player.SetActive(true);
+        
+        
+        // Här kan man köra vad man vill göra när man går ut ur bilen
+        
+        
     }
 }
