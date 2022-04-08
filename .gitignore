@@ -551,3 +551,10 @@ FodyWeavers.xsd
 Team3 Sci-Fi/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
 Team3 Sci-Fi/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset
 Team3 Sci-Fi/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset
+Team3 Sci-Fi/ProjectSettings/BurstAotSettings_StandaloneWindows.json
+Team3 Sci-Fi/ProjectSettings/CommonBurstAotSettings.json
+Team3 Sci-Fi/ProjectSettings/Packages/com.unity.probuilder/Settings.json
+Team3 Sci-Fi/ProjectSettings/ShaderGraphSettings.asset
+Team3 Sci-Fi/ProjectSettings/TimelineSettings.asset
+Team3 Sci-Fi/ProjectSettings/Packages/com.unity.probuilder/Settings.json
+Team3 Sci-Fi/ProjectSettings/ShaderGraphSettings.asset
