@@ -26,7 +26,7 @@ public class VehicleController : MonoBehaviour
     [SerializeField] private Transform backLeftTransform;
     [SerializeField] private Transform backRightTransform;
 
-    [SerializeField] private float speed;
+    public float speed;
     [SerializeField] private float brakeForce;
     [SerializeField] private float maxSteeringAngle;
 

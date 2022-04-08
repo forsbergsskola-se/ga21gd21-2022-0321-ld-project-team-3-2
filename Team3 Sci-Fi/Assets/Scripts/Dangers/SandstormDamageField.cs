@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
-public class EnvironmentDamageField : MonoBehaviour
+public class SandstormDamageField : MonoBehaviour
 {
     public float damagePerFrame;
     public LayerMask playerLayer;
@@ -12,10 +12,11 @@ public class EnvironmentDamageField : MonoBehaviour
     private PlayerHealthManager playerHealth;
     private Collider damageField;
 
-    private bool vehicleUpgradePlaceholder;
+    private GameProgressionManager gameProgress;
 
     private void Start()
     {
+        gameProgress = FindObjectOfType<GameProgressionManager>();
         playerHealth = FindObjectOfType<PlayerHealthManager>();
         damageField = GetComponent<Collider>();
     }
@@ -28,7 +29,7 @@ public class EnvironmentDamageField : MonoBehaviour
         }
         else if (Physics.CheckBox(damageField.bounds.center,damageField.bounds.extents,quaternion.Euler(0),vehicleLayer))
         {
-            if (!vehicleUpgradePlaceholder)
+            if (!gameProgress.hasSandstormUpgrade)
             {
                 playerHealth.TakeDamage(damagePerFrame);
             }
