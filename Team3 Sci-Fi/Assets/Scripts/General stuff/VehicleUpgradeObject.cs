@@ -29,11 +29,16 @@ public class VehicleUpgradeObject : MonoBehaviour
       
       isInObjectRange = Physics.CheckSphere(transform.position, pickUpRange, playerLayer);
 
+      if (!isInObjectRange)
+      {
+         return;
+      }
+      
       if (reincorfecHullUpgrade)
       {
          gameProgress.hasSandstormUpgrade = true;
       }
-      else if (reinforcedTireUpgrade)
+      else if (reinforcedTireUpgrade )
       {
          gameProgress.hasScorchedEarthUpgrade = true;
       }
