@@ -9301,6 +9301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enterOrExitScript: {fileID: 5233811308373684843}
+  currentMotorTorque: 0
   frontLeftCollider: {fileID: 5233811309432977734}
   frontRightCollider: {fileID: 5233811309057521996}
   backLeftCollider: {fileID: 5233811308449693757}
