@@ -66,7 +66,7 @@ public class BasicDialogueManager : MonoBehaviour {
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
-        FindObjectOfType<DialogueTrigger>().face.SetActive(false);
+        FindObjectOfType<BasicDialogueTrigger>().face.SetActive(false);
         isInDialogue = false;
         continueText.SetActive(false);
     }
