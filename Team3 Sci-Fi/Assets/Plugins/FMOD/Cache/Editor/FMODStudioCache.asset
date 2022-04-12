@@ -1,29 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9200368174062788951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Zone2/WindIntesty
-  m_EditorClassIdentifier: 
-  Name: WindIntesty
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 118670203
-    data2: 4129383344
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &-8897131837978101611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +48,35 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-8586192098995230794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone 3
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone 3
+  Guid:
+    Data1: -316665838
+    Data2: 1135253053
+    Data3: 1501193613
+    Data4: 654650239
+  Banks:
+  - {fileID: 851592598875442860}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7776866522766226924}
+  - {fileID: -6266913873909440237}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34594
 --- !u!114 &-8021733547711650101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,7 +105,7 @@ MonoBehaviour:
   MinDistance: 0.1
   MaxDistance: 2.2
   Length: 8000
---- !u!114 &-7753923902981711835
+--- !u!114 &-7776866522766226924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,7 +115,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Zone1/Elevation Y axen
+  m_Name: parameter:/Zone 3/Elevation Y axen
   m_EditorClassIdentifier: 
   Name: Elevation Y axen
   StudioPath: 
@@ -124,35 +129,6 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-7502457506873447698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone3
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone3
-  Guid:
-    Data1: -750395663
-    Data2: 1096057491
-    Data3: -651697266
-    Data4: -202442288
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -1112617849448857597}
-  - {fileID: 1863526991410353031}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 139636
 --- !u!114 &-7459520066760171640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +143,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: WindIntesty
   StudioPath: parameter:/WindIntesty
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 118670203
+    data2: 4129383344
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-6266913873909440237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Zone 3/WindIntesty
+  m_EditorClassIdentifier: 
+  Name: WindIntesty
+  StudioPath: 
   Min: 0
   Max: 100
   Default: 0
@@ -204,7 +204,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6024798247531479706
+--- !u!114 &-5400255411579852903
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -213,25 +213,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone5
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Zone 2/Elevation Y axen
   m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone5
-  Guid:
-    Data1: -1618243699
-    Data2: 1120827919
-    Data3: 402017461
-    Data4: 548750964
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1669930517827966571}
-  MinDistance: 0.1
-  MaxDistance: 75
-  Length: 34594
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-5282279497433120483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,8 +277,35 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 50
   Length: 34594
+--- !u!114 &-4526321474836854421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player Geting Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player Geting Hurt
+  Guid:
+    Data1: -1900654774
+    Data2: 1229814746
+    Data3: 228929714
+    Data4: 2030992761
+  Banks:
+  - {fileID: 851592598875442860}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4054302942344645651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,14 +328,14 @@ MonoBehaviour:
   - {fileID: 851592598875442860}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -5282279497433120483}
   - {fileID: 3905774673720728137}
   MinDistance: 1
   MaxDistance: 20
   Length: 34594
---- !u!114 &-1669930517827966571
+--- !u!114 &-3477014499023905816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -322,20 +345,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Zone5/Elevation Y axen
+  m_Name: parameter:/Zone 2/WindIntesty
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: WindIntesty
   StudioPath: 
   Min: 0
   Max: 100
   Default: 0
   ID:
-    data1: 44443144
-    data2: 2883253264
+    data1: 118670203
+    data2: 4129383344
   Type: 0
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-1693709234299993748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone 5
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone 5
+  Guid:
+    Data1: -1618243699
+    Data2: 1120827919
+    Data3: 402017461
+    Data4: 548750964
+  Banks:
+  - {fileID: 851592598875442860}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5867279900298104967}
+  MinDistance: 0.1
+  MaxDistance: 75
+  Length: 34594
 --- !u!114 &-1462599283882982112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,34 +426,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637853133833657439
+  lastModified: 637853662592924748
   FileSizes:
   - Name: 
-    Value: 1630
-  Exists: 1
---- !u!114 &-1112617849448857597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Zone3/WindIntesty
-  m_EditorClassIdentifier: 
-  Name: WindIntesty
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 118670203
-    data2: 4129383344
-  Type: 0
-  IsGlobal: 1
-  Labels: []
+    Value: 1806
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -420,7 +447,6 @@ MonoBehaviour:
   - {fileID: -1234142488811823581}
   - {fileID: 851592598875442860}
   EditorEvents:
-  - {fileID: 6328779858881159716}
   - {fileID: -8021733547711650101}
   - {fileID: 9119151067572617692}
   - {fileID: -6123634302006424357}
@@ -428,12 +454,15 @@ MonoBehaviour:
   - {fileID: 1393176447341687621}
   - {fileID: 5142714330517163974}
   - {fileID: -4661420711246066950}
-  - {fileID: 7793960567933512748}
   - {fileID: -4054302942344645651}
   - {fileID: 7663861323935558971}
-  - {fileID: -6024798247531479706}
-  - {fileID: 9203918353952412438}
-  - {fileID: -7502457506873447698}
+  - {fileID: -8586192098995230794}
+  - {fileID: 3260317275336872930}
+  - {fileID: -4526321474836854421}
+  - {fileID: 7475652980052050605}
+  - {fileID: -1693709234299993748}
+  - {fileID: 8228890168347734113}
+  - {fileID: 5670603683852953428}
   EditorParameters:
   - {fileID: -8897131837978101611}
   - {fileID: 5949760344786461721}
@@ -442,7 +471,7 @@ MonoBehaviour:
   - {fileID: 851592598875442860}
   StringsBanks:
   - {fileID: -1234142488811823581}
-  cacheTime: 637853133833657439
+  cacheTime: 637853662592924748
   cacheVersion: 10
 --- !u!114 &600557650524340202
 MonoBehaviour:
@@ -486,7 +515,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637853133833577345
+  lastModified: 637853662592894844
   FileSizes: []
   Exists: 1
 --- !u!114 &1393176447341687621
@@ -516,9 +545,9 @@ MonoBehaviour:
   - {fileID: 9207035514297628507}
   - {fileID: -1462599283882982112}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Length: 35500
---- !u!114 &1863526991410353031
+--- !u!114 &1910902320094282978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -528,7 +557,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Zone3/Elevation Y axen
+  m_Name: parameter:/Zone 1/Elevation Y axen
   m_EditorClassIdentifier: 
   Name: Elevation Y axen
   StudioPath: 
@@ -566,6 +595,34 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &3260317275336872930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone 1
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone 1
+  Guid:
+    Data1: -23911621
+    Data2: 1095530900
+    Data3: 45039503
+    Data4: 853185920
+  Banks:
+  - {fileID: 851592598875442860}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1910902320094282978}
+  MinDistance: 0
+  MaxDistance: 850
+  Length: 34555
 --- !u!114 &3905774673720728137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,6 +700,57 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &5670603683852953428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Flora hadling sounds
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Flora hadling sounds
+  Guid:
+    Data1: 1212578277
+    Data2: 1282144340
+    Data3: 184740279
+    Data4: -1084304530
+  Banks:
+  - {fileID: 851592598875442860}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2656
+--- !u!114 &5867279900298104967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Zone 5/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &5949760344786461721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,7 +775,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &6328779858881159716
+--- !u!114 &7475652980052050605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -677,47 +785,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Items/Pen
+  m_Name: event:/Player/Player death
   m_EditorClassIdentifier: 
-  Path: event:/Items/Pen
+  Path: event:/Player/Player death
   Guid:
-    Data1: 743308520
-    Data2: 1190560261
-    Data3: -735678788
-    Data4: 2080639400
+    Data1: 793046664
+    Data2: 1168325005
+    Data3: 566627491
+    Data4: 1252716497
   Banks:
   - {fileID: 851592598875442860}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7662306777794291966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Zone2/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &7663861323935558971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,7 +829,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 138500
---- !u!114 &7793960567933512748
+--- !u!114 &8228890168347734113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -755,24 +839,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone1
+  m_Name: event:/Musik/Zone 2
   m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone1
+  Path: event:/Musik/Zone 2
   Guid:
-    Data1: -23911621
-    Data2: 1095530900
-    Data3: 45039503
-    Data4: 853185920
+    Data1: 1297946555
+    Data2: 1295668195
+    Data3: 691262136
+    Data4: -948949229
   Banks:
   - {fileID: 851592598875442860}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -7753923902981711835}
-  MinDistance: 0
-  MaxDistance: 850
-  Length: 34555
+  - {fileID: -5400255411579852903}
+  - {fileID: -3477014499023905816}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34594
 --- !u!114 &9119151067572617692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,35 +885,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &9203918353952412438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone2
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone2
-  Guid:
-    Data1: 1297946555
-    Data2: 1295668195
-    Data3: 691262136
-    Data4: -948949229
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7662306777794291966}
-  - {fileID: -9200368174062788951}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 34594
 --- !u!114 &9207035514297628507
 MonoBehaviour:
   m_ObjectHideFlags: 0
