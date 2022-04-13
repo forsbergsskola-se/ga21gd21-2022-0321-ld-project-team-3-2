@@ -102,6 +102,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -8636625344141227344}
+  - {fileID: -4389076584080268106}
   MinDistance: 0.1
   MaxDistance: 2.2
   Length: 8000
@@ -306,6 +307,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4389076584080268106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Motor/Car Lvl
+  m_EditorClassIdentifier: 
+  Name: Car Lvl
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2537291187
+    data2: 3067985771
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-4054302942344645651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +381,30 @@ MonoBehaviour:
     data1: 118670203
     data2: 4129383344
   Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2875677037867608750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Car Lvl
+  m_EditorClassIdentifier: 
+  Name: Car Lvl
+  StudioPath: parameter:/Vehicle/Car Lvl
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2537291187
+    data2: 3067985771
+  Type: 1
   IsGlobal: 1
   Labels: []
   Exists: 1
@@ -426,10 +475,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637853662592924748
+  lastModified: 637854368527024361
   FileSizes:
   - Name: 
-    Value: 1806
+    Value: 1856
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -467,11 +516,12 @@ MonoBehaviour:
   - {fileID: -8897131837978101611}
   - {fileID: 5949760344786461721}
   - {fileID: -7459520066760171640}
+  - {fileID: -2875677037867608750}
   MasterBanks:
   - {fileID: 851592598875442860}
   StringsBanks:
   - {fileID: -1234142488811823581}
-  cacheTime: 637853662592924748
+  cacheTime: 637854368527024361
   cacheVersion: 10
 --- !u!114 &600557650524340202
 MonoBehaviour:
@@ -515,7 +565,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637853662592894844
+  lastModified: 637854368526964415
   FileSizes: []
   Exists: 1
 --- !u!114 &1393176447341687621
