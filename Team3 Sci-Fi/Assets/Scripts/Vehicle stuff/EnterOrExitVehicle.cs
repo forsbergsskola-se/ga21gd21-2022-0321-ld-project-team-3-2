@@ -50,7 +50,7 @@ public class EnterOrExitVehicle : MonoBehaviour
         vehicleCamera.SetActive(true);
        
         motorSound.start();
-       // FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Enter");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Enter");
     }
 
     private void ExitCar()
@@ -60,6 +60,6 @@ public class EnterOrExitVehicle : MonoBehaviour
         player.SetActive(true);
 
         motorSound.stop(STOP_MODE.IMMEDIATE);
-        //FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Exit");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Exit");
     }
 }
