@@ -7571,6 +7571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPos: {fileID: 2127110950}
   vehiclePos: {fileID: 1527286295}
+  mapLowestPoint: 0
 --- !u!4 &1212583546
 Transform:
   m_ObjectHideFlags: 0

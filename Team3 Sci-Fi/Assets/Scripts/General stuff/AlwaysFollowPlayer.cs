@@ -24,8 +24,8 @@ public class AlwaysFollowPlayer : MonoBehaviour
         playerElevation = playerPos.position.y;
         float elevationParameter = playerElevation - mapLowestPoint;
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Elevation Y axen", elevationParameter);
-        
-        
+
+
         if (enterExitVehicleScript.inCar)
         {
             transform.position = vehiclePos.position;
