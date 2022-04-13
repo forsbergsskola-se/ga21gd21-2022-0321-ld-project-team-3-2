@@ -7,7 +7,8 @@ public class AlwaysFollowPlayer : MonoBehaviour
 {
     [SerializeField] private Transform playerPos;
     [SerializeField] private Transform vehiclePos;
-    private Vector3 playerPosY;
+    [SerializeField] private float mapLowestPoint;
+    private float playerElevation;
     private EnterOrExitVehicle enterExitVehicleScript;
 
     private void Start()
@@ -17,7 +18,14 @@ public class AlwaysFollowPlayer : MonoBehaviour
 
     void Update()
     {
-        playerPosY = new Vector3(0f, playerPos.position.y,0f);
+        
+        
+       
+        playerElevation = playerPos.position.y;
+        float elevationParameter = playerElevation - mapLowestPoint;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Elevation Y axen", elevationParameter);
+        
+        
         if (enterExitVehicleScript.inCar)
         {
             transform.position = vehiclePos.position;
