@@ -16,15 +16,27 @@ public class VehicleController : MonoBehaviour
     //Den här siffran kommer vi ge ett värde längre ner
     public float currentMotorTorque;
     
-    [SerializeField] private WheelCollider frontLeftCollider;
-    [SerializeField] private WheelCollider frontRightCollider;
-    [SerializeField] private WheelCollider backLeftCollider;
-    [SerializeField] private WheelCollider backRightCollider;
+    [SerializeField] private WheelCollider left1Collider;
+    [SerializeField] private WheelCollider left2Collider;
+    [SerializeField] private WheelCollider left3Collider;
+    [SerializeField] private WheelCollider left4Collider;
+    [SerializeField] private WheelCollider left5Collider;
+    [SerializeField] private WheelCollider right1Collider;
+    [SerializeField] private WheelCollider right2Collider;
+    [SerializeField] private WheelCollider right3Collider;
+    [SerializeField] private WheelCollider right4Collider;
+    [SerializeField] private WheelCollider right5Collider;
     
-    [SerializeField] private Transform frontLeftTransform;
-    [SerializeField] private Transform frontRightTransform;
-    [SerializeField] private Transform backLeftTransform;
-    [SerializeField] private Transform backRightTransform;
+    [SerializeField] private Transform left1Transform;
+    [SerializeField] private Transform left2Transform;
+    [SerializeField] private Transform left3Transform;
+    [SerializeField] private Transform left4Transform;
+    [SerializeField] private Transform left5Transform;
+    [SerializeField] private Transform right1Transform;
+    [SerializeField] private Transform right2Transform;
+    [SerializeField] private Transform right3Transform;
+    [SerializeField] private Transform right4Transform;
+    [SerializeField] private Transform right5Transform;
 
     public float speed;
     [SerializeField] private float brakeForce;
@@ -39,13 +51,15 @@ public class VehicleController : MonoBehaviour
             isBrakeing = Input.GetKey(KeyCode.LeftControl);
         }
         
-        frontLeftCollider.motorTorque = verticalInput * speed;
-        frontRightCollider.motorTorque = verticalInput * speed;
+        left2Collider.motorTorque = -(verticalInput * speed);
+        right2Collider.motorTorque = -(verticalInput * speed);
+        left1Collider.motorTorque = -(verticalInput * speed);
+        right1Collider.motorTorque = -(verticalInput * speed);
         
         
         //currentMotorTorque den här siffran kan vi använda som en parameter för motorljud osv
-        currentMotorTorque = (frontRightCollider.motorTorque + frontLeftCollider.motorTorque) / 2f;
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("RPM", currentMotorTorque);
+        currentMotorTorque = (left2Collider.motorTorque + right2Collider.motorTorque) / 2f;
+        // FMODUnity.RuntimeManager.StudioSystem.setParameterByName("RPM", currentMotorTorque);
 
         
         if (!enterOrExitScript.inCar)
@@ -57,20 +71,34 @@ public class VehicleController : MonoBehaviour
             currentBrakeForce = isBrakeing ? brakeForce : 0f;
         }
         
-        frontRightCollider.brakeTorque = currentBrakeForce;
-        frontLeftCollider.brakeTorque = currentBrakeForce;
-        backRightCollider.brakeTorque = currentBrakeForce;
-        backLeftCollider.brakeTorque = currentBrakeForce;
+        left1Collider.brakeTorque = currentBrakeForce;
+        left2Collider.brakeTorque = currentBrakeForce;
+        left3Collider.brakeTorque = currentBrakeForce;
+        left4Collider.brakeTorque = currentBrakeForce;
+        left5Collider.brakeTorque = currentBrakeForce;
+        right1Collider.brakeTorque = currentBrakeForce;
+        right2Collider.brakeTorque = currentBrakeForce;
+        right3Collider.brakeTorque = currentBrakeForce;
+        right4Collider.brakeTorque = currentBrakeForce;
+        right5Collider.brakeTorque = currentBrakeForce;
         
 
         currentSteerAngle = maxSteeringAngle * horizontalInput;
-        frontLeftCollider.steerAngle = currentSteerAngle;
-        frontRightCollider.steerAngle = currentSteerAngle;
+        left1Collider.steerAngle = currentSteerAngle;
+        right1Collider.steerAngle = currentSteerAngle;
+        left2Collider.steerAngle = currentSteerAngle;
+        right2Collider.steerAngle = currentSteerAngle;
         
-        UpdateSingleWheel(frontLeftCollider, frontLeftTransform);
-        UpdateSingleWheel(frontRightCollider, frontRightTransform);
-        UpdateSingleWheel(backRightCollider, backRightTransform);
-        UpdateSingleWheel(backLeftCollider, backLeftTransform);
+        UpdateSingleWheel(left1Collider, left1Transform);
+        UpdateSingleWheel(left2Collider, left2Transform);
+        UpdateSingleWheel(left3Collider, left3Transform);
+        UpdateSingleWheel(left4Collider, left4Transform);
+        UpdateSingleWheel(left5Collider, left5Transform);
+        UpdateSingleWheel(right1Collider, right1Transform);
+        UpdateSingleWheel(right2Collider, right2Transform);
+        UpdateSingleWheel(right3Collider, right3Transform);
+        UpdateSingleWheel(right4Collider, right4Transform);
+        UpdateSingleWheel(right5Collider, right5Transform);
     }
 
     private void UpdateSingleWheel(WheelCollider wheelCollider, Transform wheelTransform)
