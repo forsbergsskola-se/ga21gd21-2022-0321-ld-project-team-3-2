@@ -51,10 +51,10 @@ public class VehicleController : MonoBehaviour
             isBrakeing = Input.GetKey(KeyCode.LeftControl);
         }
         
-        left2Collider.motorTorque = -(verticalInput * speed);
-        right2Collider.motorTorque = -(verticalInput * speed);
-        left1Collider.motorTorque = -(verticalInput * speed);
-        right1Collider.motorTorque = -(verticalInput * speed);
+        left2Collider.motorTorque = (verticalInput * speed);
+        right2Collider.motorTorque = (verticalInput * speed);
+        left1Collider.motorTorque = (verticalInput * speed);
+        right1Collider.motorTorque = (verticalInput * speed);
         
         
         //currentMotorTorque den här siffran kan vi använda som en parameter för motorljud osv

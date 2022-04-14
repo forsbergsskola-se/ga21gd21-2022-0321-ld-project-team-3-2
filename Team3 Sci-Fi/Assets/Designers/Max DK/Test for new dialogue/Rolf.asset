@@ -13,5 +13,12 @@ MonoBehaviour:
   m_Name: Rolf
   m_EditorClassIdentifier: 
   name: 
-  dialogue: []
-  playerDialogue: []
+  dialogue:
+  - "Tjena, l\xE4get?"
+  - "jag m\xE5r finfint"
+  - "jag kommer fr\xE5n storsj\xF6n"
+  - vi ses
+  playerDialogue:
+  - "Aa debra, dud\xE5?"
+  - "Vart kommer du ifr\xE5n"
+  - "Hejd\xE5"
