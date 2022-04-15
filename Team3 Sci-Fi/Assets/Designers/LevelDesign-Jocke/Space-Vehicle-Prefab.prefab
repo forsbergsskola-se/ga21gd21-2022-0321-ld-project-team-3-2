@@ -3331,7 +3331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7021538620510985628}
   m_Layer: 0
-  m_Name: Space Vehichel
+  m_Name: Space-Vehicle-Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3591,7 +3591,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8152581892521644795}
   m_LocalRotation: {x: 0.99772304, y: -0, z: -0, w: 0.06744487}
-  m_LocalPosition: {x: 0, y: 5.903, z: -8.53}
+  m_LocalPosition: {x: -0.141, y: 6.015991, z: -8.144}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
