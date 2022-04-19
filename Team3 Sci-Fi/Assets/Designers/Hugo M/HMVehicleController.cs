@@ -25,6 +25,7 @@ public class HMVehicleController : MonoBehaviour
     [SerializeField] private WheelCollider middleBackRightWheel2;
     [SerializeField] private WheelCollider middleBackLeftWheel2;
     
+    
     [SerializeField] private Transform frontLeftTransform;
     [SerializeField] private Transform frontRightTransform;
     [SerializeField] private Transform backLeftTransform;
@@ -67,6 +68,12 @@ public class HMVehicleController : MonoBehaviour
         backRightCollider.brakeTorque = currentBrakeForce;
         backLeftCollider.brakeTorque = currentBrakeForce;
         
+        //frontLeftCollider2.brakeTorque = currentBrakeForce;
+        //frontRightCollider2.brakeTorque = currentBrakeForce;
+        //backLeftCollider2.brakeTorque = currentBrakeForce;
+        //backRightCollider2.brakeTorque = currentBrakeForce;
+        //middleBackRightWheel2.brakeTorque = currentBrakeForce;
+        //middleBackLeftWheel2.brakeTorque = currentBrakeForce;
 
         currentSteerAngle = maxSteeringAngle * horizontalInput;
         frontLeftCollider.steerAngle = currentSteerAngle;
