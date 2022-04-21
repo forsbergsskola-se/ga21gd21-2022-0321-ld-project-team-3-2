@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VehicleController : MonoBehaviour
+public class HM2VehicleController1 : MonoBehaviour
 {
     [SerializeField] private EnterOrExitVehicle enterOrExitScript;
     
@@ -87,7 +87,7 @@ public class VehicleController : MonoBehaviour
         left1Collider.steerAngle = currentSteerAngle;
         right1Collider.steerAngle = currentSteerAngle;
        // left2Collider.steerAngle = currentSteerAngle;
-        //right2Collider.steerAngle = currentSteerAngle;
+       // right2Collider.steerAngle = currentSteerAngle;
         
         UpdateSingleWheel(left1Collider, left1Transform);
         UpdateSingleWheel(left2Collider, left2Transform);
