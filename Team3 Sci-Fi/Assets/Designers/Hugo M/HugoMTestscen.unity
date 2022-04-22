@@ -13339,17 +13339,17 @@ PrefabInstance:
     - target: {fileID: 6142928771057384946, guid: 55c78d76ba0dc3c449dc01f031bb6083,
         type: 3}
       propertyPath: m_Orbits.Array.data[0].m_Radius
-      value: 30.84
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6142928771057384946, guid: 55c78d76ba0dc3c449dc01f031bb6083,
         type: 3}
       propertyPath: m_Orbits.Array.data[1].m_Radius
-      value: 41.1
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 6142928771057384946, guid: 55c78d76ba0dc3c449dc01f031bb6083,
         type: 3}
       propertyPath: m_Orbits.Array.data[2].m_Radius
-      value: 30.5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6142928771057384947, guid: 55c78d76ba0dc3c449dc01f031bb6083,
         type: 3}
@@ -39959,11 +39959,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: -20
+    limit: -10
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 20
+    limit: 10
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
@@ -40147,7 +40147,7 @@ MonoBehaviour:
   right3Transform: {fileID: 6698881443192709523}
   right4Transform: {fileID: 6698881443183621712}
   right5Transform: {fileID: 6698881444371353448}
-  speed: 2000
+  speed: 1200
   brakeForce: 4500
   maxSteeringAngle: 30
 --- !u!114 &6592579719618333226
