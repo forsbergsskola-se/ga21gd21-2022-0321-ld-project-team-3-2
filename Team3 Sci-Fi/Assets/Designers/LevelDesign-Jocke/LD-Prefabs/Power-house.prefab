@@ -164,6 +164,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 32924903154291718}
+  - component: {fileID: 273525411526187663}
+  - component: {fileID: 376477794034980843}
   m_Layer: 0
   m_Name: Power-house
   m_TagString: Untagged
@@ -196,6 +198,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &273525411526187663
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057583144572002576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.263916, y: 2.6419678, z: 6.0045166}
+  m_Center: {x: -0.018188477, y: -0.28683472, z: -0.10089111}
+--- !u!65 &376477794034980843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057583144572002576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7585449, y: 2.6564941, z: 1.3380127}
+  m_Center: {x: 1.8626709, y: -0.2574463, z: 1.0669556}
 --- !u!1 &6588943226932336442
 GameObject:
   m_ObjectHideFlags: 0
