@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7085930481292734355}
   - component: {fileID: 6195145144914665526}
   - component: {fileID: 8222839435609183484}
+  - component: {fileID: 460855842468243826}
   m_Layer: 0
   m_Name: BIg_rock2
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &460855842468243826
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7574377919428998441}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.2075852
+  m_Center: {x: 0.048258305, y: -0.4870913, z: -0.0490773}
