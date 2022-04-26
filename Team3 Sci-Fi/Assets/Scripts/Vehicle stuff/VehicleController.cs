@@ -47,7 +47,7 @@ public class VehicleController : MonoBehaviour
         if (enterOrExitScript.inCar)
         {
             horizontalInput = Input.GetAxis("Horizontal");
-            verticalInput = Input.GetAxis("Vertical");
+            verticalInput = Input.GetAxis("Vertical2");
             isBrakeing = Input.GetKey(KeyCode.LeftControl);
         }
         
