@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour {
+public class OLDDialogueManager : MonoBehaviour {
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
@@ -29,28 +29,28 @@ public class DialogueManager : MonoBehaviour {
         choiceTriggers = new Queue<bool>();
     }
 
-    public void StartDialogue (Dialogue dialogue)
+    public void StartDialogue (OLDDialogue oldDialogue)
     {
         animator.SetBool("IsOpen", true);
         continueText.SetActive(true);
-        nameText.text = dialogue.name;
-        answer1Text.text = dialogue.answer1;
-        answer2Text.text = dialogue.answer2;
+        nameText.text = oldDialogue.name;
+        answer1Text.text = oldDialogue.answer1;
+        answer2Text.text = oldDialogue.answer2;
 
         isThisAnswer1 = true;
         sentences.Clear();
         choiceTriggers.Clear();
         altSentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in oldDialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
-        foreach (var sentence in dialogue.answer2Sentences)
+        foreach (var sentence in oldDialogue.answer2Sentences)
         {
             altSentences.Enqueue(sentence);
         }
-        foreach (var choice in dialogue.multipleChoiceTriggers)
+        foreach (var choice in oldDialogue.multipleChoiceTriggers)
         {
             choiceTriggers.Enqueue(choice);
         }
@@ -103,7 +103,7 @@ public class DialogueManager : MonoBehaviour {
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
-        FindObjectOfType<DialogueTrigger>().face.SetActive(false);
+        FindObjectOfType<OLDDialogueTrigger>().face.SetActive(false);
         isInDialogue = false;
         continueText.SetActive(false);
     }

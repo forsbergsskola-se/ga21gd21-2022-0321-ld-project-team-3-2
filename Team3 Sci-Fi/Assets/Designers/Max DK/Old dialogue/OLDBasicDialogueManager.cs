@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BasicDialogueManager : MonoBehaviour {
+public class OLDBasicDialogueManager : MonoBehaviour {
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
@@ -22,15 +22,15 @@ public class BasicDialogueManager : MonoBehaviour {
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue (DialogueBasic dialogue)
+    public void StartDialogue (OLDDialogueBasic oldDialogue)
     {
         animator.SetBool("IsOpen", true);
         continueText.SetActive(true);
-        nameText.text = dialogue.name;
+        nameText.text = oldDialogue.name;
 
         sentences.Clear();
         
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in oldDialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
@@ -66,7 +66,7 @@ public class BasicDialogueManager : MonoBehaviour {
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
-        FindObjectOfType<BasicDialogueTrigger>().face.SetActive(false);
+        FindObjectOfType<OLDBasicDialogueTrigger>().face.SetActive(false);
         isInDialogue = false;
         continueText.SetActive(false);
     }

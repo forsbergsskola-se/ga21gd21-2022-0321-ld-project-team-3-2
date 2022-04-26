@@ -2,18 +2,18 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class BasicDialogueTrigger : MonoBehaviour {
+public class OLDBasicDialogueTrigger : MonoBehaviour {
 
     public LayerMask PlayerLayer;
-    public DialogueBasic dialogue;
+    public OLDDialogueBasic oldDialogue;
     public GameObject face;
     [SerializeField] private float dialogueRange = 10f;
     private bool isInDialogueRange;
-    private BasicDialogueManager dialogueManager;
+    private OLDBasicDialogueManager dialogueManager;
 
     private void Start()
     {
-        dialogueManager = FindObjectOfType<BasicDialogueManager>();
+        dialogueManager = FindObjectOfType<OLDBasicDialogueManager>();
     }
 
     private void Update()
@@ -37,7 +37,7 @@ public class BasicDialogueTrigger : MonoBehaviour {
 
     private void TriggerDialogue ()
     {
-        dialogueManager.StartDialogue(dialogue);
+        dialogueManager.StartDialogue(oldDialogue);
         face.SetActive(true);
     }
 

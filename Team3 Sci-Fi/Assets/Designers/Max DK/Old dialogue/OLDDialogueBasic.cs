@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class DialogueBasic 
+public class OLDDialogueBasic 
 {
     public string name;
 

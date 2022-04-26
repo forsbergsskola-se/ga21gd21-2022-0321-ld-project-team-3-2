@@ -2,18 +2,18 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class DialogueTrigger : MonoBehaviour {
+public class OLDDialogueTrigger : MonoBehaviour {
 
     public LayerMask PlayerLayer;
-    public Dialogue dialogue;
+    public OLDDialogue oldDialogue;
     public GameObject face;
     [SerializeField] private float dialogueRange = 10f;
     private bool isInDialogueRange;
-    private DialogueManager dialogueManager;
+    private OLDDialogueManager _oldDialogueManager;
 
     private void Start()
     {
-        dialogueManager = FindObjectOfType<DialogueManager>();
+        _oldDialogueManager = FindObjectOfType<OLDDialogueManager>();
     }
 
     private void Update()
@@ -24,14 +24,14 @@ public class DialogueTrigger : MonoBehaviour {
         }
         isInDialogueRange = Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer);
 
-        if (isInDialogueRange && !dialogueManager.isInDialogue)
+        if (isInDialogueRange && !_oldDialogueManager.isInDialogue)
         {
-            dialogueManager.isInDialogue = true;
+            _oldDialogueManager.isInDialogue = true;
             TriggerDialogue();
         }
-        else if (dialogueManager.isInDialogue && !dialogueManager.inChoice)
+        else if (_oldDialogueManager.isInDialogue && !_oldDialogueManager.inChoice)
         {
-            dialogueManager.DisplayNextSentence();
+            _oldDialogueManager.DisplayNextSentence();
         }
 
 
@@ -39,7 +39,7 @@ public class DialogueTrigger : MonoBehaviour {
 
     private void TriggerDialogue ()
     {
-        dialogueManager.StartDialogue(dialogue);
+        _oldDialogueManager.StartDialogue(oldDialogue);
         face.SetActive(true);
     }
 
