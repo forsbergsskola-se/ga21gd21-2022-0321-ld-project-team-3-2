@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 [CreateAssetMenu(fileName = "New Choice Dialogue", menuName = "Choice Dialogue Object")]
 public class ChoiceDialogue : ScriptableObject
@@ -16,14 +17,14 @@ public class ChoiceDialogue : ScriptableObject
 
 [System.Serializable] public class Line
 {
-    public string speaker;
+    public Characters character;
     [TextArea(3, 10)] public string text;
 }
 
 
 [System.Serializable] public class ChoiceLine
 {
-    public string speaker;
+    public Characters character;
     [TextArea(3, 10)] public string text;
     public bool isChoiceTrigger;
 }

@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Simple dialogue
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Rolf
+  - character: {fileID: 0}
     text: TJAA ROHAN
-  - speaker: Rohan
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: Tjena rolf
-  - speaker: Rohan
+  - character: {fileID: 0}
     text: "Hur m\xE5r du?"
-  - speaker: Rolf
+  - character: {fileID: 0}
     text: Bara bra!
-  - speaker: Rohan
+  - character: {fileID: 0}
     text: Dunder!
-  - speaker: Rolf
+  - character: {fileID: 0}
     text: "Aja m\xE5ste dra hejd\xE5"
   onReturnDialogue:
-    speaker: Rolf
+    character: {fileID: 0}
     text: "F\xE4rdigsnackat ju"

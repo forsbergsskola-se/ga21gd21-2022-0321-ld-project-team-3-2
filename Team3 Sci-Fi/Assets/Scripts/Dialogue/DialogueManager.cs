@@ -20,9 +20,6 @@ public class DialogueManager : MonoBehaviour
         to do:
         - Implement faces
         - Separate into manager and trigger scripts
-
-
-
     */
    
     public ChoiceDialogue choiceDialogue;
@@ -31,13 +28,13 @@ public class DialogueManager : MonoBehaviour
     private bool isTalking;
     public float dialogueRange;
     public LayerMask PlayerLayer;
-    public GameObject player;
     public GameObject dialogueUI;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI speechText;
     public TextMeshProUGUI answer1Text;
     public TextMeshProUGUI answer2Text;
     public GameObject choices;
+    public Image icon;
 
     private int dialogueTracker = 0;
 
@@ -115,7 +112,8 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         
-        nameText.text = SimpleDialogue.lines[dialogueTracker].speaker;
+        nameText.text = SimpleDialogue.lines[dialogueTracker].character.name;
+        icon.sprite = SimpleDialogue.lines[dialogueTracker].character.icon;
 
         string sentence = SimpleDialogue.lines[dialogueTracker].text;
         StopAllCoroutines();
@@ -146,17 +144,20 @@ public class DialogueManager : MonoBehaviour
         
         if (answerNum == 1)
         {
-            nameText.text = choiceDialogue.linesBranch1[dialogueTracker].speaker;
+            nameText.text = choiceDialogue.linesBranch1[dialogueTracker].character.name;
+            icon.sprite = choiceDialogue.linesBranch1[dialogueTracker].character.icon;
             sentence = choiceDialogue.linesBranch1[dialogueTracker].text;
         }
         else if (answerNum == 2)
         {
-            nameText.text = choiceDialogue.linesBranch2[dialogueTracker].speaker;
+            nameText.text = choiceDialogue.linesBranch2[dialogueTracker].character.name;
+            icon.sprite = choiceDialogue.linesBranch2[dialogueTracker].character.icon;
             sentence = choiceDialogue.linesBranch2[dialogueTracker].text;
         }
         else
         {
-            nameText.text = choiceDialogue.linesInitial[dialogueTracker].speaker;
+            nameText.text = choiceDialogue.linesInitial[dialogueTracker].character.name;
+            icon.sprite = choiceDialogue.linesInitial[dialogueTracker].character.icon;
             sentence = choiceDialogue.linesInitial[dialogueTracker].text;
         }
         
@@ -204,12 +205,14 @@ public class DialogueManager : MonoBehaviour
         string sentence;
         if (isSimpleDialogue)
         {
-            nameText.text = SimpleDialogue.onReturnDialogue.speaker;
+            nameText.text = SimpleDialogue.onReturnDialogue.character.name;
+            icon.sprite = SimpleDialogue.onReturnDialogue.character.icon;
             sentence = SimpleDialogue.onReturnDialogue.text;
         }
         else
         {
-            nameText.text = choiceDialogue.onReturnDialogue.speaker;
+            nameText.text = choiceDialogue.onReturnDialogue.character.name;
+            icon.sprite = choiceDialogue.onReturnDialogue.character.icon;
             sentence = choiceDialogue.onReturnDialogue.text;
         }
         StopAllCoroutines();
