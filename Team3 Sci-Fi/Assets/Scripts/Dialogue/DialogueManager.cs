@@ -7,27 +7,8 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    /*
-        Modify in order to meet these criteria
-        
-        - player and npc can each talk extended periods without triggering choices, works
-        - Trigger choices whenever we want, works
-        - Player and npc can talk full size, works
-        - Dialogue length should be adjustable, works
-        - Toggleable multiple choice conversation, works
-        - Return after dialogue message, works
-
-        to do:
-        - Implement faces
-        - Separate into manager and trigger scripts
-    */
-   
-    public ChoiceDialogue choiceDialogue;
-    public SimpleDialogue SimpleDialogue;
-    private bool isSimpleDialogue;
-    private bool isTalking;
-    public float dialogueRange;
-    public LayerMask PlayerLayer;
+    private ChoiceDialogue choiceDialogue;
+    private SimpleDialogue SimpleDialogue;
     public GameObject dialogueUI;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI speechText;
@@ -37,53 +18,27 @@ public class DialogueManager : MonoBehaviour
     public Image icon;
 
     private int dialogueTracker = 0;
-
-    private bool dialogueFinished;
+    public bool dialogueFinished;
     private bool returnDialogueRead;
-    private bool inChoice;
-
+    public bool inChoice;
+    private bool isSimpleDialogue;
+    public bool isTalking;
     private int answerNum = 0;
     
     void Start()
     {
         dialogueUI.SetActive(false);
+    }
+
+    public void StartDialogue(SimpleDialogue simpleDia, ChoiceDialogue choiceDia)
+    {
+        SimpleDialogue = simpleDia;
+        choiceDialogue = choiceDia;
         if (choiceDialogue == null) isSimpleDialogue = true;
         else
         {
             isSimpleDialogue = false;
         }
-    }
-
-    private void Update()
-    {
-        if (!Input.GetKeyDown(KeyCode.F))
-        {
-            return;
-        }
-
-        if (Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer) && !isTalking)
-        {
-            StartDialogue();
-        }
-        else if (isTalking)
-        {
-            if (dialogueFinished)
-            {
-                DisplayReturnMessage();
-            }
-            else if (isSimpleDialogue)
-            {
-                DisplayNextSentenceSimple();
-            }
-            else if (!inChoice)
-            {
-                DisplayNextSentenceChoice();
-            }
-        }
-    }
-
-    void StartDialogue()
-    {
         isTalking = true;
         dialogueUI.SetActive(true);
 
@@ -231,8 +186,6 @@ public class DialogueManager : MonoBehaviour
     }
     
     
-    
-
     void EndDialogue()
     {
         dialogueFinished = true;
