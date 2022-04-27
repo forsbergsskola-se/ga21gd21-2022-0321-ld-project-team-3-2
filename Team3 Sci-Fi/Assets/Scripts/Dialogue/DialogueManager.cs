@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     private ChoiceDialogue choiceDialogue;
-    private SimpleDialogue SimpleDialogue;
     public GameObject dialogueUI;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI speechText;
@@ -17,83 +16,84 @@ public class DialogueManager : MonoBehaviour
     public GameObject choices;
     public Image icon;
 
-    private int dialogueTracker = 0;
-    public bool dialogueFinished;
-    private bool returnDialogueRead;
+    private int dialogueTracker;
     public bool inChoice;
-    private bool isSimpleDialogue;
     public bool isTalking;
     private int answerNum = 0;
-    
+    private bool isInMessage;
+
+
     void Start()
     {
+        dialogueTracker = 0;
         dialogueUI.SetActive(false);
     }
 
-    public void StartDialogue(SimpleDialogue simpleDia, ChoiceDialogue choiceDia)
+    public void StartDialogue(ChoiceDialogue choiceDia)
     {
-        SimpleDialogue = simpleDia;
+        
         choiceDialogue = choiceDia;
-        if (choiceDialogue == null) isSimpleDialogue = true;
-        else
-        {
-            isSimpleDialogue = false;
-        }
+        choiceDialogue.isDialogueFinishedChoice = false;
+        
+
+
+
         isTalking = true;
         dialogueUI.SetActive(true);
 
-        if (dialogueFinished)
-        {
-            returnDialogueRead = false;
-            DisplayReturnMessage();
-        }
-        else if (isSimpleDialogue)
-        {
-            DisplayNextSentenceSimple();
-        }
-        else
-        {
+      
+        
             answer1Text.text = choiceDialogue.answer1;
             answer2Text.text = choiceDialogue.answer2;
             DisplayNextSentenceChoice();
-        }
+    }
+
+    public void StartReturnMessageDialogue(ChoiceDialogue choice)
+    {
+        
+        choiceDialogue = choice;
+        
+        isTalking = true;
+        dialogueUI.SetActive(true);
+        
+        DisplayReturnMessage();
     }
     
-    public void DisplayNextSentenceSimple()
-    {
-        if (dialogueTracker >= SimpleDialogue.lines.Length)
-        {
-            EndDialogue();
-            return;
-        }
-        
-        nameText.text = SimpleDialogue.lines[dialogueTracker].character.name;
-        icon.sprite = SimpleDialogue.lines[dialogueTracker].character.icon;
-
-        string sentence = SimpleDialogue.lines[dialogueTracker].text;
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
-        
-        dialogueTracker++;
-    }
+    
+    
+  
 
     public void DisplayNextSentenceChoice()
     {
-        if (answerNum == 1 && dialogueTracker >= choiceDialogue.linesBranch1.Length)
+        if (choiceDialogue.linesInitial.Length == 1)
         {
-            EndDialogue();
-            return;
+            Debug.Log("dialogue is short");
+            if (dialogueTracker > 1)
+            {
+               Debug.Log("dialogue ends at first");
+                EndDialogue();
+                return;
+            }
         }
-        if (answerNum == 2 && dialogueTracker >= choiceDialogue.linesBranch2.Length)
+        else if (choiceDialogue.linesInitial.Length != 1)
         {
-            EndDialogue();
-            return;
+            if (answerNum == 1 && dialogueTracker >= choiceDialogue.linesBranch1.Length)
+            {
+                EndDialogue();
+                return;
+            }
+            if (answerNum == 2 && dialogueTracker >= choiceDialogue.linesBranch2.Length)
+            {
+                EndDialogue();
+                return;
+            }
+            if (answerNum == 0 && dialogueTracker >= choiceDialogue.linesInitial.Length)
+            {
+                EndDialogue();
+                return;
+            }
         }
-        if (answerNum == 0 && dialogueTracker >= choiceDialogue.linesInitial.Length)
-        {
-            EndDialogue();
-            return;
-        }
+        
 
         string sentence;
         
@@ -152,29 +152,26 @@ public class DialogueManager : MonoBehaviour
     
     public void DisplayReturnMessage()
     {
-        if (returnDialogueRead)
+        
+
+        if (isInMessage = true)
         {
             EndDialogue();
-            return;
+            isInMessage = false;
         }
+        
         string sentence;
-        if (isSimpleDialogue)
-        {
-            nameText.text = SimpleDialogue.onReturnDialogue.character.name;
-            icon.sprite = SimpleDialogue.onReturnDialogue.character.icon;
-            sentence = SimpleDialogue.onReturnDialogue.text;
-        }
-        else
-        {
-            nameText.text = choiceDialogue.onReturnDialogue.character.name;
-            icon.sprite = choiceDialogue.onReturnDialogue.character.icon;
-            sentence = choiceDialogue.onReturnDialogue.text;
-        }
+        
+        nameText.text = choiceDialogue.onReturnDialogue.character.name;
+        icon.sprite = choiceDialogue.onReturnDialogue.character.icon;
+        sentence = choiceDialogue.onReturnDialogue.text;
+        
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
-        returnDialogueRead = true;
+
+        isInMessage = true;
     }
-    
+
     IEnumerator TypeSentence (string sentence)
     {
         speechText.text = "";
@@ -186,14 +183,13 @@ public class DialogueManager : MonoBehaviour
     }
     
     
-    void EndDialogue()
+    public void EndDialogue()
     {
-        dialogueFinished = true;
+        choiceDialogue.isDialogueFinishedChoice = true;
         answerNum = 0;
         isTalking = false;
         dialogueUI.SetActive(false);
         dialogueTracker = 0;
+        
     }
-    
-    
 }

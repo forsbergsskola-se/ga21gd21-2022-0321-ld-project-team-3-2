@@ -12,6 +12,8 @@ public class ChoiceDialogue : ScriptableObject
     public string answer2;
     public Line[] linesBranch2;
     public Line onReturnDialogue;
+    public bool isDialogueFinishedChoice;
+    
 }
 
 
