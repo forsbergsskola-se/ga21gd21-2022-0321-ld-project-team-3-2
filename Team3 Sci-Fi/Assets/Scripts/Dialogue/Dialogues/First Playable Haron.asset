@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946dfe94e17d0d1428a8a3ebe623f0fa, type: 3}
+  m_Name: First Playable Haron
+  m_EditorClassIdentifier: 
+  linesInitial:
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "R\xF3han, good to see you on your feet. "
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Glad to be here, captain.
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: How was the transit tube?
+    isChoiceTrigger: 1
+  answer1: Liked it
+  linesBranch1:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: It was comfortable. The deep sleep it puts you in really shortens the trip.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "I\u2019m happy you enjoyed it."
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: So, are you ready for your first mission?
+  answer2: Hated it
+  linesBranch2:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: I hated it, why are we put into tiny tubes for the whole voyage?
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: It is good to know you dislike them. I will make sure you get a better
+      seat for the trip back home.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: So, are you ready for your first mission?
+  onReturnDialogue:
+    character: {fileID: 0}
+    text: 
