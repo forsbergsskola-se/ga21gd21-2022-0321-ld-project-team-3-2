@@ -7,86 +7,38 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    /*
-        Modify in order to meet these criteria
-        
-        - player and npc can each talk extended periods without triggering choices, works
-        - Trigger choices whenever we want, works
-        - Player and npc can talk full size, works
-        - Dialogue length should be adjustable, works
-        - Toggleable multiple choice conversation, works
-        - Return after dialogue message, works
-
-        to do:
-        - Implement faces
-        - Separate into manager and trigger scripts
-
-
-
-    */
-   
-    public ChoiceDialogue choiceDialogue;
-    public SimpleDialogue SimpleDialogue;
-    private bool isSimpleDialogue;
-    private bool isTalking;
-    public float dialogueRange;
-    public LayerMask PlayerLayer;
-    public GameObject player;
+    private ChoiceDialogue choiceDialogue;
+    private SimpleDialogue SimpleDialogue;
     public GameObject dialogueUI;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI speechText;
     public TextMeshProUGUI answer1Text;
     public TextMeshProUGUI answer2Text;
     public GameObject choices;
+    public Image icon;
 
     private int dialogueTracker = 0;
-
-    private bool dialogueFinished;
+    public bool dialogueFinished;
     private bool returnDialogueRead;
-    private bool inChoice;
-
+    public bool inChoice;
+    private bool isSimpleDialogue;
+    public bool isTalking;
     private int answerNum = 0;
     
     void Start()
     {
         dialogueUI.SetActive(false);
+    }
+
+    public void StartDialogue(SimpleDialogue simpleDia, ChoiceDialogue choiceDia)
+    {
+        SimpleDialogue = simpleDia;
+        choiceDialogue = choiceDia;
         if (choiceDialogue == null) isSimpleDialogue = true;
         else
         {
             isSimpleDialogue = false;
         }
-    }
-
-    private void Update()
-    {
-        if (!Input.GetKeyDown(KeyCode.F))
-        {
-            return;
-        }
-
-        if (Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer) && !isTalking)
-        {
-            StartDialogue();
-        }
-        else if (isTalking)
-        {
-            if (dialogueFinished)
-            {
-                DisplayReturnMessage();
-            }
-            else if (isSimpleDialogue)
-            {
-                DisplayNextSentenceSimple();
-            }
-            else if (!inChoice)
-            {
-                DisplayNextSentenceChoice();
-            }
-        }
-    }
-
-    void StartDialogue()
-    {
         isTalking = true;
         dialogueUI.SetActive(true);
 
@@ -115,7 +67,8 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         
-        nameText.text = SimpleDialogue.lines[dialogueTracker].speaker;
+        nameText.text = SimpleDialogue.lines[dialogueTracker].character.name;
+        icon.sprite = SimpleDialogue.lines[dialogueTracker].character.icon;
 
         string sentence = SimpleDialogue.lines[dialogueTracker].text;
         StopAllCoroutines();
@@ -146,17 +99,20 @@ public class DialogueManager : MonoBehaviour
         
         if (answerNum == 1)
         {
-            nameText.text = choiceDialogue.linesBranch1[dialogueTracker].speaker;
+            nameText.text = choiceDialogue.linesBranch1[dialogueTracker].character.name;
+            icon.sprite = choiceDialogue.linesBranch1[dialogueTracker].character.icon;
             sentence = choiceDialogue.linesBranch1[dialogueTracker].text;
         }
         else if (answerNum == 2)
         {
-            nameText.text = choiceDialogue.linesBranch2[dialogueTracker].speaker;
+            nameText.text = choiceDialogue.linesBranch2[dialogueTracker].character.name;
+            icon.sprite = choiceDialogue.linesBranch2[dialogueTracker].character.icon;
             sentence = choiceDialogue.linesBranch2[dialogueTracker].text;
         }
         else
         {
-            nameText.text = choiceDialogue.linesInitial[dialogueTracker].speaker;
+            nameText.text = choiceDialogue.linesInitial[dialogueTracker].character.name;
+            icon.sprite = choiceDialogue.linesInitial[dialogueTracker].character.icon;
             sentence = choiceDialogue.linesInitial[dialogueTracker].text;
         }
         
@@ -204,12 +160,14 @@ public class DialogueManager : MonoBehaviour
         string sentence;
         if (isSimpleDialogue)
         {
-            nameText.text = SimpleDialogue.onReturnDialogue.speaker;
+            nameText.text = SimpleDialogue.onReturnDialogue.character.name;
+            icon.sprite = SimpleDialogue.onReturnDialogue.character.icon;
             sentence = SimpleDialogue.onReturnDialogue.text;
         }
         else
         {
-            nameText.text = choiceDialogue.onReturnDialogue.speaker;
+            nameText.text = choiceDialogue.onReturnDialogue.character.name;
+            icon.sprite = choiceDialogue.onReturnDialogue.character.icon;
             sentence = choiceDialogue.onReturnDialogue.text;
         }
         StopAllCoroutines();
@@ -228,8 +186,6 @@ public class DialogueManager : MonoBehaviour
     }
     
     
-    
-
     void EndDialogue()
     {
         dialogueFinished = true;
