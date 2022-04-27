@@ -9,7 +9,7 @@ public class KeyPadPower : MonoBehaviour
 {
     [SerializeField] private GameObject keyPadHolder;
     [SerializeField] private VehicleUpgradeObject vehicleUpgrade;
-    [SerializeField] private OLDBasicDialogueTrigger lockedDialogue;
+    [SerializeField] private DialogueTrigger lockedDialogue;
     [SerializeField] private Image inputBox;
     [SerializeField] private TextMeshProUGUI NumberInput;
     [SerializeField] private int passwordLength;
