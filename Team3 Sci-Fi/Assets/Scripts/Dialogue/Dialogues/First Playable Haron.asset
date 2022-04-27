@@ -33,9 +33,11 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: For sure! What do you want me to do?
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: We have discovered a Krieran artifact in an old village just south of here.
-      The place used to be called Thasalon. We believe it to be highly valuable in
-      our possession. I would like you to go get it for us.
+    text: 'We have discovered a Krieran artifact in an old village just south of
+      here. The place used to be called Thasalon. '
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: We believe it to be highly valuable in our possession. I would like you
+      to go get it for us.
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: Artifact? What kind of artifact?
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
@@ -74,8 +76,10 @@ MonoBehaviour:
     text: For sure! What do you want me to do?
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: We have discovered a Krieran artifact in an old village just south of here.
-      The place used to be called Thasalon. We believe it to be highly valuable in
-      our possession. I would like you to go get it for us.
+      The place used to be called Thasalon.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: We believe it to be highly valuable in our possession. I would like you
+      to go get it for us.
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: Artifact? What kind of artifact?
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
