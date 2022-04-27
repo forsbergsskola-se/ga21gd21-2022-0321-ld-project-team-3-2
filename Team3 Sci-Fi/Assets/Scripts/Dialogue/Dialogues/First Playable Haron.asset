@@ -30,6 +30,37 @@ MonoBehaviour:
     text: "I\u2019m happy you enjoyed it."
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: So, are you ready for your first mission?
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: For sure! What do you want me to do?
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: We have discovered a Krieran artifact in an old village just south of here.
+      The place used to be called Thasalon. We believe it to be highly valuable in
+      our possession. I would like you to go get it for us.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Artifact? What kind of artifact?
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: It is an old incubator, it was used to create artificial intelligence that
+      acted as a workforce.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "It creates life that looks almost exactly like a Krieran, acts like it
+      too.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Incubator, got it. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "I am giving you full access to the rover. The way to the village should
+      be easy to find.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We did notice that there is some difficult terrain. Just don\u2019t charge
+      head first into burning ground, understood?\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Don\u2019t worry about it captain, I\u2019ll be fine."
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: I like your confidence, kid. Now go, Kahir will contact you on the intercom
+      if you need it.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: Honor to Degalon.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Honor to Degalon.
   answer2: Hated it
   linesBranch2:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
@@ -39,6 +70,39 @@ MonoBehaviour:
       seat for the trip back home.
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: So, are you ready for your first mission?
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: For sure! What do you want me to do?
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: We have discovered a Krieran artifact in an old village just south of here.
+      The place used to be called Thasalon. We believe it to be highly valuable in
+      our possession. I would like you to go get it for us.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Artifact? What kind of artifact?
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: It is an old incubator, it was used to create artificial intelligence that
+      acted as a workforce.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "It creates life that looks almost exactly like a Krieran, acts like it
+      too.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Incubator, got it.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: I am giving you full access to the rover. The way to the village should
+      be easy to find.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We did notice that there is some difficult terrain. Just don\u2019t charge
+      head first into burning ground, understood?\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Don\u2019t worry about it captain, I\u2019ll be fine."
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 'I like your confidence, kid. Now go, Kahir will contact you on the intercom
+      if you need it.
+
+'
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: Honor to Degalon
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Honor to Degalon
   onReturnDialogue:
-    character: {fileID: 0}
-    text: 
+    character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Why are you still here? Get into the rover and go get me my incubator.\r"
