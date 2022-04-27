@@ -9,30 +9,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 834b39d1551a4db43bba724eaf11245f, type: 3}
+  m_Script: {fileID: 11500000, guid: 946dfe94e17d0d1428a8a3ebe623f0fa, type: 3}
   m_Name: Getting Close to Building A
   m_EditorClassIdentifier: 
-  lines:
+  linesInitial:
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "R\xF3han? Can you hear me?\r"
+    isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "I hear you. Just passed by some scorched ground, there is no way I\u2019m
       going through that. \r"
+    isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "Yeah I get that, tires would melt. You see that building in front of you?
       It looks like an old Pintagl\xED workshop.\r"
+    isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "Wait, are you seeing what I am seeing?\r"
+    isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "Sure do, H\xE1ron made sure to insert a camera into one of your eyes when
       you were asleep. \r"
+    isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "That\u2019s\u2026 "
+    isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "scary. No matter, the building does not seem to have any power. \r"
+    isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: Shit. Most power is run though generators here. There should be a power
       station around here somewhere. Look around for something like that.
+    isChoiceTrigger: 0
+  answer1: 
+  linesBranch1: []
+  answer2: 
+  linesBranch2: []
   onReturnDialogue:
     character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: 'There''s has to be a way to unlock that workshop somewhere here. '
+  isDialogueFinishedChoice: 0

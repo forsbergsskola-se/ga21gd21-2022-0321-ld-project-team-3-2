@@ -16,16 +16,28 @@ public class KeyPadPower : MonoBehaviour
     [SerializeField] private string correctPassword;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float interactionRange;
+    [SerializeField] private Animator anim;
     private bool inKeyPad;
     private MouseLook fpsView;
+    private DialogueTrigger onReturnDialogue;
+    
 
     private void Start()
     {
         fpsView = FindObjectOfType<MouseLook>();
+        onReturnDialogue = GetComponent<DialogueTrigger>();
     }
 
     private void Update()
     {
+        // if (!Physics.CheckSphere(transform.position, interactionRange, playerLayer))
+        // {
+        //     keyPadHolder.SetActive(false);
+        //     inKeyPad = false;
+        //     Cursor.lockState = CursorLockMode.Locked;
+        //     fpsView.enabled = true;
+        // }
+        
         if (!Input.GetKeyDown(KeyCode.F))
         {
             return;
@@ -45,8 +57,6 @@ public class KeyPadPower : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             fpsView.enabled = false;
         }
-        
-
     }
 
 
@@ -57,6 +67,13 @@ public class KeyPadPower : MonoBehaviour
             lockedDialogue.enabled = false;
             vehicleUpgrade.enabled = true;
             inputBox.color = Color.green;
+            anim.SetTrigger("Go away");
+            inKeyPad = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            fpsView.enabled = true;
+            KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
+            thisKeypad.enabled = false;
+            onReturnDialogue.enabled = true;
         }
     }
     public void BackSpaceButton()

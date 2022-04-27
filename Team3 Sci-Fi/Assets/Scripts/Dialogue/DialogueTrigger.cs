@@ -11,13 +11,10 @@ public class DialogueTrigger : MonoBehaviour
     
     void Start()
     {
-        
         choiceDialogue.isDialogueFinishedChoice = false;
         dialogueManager = FindObjectOfType<DialogueManager>();
     }
     
-    
-   
     void Update()
     {
         if (!Input.GetKeyDown(KeyCode.F))
@@ -25,11 +22,16 @@ public class DialogueTrigger : MonoBehaviour
             return;
         }
 
-        if (Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer) && !dialogueManager.isTalking && !choiceDialogue.isDialogueFinishedChoice)
+        if (!Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer))
+        {
+            return;
+        }
+        
+        if (!dialogueManager.isTalking && !choiceDialogue.isDialogueFinishedChoice)
         {
             dialogueManager.StartDialogue(choiceDialogue);
         }
-        else if (Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer) && !dialogueManager.isTalking && choiceDialogue.isDialogueFinishedChoice)
+        else if (!dialogueManager.isTalking && choiceDialogue.isDialogueFinishedChoice)
         {
             dialogueManager.StartReturnMessageDialogue(choiceDialogue);
         }

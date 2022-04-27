@@ -15,12 +15,15 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI answer2Text;
     public GameObject choices;
     public Image icon;
+    public MouseLook mouseLook;
 
-    private int dialogueTracker;
+    public int dialogueTracker;
     public bool inChoice;
     public bool isTalking;
     private int answerNum = 0;
     private bool isInMessage;
+
+   
 
 
     void Start()
@@ -31,49 +34,36 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(ChoiceDialogue choiceDia)
     {
-        
         choiceDialogue = choiceDia;
         choiceDialogue.isDialogueFinishedChoice = false;
+       
         
-
-
-
         isTalking = true;
         dialogueUI.SetActive(true);
 
-      
         
-            answer1Text.text = choiceDialogue.answer1;
-            answer2Text.text = choiceDialogue.answer2;
-            DisplayNextSentenceChoice();
+        answer1Text.text = choiceDialogue.answer1;
+        answer2Text.text = choiceDialogue.answer2;
+        DisplayNextSentenceChoice();
     }
 
     public void StartReturnMessageDialogue(ChoiceDialogue choice)
     {
         
         choiceDialogue = choice;
-        
+       
         isTalking = true;
         dialogueUI.SetActive(true);
         
         DisplayReturnMessage();
     }
     
-    
-    
-  
 
     public void DisplayNextSentenceChoice()
     {
         if (choiceDialogue.linesInitial.Length == 1)
         {
-            Debug.Log("dialogue is short");
-            if (dialogueTracker > 1)
-            {
-               Debug.Log("dialogue ends at first");
-                EndDialogue();
-                return;
-            }
+            DisplayReturnMessage();
         }
         else if (choiceDialogue.linesInitial.Length != 1)
         {
@@ -123,9 +113,10 @@ public class DialogueManager : MonoBehaviour
             inChoice = true;
             choices.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
-            FindObjectOfType<MouseLook>().enabled = false;
+            mouseLook.enabled = false;
         }
         dialogueTracker++;
+        
     }
 
     public void Answer1()
@@ -135,7 +126,7 @@ public class DialogueManager : MonoBehaviour
         inChoice = false;
         choices.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
-        FindObjectOfType<MouseLook>().enabled = true;
+        mouseLook.enabled = true;
         DisplayNextSentenceChoice();
     }
     public void Answer2()
@@ -145,19 +136,18 @@ public class DialogueManager : MonoBehaviour
         inChoice = false;
         choices.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
-        FindObjectOfType<MouseLook>().enabled = true;
+        mouseLook.enabled = true;
         DisplayNextSentenceChoice();
     }
     
     
     public void DisplayReturnMessage()
     {
-        
-
-        if (isInMessage = true)
+        if (isInMessage)
         {
             EndDialogue();
             isInMessage = false;
+            return;
         }
         
         string sentence;
@@ -168,7 +158,7 @@ public class DialogueManager : MonoBehaviour
         
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
-
+        
         isInMessage = true;
     }
 
@@ -190,6 +180,5 @@ public class DialogueManager : MonoBehaviour
         isTalking = false;
         dialogueUI.SetActive(false);
         dialogueTracker = 0;
-        
     }
 }
