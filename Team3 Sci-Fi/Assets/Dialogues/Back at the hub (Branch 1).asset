@@ -12,12 +12,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946dfe94e17d0d1428a8a3ebe623f0fa, type: 3}
   m_Name: Back at the hub (Branch 1)
   m_EditorClassIdentifier: 
-  linesInitial: []
-  answer1: 
-  linesBranch1: []
-  answer2: 
-  linesBranch2: []
+  linesInitial:
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "R\xF3han, you\u2019re back! Let me take that incubator off your hands.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "What the hell was that? You made me kill that man!\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "I get it man, it was hard my first time too. \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "But don\u2019t worry about it, you did what you had to. H\xE1ron is very
+      pleased with you. \r"
+    isChoiceTrigger: 1
+  answer1: "Screw H\xE1ron!"
+  linesBranch1:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Screw H\xE1ron! Is this how he treats us? Forcing us to kill?"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "R\xF3han, I get you\u2019re ang-"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I am telling everyone back on Fangl what you are doing. \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "We both know that is not a good idea.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I\u2019ll make sure every single man and woman on Fangl knows what you
+      are doing."
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "This institute is over. \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "I\u2019m not sure I am the right person to talk to. \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "Maybe ask H\xE1ron if he can send you home.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Where is he? Hiding somewhere? \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "Not sure. I\u2019ll ask him to contact you on the intercom.\r\n"
+  answer2: Screw you!
+  linesBranch2:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Screw you Kahir, you asked me to do this!
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "R\xF3han, I get you\u2019re ang-"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I am telling everyone back on Fangl what you are doing. \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "We both know that is not a good idea.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I\u2019ll make sure every single man and woman on Fangl knows what you
+      are doing.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "This institute is over. \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "I\u2019m not sure I am the right person to talk to. \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "Maybe ask H\xE1ron if he can send you home.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Where is he? Hiding somewhere? \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "Not sure. I\u2019ll ask him to contact you on the intercom.\r"
   onReturnDialogue:
-    character: {fileID: 0}
-    text: 
+    character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "I spoke to H\xE1ron. He'll contact you any second if he hasn't already."
   isDialogueFinishedChoice: 0
