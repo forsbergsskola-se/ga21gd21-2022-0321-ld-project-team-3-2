@@ -230,6 +230,34 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 34594
+--- !u!114 &-6460850242016801570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone2/ZoneCJ2
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone2/ZoneCJ2
+  Guid:
+    Data1: -1095406010
+    Data2: 1176567090
+    Data3: -1478453109
+    Data4: 1466283098
+  Banks:
+  - {fileID: -2607085943357291034}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2884949399318992505}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 35000
 --- !u!114 &-6386943139187375686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +384,30 @@ MonoBehaviour:
   ID:
     data1: 1019152161
     data2: 988637408
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-5517984180013049526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ZoneCJ1/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 44443144
+    data2: 2883253264
   Type: 0
   IsGlobal: 1
   Labels: []
@@ -704,6 +756,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-3193214894253684733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ZoneCJ3/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-3137272172361633031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,6 +791,30 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/ZoneRL2/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2884949399318992505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ZoneCJ2/Elevation Y axen
   m_EditorClassIdentifier: 
   Name: Elevation Y axen
   StudioPath: 
@@ -767,7 +867,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637867561725821809
+  lastModified: 637867575690886191
   FileSizes: []
   Exists: 1
 --- !u!114 &-2018297688957481780
@@ -852,6 +952,34 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 34555
+--- !u!114 &-1521670773957575327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone1/ZoneCJ1
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone1/ZoneCJ1
+  Guid:
+    Data1: 1789288174
+    Data2: 1310794796
+    Data3: 1518622107
+    Data4: 1145528212
+  Banks:
+  - {fileID: -2607085943357291034}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5517984180013049526}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36000
 --- !u!114 &-1462599283882982112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -927,6 +1055,9 @@ MonoBehaviour:
   - {fileID: 6602206290848024410}
   - {fileID: -2018297688957481780}
   - {fileID: -7379465812176224857}
+  - {fileID: -6460850242016801570}
+  - {fileID: 7900821374933184218}
+  - {fileID: -1521670773957575327}
   EditorParameters:
   - {fileID: 271399194129120926}
   - {fileID: 3951380021854401087}
@@ -936,7 +1067,7 @@ MonoBehaviour:
   - {fileID: -2607085943357291034}
   StringsBanks:
   - {fileID: 560267498135049950}
-  cacheTime: 637867561725821809
+  cacheTime: 637867575690935102
   cacheVersion: 10
 --- !u!114 &271399194129120926
 MonoBehaviour:
@@ -1025,10 +1156,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637864753284816757
+  lastModified: 637867575690935102
   FileSizes:
   - Name: 
-    Value: 1964
+    Value: 2066
   Exists: 1
 --- !u!114 &600557650524340202
 MonoBehaviour:
@@ -1543,6 +1674,34 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &7900821374933184218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone3/ZoneCJ3
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone3/ZoneCJ3
+  Guid:
+    Data1: -1871881793
+    Data2: 1268017154
+    Data3: -925749089
+    Data4: -1892051222
+  Banks:
+  - {fileID: -2607085943357291034}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3193214894253684733}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34600
 --- !u!114 &8280586949011649784
 MonoBehaviour:
   m_ObjectHideFlags: 0
