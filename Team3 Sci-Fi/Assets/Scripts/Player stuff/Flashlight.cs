@@ -8,13 +8,13 @@ public class Flashlight : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && flashlight.enabled == false)
+        if (Input.GetKeyDown(KeyCode.F) && flashlight.enabled == false)
         {
             flashlight.enabled = true;
         }
-        else if (Input.GetKeyDown(KeyCode.E) && flashlight.enabled == true)
+        else if (Input.GetKeyDown(KeyCode.F) && flashlight.enabled)
         {
-            
+            flashlight.enabled = false;
         }
     }   
 }
