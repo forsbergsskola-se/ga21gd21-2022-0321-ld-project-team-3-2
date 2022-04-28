@@ -55,14 +55,13 @@ public class VehicleController : MonoBehaviour
         right2Collider.motorTorque = (verticalInput * speed);
         left1Collider.motorTorque = (verticalInput * speed);
         right1Collider.motorTorque = (verticalInput * speed);
-
-        left3Collider.motorTorque = (verticalInput * speed);
-        left4Collider.motorTorque = (verticalInput * speed);
-        left5Collider.motorTorque = (verticalInput * speed);
-
-        right3Collider.motorTorque = (verticalInput * speed);
-        right4Collider.motorTorque = (verticalInput * speed);
-        right5Collider.motorTorque = (verticalInput * speed);
+        
+        left3Collider.motorTorque = (verticalInput * speed/2);
+        left4Collider.motorTorque = (verticalInput * speed/2);
+        left5Collider.motorTorque = (verticalInput * speed/2);
+        right3Collider.motorTorque = (verticalInput * speed/2);
+        right4Collider.motorTorque = (verticalInput * speed/2);
+        right5Collider.motorTorque = (verticalInput * speed/2);
         
         //currentMotorTorque den här siffran kan vi använda som en parameter för motorljud osv
         currentMotorTorque = (left2Collider.motorTorque + right2Collider.motorTorque) / 2f;
