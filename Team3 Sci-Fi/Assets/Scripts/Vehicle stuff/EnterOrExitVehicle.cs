@@ -10,8 +10,7 @@ public class EnterOrExitVehicle : MonoBehaviour
     [SerializeField] private GameObject vehicleCamera;
     [SerializeField] private float carEnterRange = 10f;
     [SerializeField] private Vector3 exitCarPosition;
-    [SerializeField] private GameObject vehicleModel;
-    
+
     // private FMOD.Studio.EventInstance motorSound;
     private Transform playerTransform;
     public LayerMask PlayerLayer;
@@ -25,7 +24,7 @@ public class EnterOrExitVehicle : MonoBehaviour
 
     private void Update()
     {
-        isInCarRange = Physics.CheckSphere(vehicleModel.transform.position, carEnterRange, PlayerLayer);
+        isInCarRange = Physics.CheckSphere(transform.position, carEnterRange, PlayerLayer);
 
         if (inCar && Input.GetKeyDown(KeyCode.E))
         {
@@ -38,7 +37,7 @@ public class EnterOrExitVehicle : MonoBehaviour
 
         if (inCar)
         {
-            playerTransform.position = vehicleModel.transform.position + exitCarPosition;
+            playerTransform.position = transform.position + exitCarPosition;
         }
         
     }

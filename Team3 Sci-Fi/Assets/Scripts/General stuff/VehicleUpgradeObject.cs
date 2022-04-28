@@ -12,6 +12,7 @@ public class VehicleUpgradeObject : MonoBehaviour
    private bool isInObjectRange;
    public float pickUpRange;
    public LayerMask playerLayer;
+   public Animator upgradePopup;
    
    private GameProgressionManager gameProgress;
 
@@ -41,6 +42,7 @@ public class VehicleUpgradeObject : MonoBehaviour
       else if (reinforcedTireUpgrade )
       {
          gameProgress.hasScorchedEarthUpgrade = true;
+         upgradePopup.SetTrigger("Upgrade");
       }
       else
       {

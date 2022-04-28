@@ -7,5 +7,6 @@ public class SimpleDialogue : ScriptableObject
 {
     public Line[] lines;
     public Line onReturnDialogue;
+    public bool isDialogueFinishedSimple = false;
 }
 

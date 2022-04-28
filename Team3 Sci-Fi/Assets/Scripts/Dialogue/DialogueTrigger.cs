@@ -8,19 +8,13 @@ public class DialogueTrigger : MonoBehaviour
     public LayerMask PlayerLayer;
     private DialogueManager dialogueManager;
     public ChoiceDialogue choiceDialogue;
-    public SimpleDialogue SimpleDialogue;
-    private bool isSimpleDialogue;
+    
     void Start()
     {
+        choiceDialogue.isDialogueFinishedChoice = false;
         dialogueManager = FindObjectOfType<DialogueManager>();
-        if (choiceDialogue == null) isSimpleDialogue = true;
-        else
-        {
-            isSimpleDialogue = false;
-        }
     }
-
-   
+    
     void Update()
     {
         if (!Input.GetKeyDown(KeyCode.F))
@@ -28,21 +22,26 @@ public class DialogueTrigger : MonoBehaviour
             return;
         }
 
-        if (Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer) && !dialogueManager.isTalking)
+        if (!Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer))
         {
-            dialogueManager.StartDialogue(SimpleDialogue,choiceDialogue);
+            return;
+        }
+        
+        if (!dialogueManager.isTalking && !choiceDialogue.isDialogueFinishedChoice)
+        {
+            dialogueManager.StartDialogue(choiceDialogue);
+        }
+        else if (!dialogueManager.isTalking && choiceDialogue.isDialogueFinishedChoice)
+        {
+            dialogueManager.StartReturnMessageDialogue(choiceDialogue);
         }
         else if (dialogueManager.isTalking)
         {
-            if (dialogueManager.dialogueFinished)
+            if (!dialogueManager.inChoice && choiceDialogue.isDialogueFinishedChoice)
             {
                 dialogueManager.DisplayReturnMessage();
             }
-            else if (isSimpleDialogue)
-            {
-                dialogueManager.DisplayNextSentenceSimple();
-            }
-            else if (!dialogueManager.inChoice)
+            else if (!dialogueManager.inChoice && !choiceDialogue.isDialogueFinishedChoice)
             {
                 dialogueManager.DisplayNextSentenceChoice();
             }
