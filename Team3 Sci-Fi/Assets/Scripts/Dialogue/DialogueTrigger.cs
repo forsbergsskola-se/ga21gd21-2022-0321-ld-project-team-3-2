@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,42 +6,50 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public float dialogueRange;
-    public LayerMask PlayerLayer;
     private DialogueManager dialogueManager;
     public ChoiceDialogue choiceDialogue;
+    private float distance;
+    private GameObject player;
+    
+    
     
     void Start()
     {
+        player = FindObjectOfType<Movement>().gameObject;
         choiceDialogue.isDialogueFinishedChoice = false;
         dialogueManager = FindObjectOfType<DialogueManager>();
     }
     
-    void Update()
+    
+    
+    private void OnMouseOver()
     {
-        if (Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer))
+        distance = Vector3.Distance(player.transform.position, transform.position);
+        if (distance <= dialogueRange && Input.GetKeyDown(KeyCode.E))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (!dialogueManager.isTalking && !choiceDialogue.isDialogueFinishedChoice)
             {
-                if (!dialogueManager.isTalking && !choiceDialogue.isDialogueFinishedChoice)
+                dialogueManager.StartDialogue(choiceDialogue);
+            }
+            else if (!dialogueManager.isTalking && choiceDialogue.isDialogueFinishedChoice)
+            {
+                dialogueManager.StartReturnMessageDialogue(choiceDialogue);
+            }
+            else if (dialogueManager.isTalking)
+            {
+                if (!dialogueManager.inChoice && choiceDialogue.isDialogueFinishedChoice)
                 {
-                    dialogueManager.StartDialogue(choiceDialogue);
+                    dialogueManager.DisplayReturnMessage();
                 }
-                else if (!dialogueManager.isTalking && choiceDialogue.isDialogueFinishedChoice)
+                else if (!dialogueManager.inChoice && !choiceDialogue.isDialogueFinishedChoice)
                 {
-                    dialogueManager.StartReturnMessageDialogue(choiceDialogue);
-                }
-                else if (dialogueManager.isTalking)
-                {
-                    if (!dialogueManager.inChoice && choiceDialogue.isDialogueFinishedChoice)
-                    {
-                        dialogueManager.DisplayReturnMessage();
-                    }
-                    else if (!dialogueManager.inChoice && !choiceDialogue.isDialogueFinishedChoice)
-                    {
-                        dialogueManager.DisplayNextSentenceChoice();
-                    }
+                    dialogueManager.DisplayNextSentenceChoice();
                 }
             }
+        }
+        else if (distance > dialogueRange && dialogueManager.isTalking)
+        {
+            dialogueManager.CancelDialogue();
         }
     }
 }

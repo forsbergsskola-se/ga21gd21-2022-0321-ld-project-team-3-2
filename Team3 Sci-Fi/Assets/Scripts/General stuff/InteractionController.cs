@@ -1,20 +1,36 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractionController : MonoBehaviour
 {
-    
-    public LayerMask PlayerLayer;
     public GameObject interactionBox;
     [SerializeField] private float interactionRange = 10f;
     private bool isInInteractRange;
-   
-    
-    void Update()
-    {
-        isInInteractRange = Physics.CheckSphere(transform.position, interactionRange, PlayerLayer);
+    private GameObject player;
+    private float distance;
 
-        interactionBox.SetActive(isInInteractRange);
+    private void Start()
+    {
+        player = FindObjectOfType<Movement>().gameObject;
+    }
+
+    private void OnMouseOver()
+    {
+        if (distance <= interactionRange)
+        {
+            interactionBox.SetActive(true);
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        interactionBox.SetActive(false);
+    }
+
+    private void Update()
+    {
+        distance = Vector3.Distance(player.transform.position, transform.position);
     }
 }
