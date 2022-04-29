@@ -14,7 +14,7 @@ public class ScorchedEarthDamageField : MonoBehaviour
     private Collider damageField;
     private bool isPlayerIn;
     private bool isVehicleIn;
-    private FMOD.Studio.EventInstance scorchSound;
+   
 
     private GameProgressionManager gameProgress;
 
@@ -23,7 +23,7 @@ public class ScorchedEarthDamageField : MonoBehaviour
         gameProgress = FindObjectOfType<GameProgressionManager>();
         playerHealth = FindObjectOfType<PlayerHealthManager>();
         damageField = GetComponent<Collider>();
-        scorchSound = FMODUnity.RuntimeManager.CreateInstance("event:/Ambi/Scorched Earth");
+        
     }
 
     private void FixedUpdate()
@@ -40,36 +40,6 @@ public class ScorchedEarthDamageField : MonoBehaviour
             if (!gameProgress.hasScorchedEarthUpgrade)
             {
                 playerHealth.TakeDamage(damagePerFrame);
-            }
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (isPlayerIn)
-        {
-            scorchSound.start();
-        }
-        else if (isVehicleIn)
-        {
-            if (!gameProgress.hasScorchedEarthUpgrade)
-            {
-                scorchSound.start();
-            }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (!isPlayerIn)
-        {
-            scorchSound.stop(STOP_MODE.ALLOWFADEOUT);
-        }
-        else if (!isVehicleIn)
-        {
-            if (!gameProgress.hasScorchedEarthUpgrade)
-            {
-                scorchSound.stop(STOP_MODE.ALLOWFADEOUT);
             }
         }
     }

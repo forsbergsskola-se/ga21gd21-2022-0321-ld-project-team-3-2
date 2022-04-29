@@ -38,11 +38,15 @@ public class VehicleUpgradeObject : MonoBehaviour
       if (reincorfecHullUpgrade)
       {
          gameProgress.hasSandstormUpgrade = true;
+         gameProgress.vehicleUpgradeLevel++;
+         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
       else if (reinforcedTireUpgrade )
       {
          gameProgress.hasScorchedEarthUpgrade = true;
          upgradePopup.SetTrigger("Upgrade");
+         gameProgress.vehicleUpgradeLevel++;
+         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
       else
       {
