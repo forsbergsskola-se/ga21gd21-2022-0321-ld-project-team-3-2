@@ -13,15 +13,21 @@ MonoBehaviour:
   m_Name: First Playable Kahir
   m_EditorClassIdentifier: 
   linesInitial:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Hey Kahir. H\xE1ron sent me, he said you needed some help.\r"
+    isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: Alright, this is it. Pintagli.
+    text: "R\xF3han! Good to see you.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "So this is it. Pintagli. \r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "Whew, it\u2019s warmer than I expected here."
+    text: "It\u2019s warmer than I expected here.\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: Yeah, the guys living here really messed the place up. Ruined it in a few
-      hundred years.
+    text: "Yeah, the guys living here really messed the place up. Ruined it in a
+      few hundred years. \r"
     isChoiceTrigger: 1
   answer1: Krieras fault
   linesBranch1:
@@ -30,14 +36,28 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: Sure does, Kriera just loves their destruction.
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "No one really told me what we are supposed to be doing here. What\u2019s
-      the mission?\r"
+    text: "H\xE1ron told me about an incubator he wanted. Said to be south from here.
+      \r"
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "I\u2019ll mostly stay at the hub analyzing whatever is brought back here.
-      \r\nYou oughta ask Captain H\xE1ron about your assignment. He should be around
-      here somewhere.\r"
+    text: "Yeah, it should be in Thasalon. I guess you saw that hell ground before
+      coming here?\r"
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "Alright, catch you later.\r"
+    text: "I did. There is no way I\u2019m going in there.\r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: It would break the tires of the rover. But we still need to get past it.
+      Just over there is an old Fangl workshop.
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "There might just be some scraps we could use to reinforce the rover with.\r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "There is an issue though, the workshop is closed and will only open with
+      its power activated. \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "All electricity here is controlled by generators, often locked with a
+      code lock. I could not figure out how to turn it on. How about you try? \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I guess I don\u2019t have any choice. I\u2019ll check it out. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Thanks man. Just come back to me if you want some help.\r"
   answer2: Colonizers fault
   linesBranch2:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
@@ -45,14 +65,30 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "Maybe, it wouldn't surprise me if the old Krieran\u2019s caused it though."
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "No one really told me what we are supposed to be doing here. What\u2019s
-      the mission?\r"
+    text: "H\xE1ron told me about an incubator he wanted. Said to be south from here.
+      \r"
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "I\u2019ll mostly stay at the hub analyzing whatever is brought back here.
-      \r\nYou oughta ask Captain H\xE1ron about your assignment. He should be around
-      here somewhere.\r"
+    text: "Yeah, it should be in Thasalon. I guess you saw that hell ground before
+      coming here?\r"
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: Alright, catch you later.
+    text: "I did. There is no way I\u2019m going in there.\r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: 'It would break the tires of the rover. But we still need to get past it.
+      Just over there is an old Fangl workshop. '
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "There might just be some scraps we could use to reinforce the rover with.\r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "There is an issue though, the workshop is closed and will only open with
+      its power activated. \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "All electricity here is controlled by generators, often locked with a
+      code lock. I could not figure out how to turn it on. How about you try?\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I guess I don\u2019t have any choice. I\u2019ll check it out. \r"
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: Thanks man. Just come back to me if you want some help.
   onReturnDialogue:
     character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "Don\u2019t you have a mission to do? \r"
+    text: The building closest to me is the workshop. See if you can activate the
+      generator from the building on the other side. The building should then unlock.
+  isDialogueFinishedChoice: 0
