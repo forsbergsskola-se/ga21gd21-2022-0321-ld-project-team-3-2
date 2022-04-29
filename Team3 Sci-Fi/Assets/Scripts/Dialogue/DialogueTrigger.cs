@@ -17,12 +17,7 @@ public class DialogueTrigger : MonoBehaviour
     
     void Update()
     {
-        if (!Input.GetKeyDown(KeyCode.E))
-        {
-            return;
-        }
-
-        if (!Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer))
+        if (!Input.GetKeyDown(KeyCode.E) && !Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer))
         {
             return;
         }

@@ -171,7 +171,11 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
     }
-    
+    public void CancelDialogue()
+    {
+        isTalking = false;
+        dialogueUI.SetActive(false);
+    }
     
     public void EndDialogue()
     {
