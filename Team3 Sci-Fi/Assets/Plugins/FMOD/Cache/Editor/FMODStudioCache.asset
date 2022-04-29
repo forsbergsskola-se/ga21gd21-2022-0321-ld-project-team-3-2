@@ -127,8 +127,8 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -7825656774975252769}
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 50
   Length: 34594
 --- !u!114 &-7687873427271842883
 MonoBehaviour:
@@ -252,12 +252,12 @@ MonoBehaviour:
   - {fileID: -2607085943357291034}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -2884949399318992505}
   MinDistance: 1
   MaxDistance: 20
-  Length: 35000
+  Length: 34500
 --- !u!114 &-6386943139187375686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,8 +729,8 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 7182573060734541347}
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 50
   Length: 34594
 --- !u!114 &-3591104909939908479
 MonoBehaviour:
@@ -867,7 +867,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637867757748911146
+  lastModified: 637868253735705319
   FileSizes: []
   Exists: 1
 --- !u!114 &-2018297688957481780
@@ -974,12 +974,12 @@ MonoBehaviour:
   - {fileID: -2607085943357291034}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -5517984180013049526}
   MinDistance: 1
   MaxDistance: 20
-  Length: 36000
+  Length: 34500
 --- !u!114 &-1462599283882982112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,6 +1058,7 @@ MonoBehaviour:
   - {fileID: -6460850242016801570}
   - {fileID: 7900821374933184218}
   - {fileID: -1521670773957575327}
+  - {fileID: 8953265147118086199}
   EditorParameters:
   - {fileID: 271399194129120926}
   - {fileID: 3951380021854401087}
@@ -1067,7 +1068,7 @@ MonoBehaviour:
   - {fileID: -2607085943357291034}
   StringsBanks:
   - {fileID: 560267498135049950}
-  cacheTime: 637867757748980670
+  cacheTime: 637868253735772256
   cacheVersion: 10
 --- !u!114 &271399194129120926
 MonoBehaviour:
@@ -1156,10 +1157,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637867757748980670
+  lastModified: 637868253735772256
   FileSizes:
   - Name: 
-    Value: 2066
+    Value: 2118
   Exists: 1
 --- !u!114 &600557650524340202
 MonoBehaviour:
@@ -1438,8 +1439,8 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -6075449299319331230}
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 50
   Length: 34594
 --- !u!114 &4908187999380180841
 MonoBehaviour:
@@ -1754,6 +1755,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 34594
+--- !u!114 &8953265147118086199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Flashlight
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Flashlight
+  Guid:
+    Data1: -461996321
+    Data2: 1258247971
+    Data3: -1806334052
+    Data4: 1760254340
+  Banks:
+  - {fileID: -2607085943357291034}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &9040724246162769032
 MonoBehaviour:
   m_ObjectHideFlags: 0
