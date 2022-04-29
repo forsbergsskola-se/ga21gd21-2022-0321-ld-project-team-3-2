@@ -13,6 +13,8 @@ public class Flashlight : MonoBehaviour
     
     [SerializeField] private EnterOrExitVehicle InCar;
     private Random flickerTimeRandom = new Random();
+    private Random flickerChance = new Random();
+    private int flickTrigger;
     [SerializeField] private double flickerTimeVal;
     [SerializeField] private float flickerTime;
 
@@ -20,7 +22,15 @@ public class Flashlight : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && flashlight.enabled == false && InCar.inCar == false)
         {
-            StartCoroutine(Flicker());
+            flickTrigger = flickerChance.Next(1, 4);
+            if (flickTrigger <= 2)
+            {
+                flashlight.enabled = true;
+            }
+            else
+            {
+                StartCoroutine(Flicker());
+            }
         }
         else if (Input.GetKeyDown(KeyCode.F) && flashlight.enabled && InCar.inCar == false)
         {
