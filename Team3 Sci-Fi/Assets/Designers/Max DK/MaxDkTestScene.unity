@@ -2597,9 +2597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b185f484734ca8440b2320ff812b994c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerLayer:
-    serializedVersion: 2
-    m_Bits: 64
   interactionBox: {fileID: 104696286}
   interactionRange: 10
 --- !u!1 &325339477
@@ -3085,9 +3082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b185f484734ca8440b2320ff812b994c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerLayer:
-    serializedVersion: 2
-    m_Bits: 64
   interactionBox: {fileID: 772925719}
   interactionRange: 10
 --- !u!114 &361504429
@@ -8791,9 +8785,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b185f484734ca8440b2320ff812b994c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerLayer:
-    serializedVersion: 2
-    m_Bits: 64
   interactionBox: {fileID: 100559495}
   interactionRange: 10
 --- !u!114 &1123138315
@@ -10174,9 +10165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b185f484734ca8440b2320ff812b994c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerLayer:
-    serializedVersion: 2
-    m_Bits: 64
   interactionBox: {fileID: 1533419569}
   interactionRange: 10
 --- !u!136 &1349746303
@@ -10201,7 +10189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349746300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.43056023, y: 1.02, z: -17.86579}
+  m_LocalPosition: {x: -0.43056023, y: 1.02, z: -22.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10223,9 +10211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRange: 10
-  PlayerLayer:
-    serializedVersion: 2
-    m_Bits: 64
   choiceDialogue: {fileID: 11400000, guid: 2e618cb6017f50c42960af00645b130f, type: 2}
 --- !u!1001 &1354618824
 PrefabInstance:
@@ -10425,9 +10410,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueRange: 10
-  PlayerLayer:
-    serializedVersion: 2
-    m_Bits: 64
   choiceDialogue: {fileID: 11400000, guid: 34c8e9694169a1a4a9bdfe7b6a1176e7, type: 2}
 --- !u!114 &1378546584
 MonoBehaviour:
@@ -10441,9 +10423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b185f484734ca8440b2320ff812b994c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerLayer:
-    serializedVersion: 2
-    m_Bits: 64
   interactionBox: {fileID: 1537424238}
   interactionRange: 10
 --- !u!136 &1378546585
@@ -11272,7 +11251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1533419570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11387,7 +11366,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1537424239
 MonoBehaviour:
   m_ObjectHideFlags: 0
