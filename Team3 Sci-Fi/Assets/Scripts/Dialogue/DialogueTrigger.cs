@@ -17,28 +17,29 @@ public class DialogueTrigger : MonoBehaviour
     
     void Update()
     {
-        if (!Input.GetKeyDown(KeyCode.E) && !Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer))
+        if (Physics.CheckSphere(transform.position, dialogueRange, PlayerLayer))
         {
-            return;
-        }
-        
-        if (!dialogueManager.isTalking && !choiceDialogue.isDialogueFinishedChoice)
-        {
-            dialogueManager.StartDialogue(choiceDialogue);
-        }
-        else if (!dialogueManager.isTalking && choiceDialogue.isDialogueFinishedChoice)
-        {
-            dialogueManager.StartReturnMessageDialogue(choiceDialogue);
-        }
-        else if (dialogueManager.isTalking)
-        {
-            if (!dialogueManager.inChoice && choiceDialogue.isDialogueFinishedChoice)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                dialogueManager.DisplayReturnMessage();
-            }
-            else if (!dialogueManager.inChoice && !choiceDialogue.isDialogueFinishedChoice)
-            {
-                dialogueManager.DisplayNextSentenceChoice();
+                if (!dialogueManager.isTalking && !choiceDialogue.isDialogueFinishedChoice)
+                {
+                    dialogueManager.StartDialogue(choiceDialogue);
+                }
+                else if (!dialogueManager.isTalking && choiceDialogue.isDialogueFinishedChoice)
+                {
+                    dialogueManager.StartReturnMessageDialogue(choiceDialogue);
+                }
+                else if (dialogueManager.isTalking)
+                {
+                    if (!dialogueManager.inChoice && choiceDialogue.isDialogueFinishedChoice)
+                    {
+                        dialogueManager.DisplayReturnMessage();
+                    }
+                    else if (!dialogueManager.inChoice && !choiceDialogue.isDialogueFinishedChoice)
+                    {
+                        dialogueManager.DisplayNextSentenceChoice();
+                    }
+                }
             }
         }
     }

@@ -215,6 +215,7 @@ MonoBehaviour:
   answer2Text: {fileID: 2037853898}
   choices: {fileID: 1864572125}
   icon: {fileID: 223074250}
+  mouseLook: {fileID: 1895819983}
   dialogueTracker: 0
   inChoice: 0
   isTalking: 0
@@ -2504,6 +2505,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   interactionRange: 10
+  anim: {fileID: 0}
 --- !u!65 &324215399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3131,7 +3133,6 @@ MonoBehaviour:
   vehicleCamera: {fileID: 885209270}
   carEnterRange: 10
   exitCarPosition: {x: 2, y: 0, z: 0}
-  vehicleModel: {fileID: 0}
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -8815,6 +8816,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  upgradePopup: {fileID: 0}
 --- !u!4 &1123138319
 Transform:
   m_ObjectHideFlags: 0
@@ -10224,7 +10226,7 @@ MonoBehaviour:
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 64
-  choiceDialogue: {fileID: 11400000, guid: 788be06ac387cc1469d76a82ee98454f, type: 2}
+  choiceDialogue: {fileID: 11400000, guid: 2e618cb6017f50c42960af00645b130f, type: 2}
 --- !u!1001 &1354618824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10426,7 +10428,7 @@ MonoBehaviour:
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 64
-  choiceDialogue: {fileID: 11400000, guid: f437fcb948569e74cb1fdfa07a687217, type: 2}
+  choiceDialogue: {fileID: 11400000, guid: 34c8e9694169a1a4a9bdfe7b6a1176e7, type: 2}
 --- !u!114 &1378546584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12450,6 +12452,18 @@ Transform:
   m_Father: {fileID: 1572014058}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1895819983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7270844399649354809, guid: 7fd0b6b716b28c143bff6e514762a999,
+    type: 3}
+  m_PrefabInstance: {fileID: 7270844398288721822}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbfea197d3fb139489551a41dd75a81d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1901521029 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 943c7d88081588249800df5108ae5266,
