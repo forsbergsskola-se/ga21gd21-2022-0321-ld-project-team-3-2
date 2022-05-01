@@ -93,8 +93,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -129,7 +129,7 @@ MonoBehaviour:
   - {fileID: -7825656774975252769}
   MinDistance: 0
   MaxDistance: 50
-  Length: 34594
+  Length: 36594
 --- !u!114 &-7687873427271842883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,6 +202,30 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-7418046531921252937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vehicle Exit/Car Lvl
+  m_EditorClassIdentifier: 
+  Name: Car Lvl
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2537291187
+    data2: 3067985771
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-7379465812176224857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,6 +254,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 34594
+--- !u!114 &-6878784062046376996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vehicle Enter/Car Lvl
+  m_EditorClassIdentifier: 
+  Name: Car Lvl
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2537291187
+    data2: 3067985771
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-6460850242016801570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,8 +376,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -361,8 +409,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 0.5
-  MaxDistance: 30
+  MinDistance: 0
+  MaxDistance: 70
   Length: 34594
 --- !u!114 &-5711416411356705721
 MonoBehaviour:
@@ -378,9 +426,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: RPM
   StudioPath: parameter:/Vehicle/RPM
-  Min: 0
-  Max: 2000
-  Default: 0
+  Min: -800
+  Max: 800
+  Default: -800
   ID:
     data1: 1019152161
     data2: 988637408
@@ -403,8 +451,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -498,7 +546,7 @@ MonoBehaviour:
   - {fileID: -4109222710461899136}
   MinDistance: 0.1
   MaxDistance: 2.2
-  Length: 14875
+  Length: 16000
 --- !u!114 &-5064396633903207912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,8 +715,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -731,7 +779,7 @@ MonoBehaviour:
   - {fileID: 7182573060734541347}
   MinDistance: 0
   MaxDistance: 50
-  Length: 34594
+  Length: 36594
 --- !u!114 &-3591104909939908479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,8 +795,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -771,8 +819,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -819,8 +867,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -867,7 +915,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637868258607717719
+  lastModified: 637868508631203936
   FileSizes: []
   Exists: 1
 --- !u!114 &-2018297688957481780
@@ -919,11 +967,12 @@ MonoBehaviour:
   - {fileID: -2607085943357291034}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5298613739567730095}
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 10000
 --- !u!114 &-1763695706194361707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,7 +1117,7 @@ MonoBehaviour:
   - {fileID: -2607085943357291034}
   StringsBanks:
   - {fileID: 560267498135049950}
-  cacheTime: 637868258607777841
+  cacheTime: 637868508631274203
   cacheVersion: 10
 --- !u!114 &271399194129120926
 MonoBehaviour:
@@ -1085,8 +1134,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: parameter:/Elevation Y axen
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -1132,9 +1181,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: RPM
   StudioPath: 
-  Min: 0
-  Max: 2000
-  Default: 0
+  Min: -800
+  Max: 800
+  Default: -800
   ID:
     data1: 1019152161
     data2: 988637408
@@ -1157,10 +1206,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637868258607777841
+  lastModified: 637868508631274203
   FileSizes:
   - Name: 
-    Value: 2118
+    Value: 2174
   Exists: 1
 --- !u!114 &600557650524340202
 MonoBehaviour:
@@ -1283,7 +1332,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -6878784062046376996}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1357,8 +1407,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -1441,7 +1491,7 @@ MonoBehaviour:
   - {fileID: -6075449299319331230}
   MinDistance: 0
   MaxDistance: 50
-  Length: 34594
+  Length: 36594
 --- !u!114 &4908187999380180841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,6 +1542,30 @@ MonoBehaviour:
     data2: 2883253264
   Type: 0
   IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &5298613739567730095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player Geting Hurt/Player Hurt Amunte
+  m_EditorClassIdentifier: 
+  Name: Player Hurt Amunte
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3477680922
+    data2: 1254451453
+  Type: 0
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &5670603683852953428
@@ -1568,7 +1642,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -7418046531921252937}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1615,8 +1690,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -1718,8 +1793,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -1797,8 +1872,8 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
