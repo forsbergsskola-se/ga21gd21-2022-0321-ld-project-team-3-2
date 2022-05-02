@@ -21,6 +21,9 @@ public class KeyPadPower : MonoBehaviour
     private bool inKeyPad;
     private MouseLook fpsView;
     private InteractionManager interact;
+    public GameObject dialogueTriggerOnComplete;
+    public Light lampPost1;
+    public Light lampPost2;
     
     
 
@@ -87,7 +90,10 @@ public class KeyPadPower : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
+            dialogueTriggerOnComplete.SetActive(true);
             thisKeypad.enabled = false;
+            lampPost1.color = Color.green;
+            lampPost2.color = Color.green;
         }
     }
     public void BackSpaceButton()
