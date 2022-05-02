@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946dfe94e17d0d1428a8a3ebe623f0fa, type: 3}
+  m_Name: Speak to Haron on Intercom (Branch 2)
+  m_EditorClassIdentifier: 
+  linesInitial:
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "I heard you are displeased with the mission. \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "I want to be very clear that I am very happy with your work.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Listen up H\xE1ron. I was asked to kill a man. This was not part of my
+      job description. \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I want to go home today. \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "This is a natural part of the job. The DPIA is grateful and you can expect
+      a bonus when you get home. \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "What do you even need this incubator for? \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "I guess it is time to explain this to you. \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: You are very much aware of our difficult situation in the war.
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "The incubator might just be our last hope of survival.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "How is that? \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Our hopes of winning this war using weapons or diplomacy died a long time
+      ago.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "The life that the incubator can create is almost indistinguishable from
+      an actual Krieran habitant. We can use this fact to our advantage.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We will use the artificial life as propaganda.  It will be put into a
+      cell under harsh circumstances, treating it like a war criminal.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "It will all be filmed, live footage televised on all screens on every
+      street of Kriera. \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: We then tell the Krieran government that we have many more Krierans, hundreds
+      maybe  thousands.
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "In exchange for their lives we will require that the invasion is ceased.
+      \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Understand R\xF3han, your work might just save our whole planet. \r"
+    isChoiceTrigger: 1
+  answer1: This is insanity
+  linesBranch1:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: This is insanity, propaganda? You know just as well as me that artificial
+      lifeforms are just as conscious as you and me.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: You are as irresponsible as I was told. This is your last expedition with
+      us. Still, your work means a lot to Fangl.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: You are as irresponsible as I was told. This is your last expedition with
+      us. Still, your work means a lot to Fangl.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I will tell people back on Fangl what you are doing. The people need to
+      know.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "But now I just want to go home. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "You are not telling a single person about this operation, understood?\r
+      That would be a crime against Fangl. You will be killed."
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Whatever.\r Can you just send me home?"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We can leave tomorrow. But we have a problem.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We are running low on the mineral gallium, we need it for repairing the
+      ship. You seem to traverse these lands pretty well.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "If you go get us that gallium today, we can leave first thing in the morning.
+      \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "If I have to hurt one more person I\u2019ll make it cost you. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "No more hurting anyone. There is a gallium quarry further into the valley,
+      some way past Thesalon. Just head over there, get the gallium and come back.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Just go as far away as possible in the valley and you should find the
+      place. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I\u2019m taking the rover.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Good. Honor to Dega-\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: '*click*'
+  answer2: I understand
+  linesBranch2:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "That is\u2026 grim. But I understand it. Still you can not expect me to
+      kill helpless people."
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: I understand why you think of it that way. Still, your work means a lot
+      to Fangl.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I will tell people back on Fangl what you are doing. The people need to
+      know.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "But now I just want to go home. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "You are not telling a single person about this operation, understood?
+      That would be a crime against Fangl. You will be killed.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Whatever. Can you just send me home?\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 'We can leave tomorrow. But we have a problem.
+
+'
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We are running low on the mineral gallium, we need it for repairing the
+      ship. You seem to traverse these lands pretty well.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "If you go get us that gallium today, we can leave first thing in the morning.
+      \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "If I have to hurt one more person I\u2019ll make it cost you. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "No more hurting anyone. There is a gallium quarry further into the valley,
+      some way past Thesalon. Just head over there, get the gallium and come back.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Just go as far away as possible in the valley and you should find the
+      place. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I\u2019m taking the rover.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: Good. Honor to Dega-
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "*click*\r"
+  onReturnDialogue:
+    character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 
+  isDialogueFinishedChoice: 0
