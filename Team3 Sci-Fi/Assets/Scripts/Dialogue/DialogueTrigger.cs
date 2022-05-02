@@ -59,7 +59,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (distance <= dialogueRange && !dialogueManager.isTalking)
+        if (distance <= dialogueRange && !dialogueManager.isTalking && enabled)
         {
             interact.ShowInteractMessage(interactMessage);
         }

@@ -20,14 +20,14 @@ public class KeyPadPower : MonoBehaviour
     public string interactMessage;
     private bool inKeyPad;
     private MouseLook fpsView;
-    private DialogueTrigger onReturnDialogue;
     private InteractionManager interact;
+    
     
 
     private void Start()
     {
+        
         fpsView = FindObjectOfType<MouseLook>();
-        onReturnDialogue = GetComponent<DialogueTrigger>();
         interact = FindObjectOfType<InteractionManager>();
     }
 
@@ -64,7 +64,7 @@ public class KeyPadPower : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (Physics.CheckSphere(transform.position, interactionRange, playerLayer))
+        if (Physics.CheckSphere(transform.position, interactionRange, playerLayer) && enabled)
         {
             interact.ShowInteractMessage(interactMessage);
         }
@@ -88,7 +88,6 @@ public class KeyPadPower : MonoBehaviour
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
             thisKeypad.enabled = false;
-            onReturnDialogue.enabled = true;
         }
     }
     public void BackSpaceButton()
