@@ -19,12 +19,32 @@ public class DialogueTrigger : MonoBehaviour
         choiceDialogue.isDialogueFinishedChoice = false;
         dialogueManager = FindObjectOfType<DialogueManager>();
     }
-    
-    
+
+    private void Update()
+    {
+        distance = Vector3.Distance(player.transform.position, transform.position);
+        
+        if (distance <= dialogueRange && dialogueManager.isTalking && Input.GetKeyDown(KeyCode.E))
+        {
+            if (!dialogueManager.inChoice && choiceDialogue.isDialogueFinishedChoice)
+            {
+                dialogueManager.DisplayReturnMessage();
+            }
+            else if (!dialogueManager.inChoice && !choiceDialogue.isDialogueFinishedChoice)
+            {
+                dialogueManager.DisplayNextSentenceChoice();
+            }
+        }
+        // else if (distance > dialogueRange && dialogueManager.isTalking)
+        // {
+        //     dialogueManager.CancelDialogue();
+        // }
+    }
+
     
     private void OnMouseOver()
     {
-        distance = Vector3.Distance(player.transform.position, transform.position);
+        
         if (distance <= dialogueRange && Input.GetKeyDown(KeyCode.E))
         {
             if (!dialogueManager.isTalking && !choiceDialogue.isDialogueFinishedChoice)
@@ -35,21 +55,8 @@ public class DialogueTrigger : MonoBehaviour
             {
                 dialogueManager.StartReturnMessageDialogue(choiceDialogue);
             }
-            else if (dialogueManager.isTalking)
-            {
-                if (!dialogueManager.inChoice && choiceDialogue.isDialogueFinishedChoice)
-                {
-                    dialogueManager.DisplayReturnMessage();
-                }
-                else if (!dialogueManager.inChoice && !choiceDialogue.isDialogueFinishedChoice)
-                {
-                    dialogueManager.DisplayNextSentenceChoice();
-                }
-            }
+            
         }
-        else if (distance > dialogueRange && dialogueManager.isTalking)
-        {
-            dialogueManager.CancelDialogue();
-        }
+        
     }
 }

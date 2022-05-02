@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InteractionController : MonoBehaviour
@@ -23,6 +24,7 @@ public class InteractionController : MonoBehaviour
             interactionBox.SetActive(true);
         }
     }
+    
 
     private void OnMouseExit()
     {
