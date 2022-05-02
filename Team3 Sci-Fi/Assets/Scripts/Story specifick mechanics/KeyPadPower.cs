@@ -17,15 +17,18 @@ public class KeyPadPower : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float interactionRange;
     [SerializeField] private Animator anim;
+    public string interactMessage;
     private bool inKeyPad;
     private MouseLook fpsView;
     private DialogueTrigger onReturnDialogue;
+    private InteractionManager interact;
     
 
     private void Start()
     {
         fpsView = FindObjectOfType<MouseLook>();
         onReturnDialogue = GetComponent<DialogueTrigger>();
+        interact = FindObjectOfType<InteractionManager>();
     }
 
     private void Update()
@@ -38,7 +41,7 @@ public class KeyPadPower : MonoBehaviour
         //     fpsView.enabled = true;
         // }
         
-        if (!Input.GetKeyDown(KeyCode.F))
+        if (!Input.GetKeyDown(KeyCode.E))
         {
             return;
         }
@@ -59,6 +62,18 @@ public class KeyPadPower : MonoBehaviour
         }
     }
 
+    private void OnMouseOver()
+    {
+        if (Physics.CheckSphere(transform.position, interactionRange, playerLayer))
+        {
+            interact.ShowInteractMessage(interactMessage);
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        interact.HideInteractMessage();
+    }
 
     public void OkButton()
     {
