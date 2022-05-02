@@ -10,13 +10,14 @@ public class DialogueTrigger : MonoBehaviour
     public ChoiceDialogue choiceDialogue;
     private float distance;
     private GameObject player;
-    
-    
+    private InteractionManager interact;
+    public string interactMessage;
     
     void Start()
     {
+        interact = FindObjectOfType<InteractionManager>();
         player = FindObjectOfType<Movement>().gameObject;
-        choiceDialogue.isDialogueFinishedChoice = false;
+        choiceDialogue.isDialogueFinished = false;
         dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
@@ -24,39 +25,48 @@ public class DialogueTrigger : MonoBehaviour
     {
         distance = Vector3.Distance(player.transform.position, transform.position);
         
-        if (distance <= dialogueRange && dialogueManager.isTalking && Input.GetKeyDown(KeyCode.E))
-        {
-            if (!dialogueManager.inChoice && choiceDialogue.isDialogueFinishedChoice)
-            {
-                dialogueManager.DisplayReturnMessage();
-            }
-            else if (!dialogueManager.inChoice && !choiceDialogue.isDialogueFinishedChoice)
-            {
-                dialogueManager.DisplayNextSentenceChoice();
-            }
-        }
-        // else if (distance > dialogueRange && dialogueManager.isTalking)
-        // {
-        //     dialogueManager.CancelDialogue();
-        // }
-    }
-
-    
-    private void OnMouseOver()
-    {
-        
         if (distance <= dialogueRange && Input.GetKeyDown(KeyCode.E))
         {
-            if (!dialogueManager.isTalking && !choiceDialogue.isDialogueFinishedChoice)
+            if (!dialogueManager.isTalking && !choiceDialogue.isDialogueFinished)
             {
                 dialogueManager.StartDialogue(choiceDialogue);
+                choiceDialogue.talking = true;
             }
-            else if (!dialogueManager.isTalking && choiceDialogue.isDialogueFinishedChoice)
+            else if (!dialogueManager.isTalking && choiceDialogue.isDialogueFinished)
             {
                 dialogueManager.StartReturnMessageDialogue(choiceDialogue);
+                choiceDialogue.talking = true;
             }
-            
+            else if (dialogueManager.isTalking)
+            {
+                if (!dialogueManager.inChoice && choiceDialogue.isDialogueFinished)
+                {
+                    dialogueManager.DisplayReturnMessage();
+                }
+                else if (!dialogueManager.inChoice && !choiceDialogue.isDialogueFinished)
+                {
+                    dialogueManager.DisplayNextSentenceChoice();
+                }
+            }
         }
-        
+
+        if (distance > dialogueRange && dialogueManager.isTalking && choiceDialogue.talking)
+        {
+            dialogueManager.CancelDialogue();
+            choiceDialogue.talking = false;
+        }
+    }
+
+    private void OnMouseOver()
+    {
+        if (distance <= dialogueRange && !dialogueManager.isTalking)
+        {
+            interact.ShowInteractMessage(interactMessage);
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        interact.HideInteractMessage();
     }
 }

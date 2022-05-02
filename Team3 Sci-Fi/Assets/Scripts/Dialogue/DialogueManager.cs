@@ -16,12 +16,17 @@ public class DialogueManager : MonoBehaviour
     public GameObject choices;
     public Image icon;
     public MouseLook mouseLook;
-
-    public int dialogueTracker;
-    public bool inChoice;
-    public bool isTalking;
+    public InteractionManager interact;
+    public GameObject choiceText;
+    public GameObject continueText;
+    
+    private int dialogueTracker;
+    [HideInInspector] public bool inChoice;
+    [HideInInspector] public bool isTalking;
     private int answerNum = 0;
     private bool isInMessage;
+
+    public float timeBetweenLetters;
 
    
 
@@ -35,10 +40,11 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(ChoiceDialogue choiceDia)
     {
         choiceDialogue = choiceDia;
-        choiceDialogue.isDialogueFinishedChoice = false;
+        choiceDialogue.isDialogueFinished = false;
        
         
         isTalking = true;
+        interact.HideInteractMessage();
         dialogueUI.SetActive(true);
 
         
@@ -53,36 +59,38 @@ public class DialogueManager : MonoBehaviour
         choiceDialogue = choice;
        
         isTalking = true;
+        interact.HideInteractMessage();
         dialogueUI.SetActive(true);
-        
+        Debug.Log("is this happening 1");
         DisplayReturnMessage();
     }
     
 
     public void DisplayNextSentenceChoice()
     {
+        Debug.Log("is this happening 4");
         if (choiceDialogue.linesInitial.Length == 1)
         {
             DisplayReturnMessage();
+            return;
         }
-        else if (choiceDialogue.linesInitial.Length != 1)
+        
+        if (answerNum == 1 && dialogueTracker >= choiceDialogue.linesBranch1.Length)
         {
-            if (answerNum == 1 && dialogueTracker >= choiceDialogue.linesBranch1.Length)
-            {
-                EndDialogue();
-                return;
-            }
-            if (answerNum == 2 && dialogueTracker >= choiceDialogue.linesBranch2.Length)
-            {
-                EndDialogue();
-                return;
-            }
-            if (answerNum == 0 && dialogueTracker >= choiceDialogue.linesInitial.Length)
-            {
-                EndDialogue();
-                return;
-            }
+            EndDialogue();
+            return;
         }
+        if (answerNum == 2 && dialogueTracker >= choiceDialogue.linesBranch2.Length)
+        {
+            EndDialogue();
+            return;
+        }
+        if (answerNum == 0 && dialogueTracker >= choiceDialogue.linesInitial.Length)
+        {
+            EndDialogue();
+            return;
+        }
+        
         
 
         string sentence;
@@ -110,6 +118,8 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
         if (answerNum == 0 && choiceDialogue.linesInitial[dialogueTracker].isChoiceTrigger)
         {
+            continueText.SetActive(false);
+            choiceText.SetActive(true);
             inChoice = true;
             choices.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
@@ -121,6 +131,8 @@ public class DialogueManager : MonoBehaviour
 
     public void Answer1()
     {
+        continueText.SetActive(true);
+        choiceText.SetActive(false);
         answerNum = 1;
         dialogueTracker = 0;
         inChoice = false;
@@ -131,6 +143,8 @@ public class DialogueManager : MonoBehaviour
     }
     public void Answer2()
     {
+        continueText.SetActive(true);
+        choiceText.SetActive(false);
         answerNum = 2;
         dialogueTracker = 0;
         inChoice = false;
@@ -145,11 +159,12 @@ public class DialogueManager : MonoBehaviour
     {
         if (isInMessage)
         {
+            Debug.Log("is this happening 2");
             EndDialogue();
             isInMessage = false;
             return;
         }
-        
+        Debug.Log("is this happening 3");
         string sentence;
         
         nameText.text = choiceDialogue.onReturnDialogue.character.name;
@@ -168,18 +183,27 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             speechText.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(timeBetweenLetters);
         }
     }
     public void CancelDialogue()
     {
         isTalking = false;
         dialogueUI.SetActive(false);
+        dialogueTracker = 0;
+        answerNum = 0;
+        inChoice = false;
+        choices.SetActive(false);
+        if (Cursor.lockState == CursorLockMode.None)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            mouseLook.enabled = true;
+        }
     }
     
     public void EndDialogue()
     {
-        choiceDialogue.isDialogueFinishedChoice = true;
+        choiceDialogue.isDialogueFinished = true;
         answerNum = 0;
         isTalking = false;
         dialogueUI.SetActive(false);
