@@ -91,7 +91,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         
-        
+        Debug.Log("triggerZone debug");
 
         string sentence;
         
@@ -208,5 +208,6 @@ public class DialogueManager : MonoBehaviour
         isTalking = false;
         dialogueUI.SetActive(false);
         dialogueTracker = 0;
+        choiceDialogue.talking = false;
     }
 }
