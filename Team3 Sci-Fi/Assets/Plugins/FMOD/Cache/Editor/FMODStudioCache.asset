@@ -129,7 +129,7 @@ MonoBehaviour:
   - {fileID: -7825656774975252769}
   MinDistance: 0
   MaxDistance: 50
-  Length: 36594
+  Length: 34594
 --- !u!114 &-7687873427271842883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
   - {fileID: 3886911980567074456}
   MinDistance: 0
   MaxDistance: 50
-  Length: 34594
+  Length: 41081
 --- !u!114 &-6460850242016801570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ MonoBehaviour:
   - {fileID: 8280586949011649784}
   MinDistance: 0
   MaxDistance: 50
-  Length: 34594
+  Length: 47027
 --- !u!114 &-6123634302006424357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,7 +703,7 @@ MonoBehaviour:
   - {fileID: 9040724246162769032}
   MinDistance: 0
   MaxDistance: 50
-  Length: 52594
+  Length: 51891
 --- !u!114 &-3814790498772518510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,7 +731,7 @@ MonoBehaviour:
   - {fileID: 7182573060734541347}
   MinDistance: 0
   MaxDistance: 50
-  Length: 36594
+  Length: 34594
 --- !u!114 &-3591104909939908479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,7 +867,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637871736401044857
+  lastModified: 637872152285528682
   FileSizes: []
   Exists: 1
 --- !u!114 &-2018297688957481780
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   - {fileID: -2607085943357291034}
   StringsBanks:
   - {fileID: 560267498135049950}
-  cacheTime: 637871736401115518
+  cacheTime: 637872152285594165
   cacheVersion: 10
 --- !u!114 &271399194129120926
 MonoBehaviour:
@@ -1186,7 +1186,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637871736401115518
+  lastModified: 637872152285594165
   FileSizes:
   - Name: 
     Value: 2166
@@ -1289,6 +1289,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 30
   Length: 35500
+--- !u!114 &1518832119778062683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vehicle Enter/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &2331972871502024329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1336,7 +1360,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 1518832119778062683}
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
@@ -1494,7 +1519,7 @@ MonoBehaviour:
   - {fileID: -6075449299319331230}
   MinDistance: 0
   MaxDistance: 50
-  Length: 36594
+  Length: 34594
 --- !u!114 &4908187999380180841
 MonoBehaviour:
   m_ObjectHideFlags: 0
