@@ -81,7 +81,7 @@ public class PlayerHealthManager : MonoBehaviour
         {
             vehicleEnter.ExitCarOnDeath();
         }
-        vehicleFront.position = gameProgress.CheckPoints[gameProgress.currentCheckpoint].position + new Vector3(5, 1, 0);
+        vehicleFront.position = gameProgress.CheckPoints[gameProgress.currentCheckpoint].position + new Vector3(7, 1, 0);
         vehicleBack.position = vehicleFront.position + new Vector3(0, 0, -10);
         player.position = gameProgress.CheckPoints[gameProgress.currentCheckpoint].position;
         isDead = false;

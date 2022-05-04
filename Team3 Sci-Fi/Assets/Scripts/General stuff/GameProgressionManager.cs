@@ -14,9 +14,11 @@ public class GameProgressionManager : MonoBehaviour
     public int vehicleUpgradeLevel = 0;
     public int currentCheckpoint;
     public Transform[] CheckPoints;
+    
     public void GetSpeedUpgrade(float speedUpgradeValue)
     {
         vehicleControll.speed += speedUpgradeValue;
         speedUpgradeAmount += 1;
     }
+    
 }

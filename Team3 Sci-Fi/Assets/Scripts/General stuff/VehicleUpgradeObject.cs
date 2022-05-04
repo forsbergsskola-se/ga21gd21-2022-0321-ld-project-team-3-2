@@ -13,23 +13,34 @@ public class VehicleUpgradeObject : MonoBehaviour
    public float pickUpRange;
    public LayerMask playerLayer;
    public Animator upgradePopup;
+   private InteractionManager interact;
    
    private GameProgressionManager gameProgress;
 
    private void Start()
    {
+      interact = FindObjectOfType<InteractionManager>();
       gameProgress = FindObjectOfType<GameProgressionManager>();
    }
 
    private void Update()
    {
-      if (!Input.GetKeyDown(KeyCode.F))
+      isInObjectRange = Physics.CheckSphere(transform.position, pickUpRange, playerLayer);
+
+      if (isInObjectRange)
+      {
+         interact.ShowInteractMessage("Press E to interact");
+      }
+      else
+      {
+         interact.HideInteractMessage();
+      }
+      
+      if (!Input.GetKeyDown(KeyCode.E))
       {
          return;
       }
       
-      isInObjectRange = Physics.CheckSphere(transform.position, pickUpRange, playerLayer);
-
       if (!isInObjectRange)
       {
          return;
@@ -41,9 +52,10 @@ public class VehicleUpgradeObject : MonoBehaviour
          gameProgress.vehicleUpgradeLevel++;
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
-      else if (reinforcedTireUpgrade )
+      else if (reinforcedTireUpgrade)
       {
          gameProgress.hasScorchedEarthUpgrade = true;
+         gameProgress.currentCheckpoint = 1;
          upgradePopup.SetTrigger("Upgrade");
          gameProgress.vehicleUpgradeLevel++;
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
@@ -53,6 +65,7 @@ public class VehicleUpgradeObject : MonoBehaviour
          gameProgress.GetSpeedUpgrade(speedUpgradeValue);
       }
       
+      interact.HideInteractMessage();
       Destroy(gameObject);
    }
 }
