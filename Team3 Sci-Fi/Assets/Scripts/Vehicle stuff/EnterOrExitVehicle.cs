@@ -35,10 +35,10 @@ public class EnterOrExitVehicle : MonoBehaviour
             EnterCar();
         }
 
-        if (inCar)
-        {
-            playerTransform.position = transform.position + exitCarPosition;
-        }
+        // if (inCar)
+        // {
+        //     
+        // }
         
     }
 
@@ -53,13 +53,21 @@ public class EnterOrExitVehicle : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Enter");
     }
 
-    private void ExitCar()
+    public void ExitCar()
+    {
+        inCar = false;
+        vehicleCamera.SetActive(false);
+        playerTransform.position = transform.position + exitCarPosition;
+        player.SetActive(true);
+        
+        motorSound.stop(STOP_MODE.IMMEDIATE);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Exit");
+    }
+    public void ExitCarOnDeath()
     {
         inCar = false;
         vehicleCamera.SetActive(false);
         player.SetActive(true);
-
         motorSound.stop(STOP_MODE.IMMEDIATE);
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Exit");
     }
 }

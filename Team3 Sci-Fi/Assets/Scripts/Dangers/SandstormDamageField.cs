@@ -11,11 +11,13 @@ public class SandstormDamageField : MonoBehaviour
     public LayerMask vehicleLayer;
     private PlayerHealthManager playerHealth;
     private Collider damageField;
+    private EnterOrExitVehicle enterVehicle;
 
     private GameProgressionManager gameProgress;
 
     private void Start()
     {
+        enterVehicle = FindObjectOfType<EnterOrExitVehicle>();
         gameProgress = FindObjectOfType<GameProgressionManager>();
         playerHealth = FindObjectOfType<PlayerHealthManager>();
         damageField = GetComponent<Collider>();
@@ -23,11 +25,11 @@ public class SandstormDamageField : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Physics.CheckBox(damageField.bounds.center,damageField.bounds.extents,quaternion.Euler(0),playerLayer))
+        if (Physics.CheckBox(damageField.bounds.center,damageField.bounds.extents,quaternion.Euler(0),playerLayer) && !enterVehicle.inCar)
         {
             playerHealth.TakeDamage(damagePerFrame);
         }
-        else if (Physics.CheckBox(damageField.bounds.center,damageField.bounds.extents,quaternion.Euler(0),vehicleLayer))
+        else if (Physics.CheckBox(damageField.bounds.center,damageField.bounds.extents,quaternion.Euler(0),vehicleLayer) && enterVehicle.inCar)
         {
             if (!gameProgress.hasSandstormUpgrade)
             {

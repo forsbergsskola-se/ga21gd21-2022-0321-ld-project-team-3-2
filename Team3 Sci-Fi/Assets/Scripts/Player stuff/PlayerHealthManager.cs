@@ -16,7 +16,12 @@ public class PlayerHealthManager : MonoBehaviour
     private bool isTakingDamage;
     public float healthRegenSpeed;
     [SerializeField] private Image healthIndicator;
-    
+    private GameProgressionManager gameProgress;
+    [SerializeField] private Transform player;
+    [SerializeField] private Transform vehicle;
+    [SerializeField] private Transform vehicleFront;
+    [SerializeField] private Transform vehicleBack;
+    private EnterOrExitVehicle vehicleEnter;
     public bool isDead
     {
         get;
@@ -32,7 +37,9 @@ public class PlayerHealthManager : MonoBehaviour
     
     private void Start()
     {
+        vehicleEnter = FindObjectOfType<EnterOrExitVehicle>();
         currentHealth = maxHealth;
+        gameProgress = FindObjectOfType<GameProgressionManager>();
     }
 
     private void FixedUpdate()
@@ -69,7 +76,15 @@ public class PlayerHealthManager : MonoBehaviour
     public void Death()
     {
         isDead = true;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //Move player and vehicle to last checkpoint or game start
+        if (vehicleEnter.inCar)
+        {
+            vehicleEnter.ExitCarOnDeath();
+        }
+        vehicleFront.position = gameProgress.CheckPoints[gameProgress.currentCheckpoint].position + new Vector3(5, 1, 0);
+        vehicleBack.position = vehicleFront.position + new Vector3(0, 0, -10);
+        player.position = gameProgress.CheckPoints[gameProgress.currentCheckpoint].position;
         isDead = false;
     }
 
