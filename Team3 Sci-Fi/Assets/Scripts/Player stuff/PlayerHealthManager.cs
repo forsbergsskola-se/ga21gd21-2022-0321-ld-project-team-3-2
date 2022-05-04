@@ -18,7 +18,6 @@ public class PlayerHealthManager : MonoBehaviour
     [SerializeField] private Image healthIndicator;
     private GameProgressionManager gameProgress;
     [SerializeField] private Transform player;
-    [SerializeField] private Transform vehicle;
     [SerializeField] private Transform vehicleFront;
     [SerializeField] private Transform vehicleBack;
     private EnterOrExitVehicle vehicleEnter;
