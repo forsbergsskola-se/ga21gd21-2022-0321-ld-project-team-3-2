@@ -7442,6 +7442,16 @@ PrefabInstance:
       propertyPath: vehicleCamera
       value: 
       objectReference: {fileID: 1316593705}
+    - target: {fileID: 782933237754711426, guid: a11525c2bdeac034dbf48d8b6aaec185,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 782933238677893406, guid: a11525c2bdeac034dbf48d8b6aaec185,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3310157587499463475, guid: a11525c2bdeac034dbf48d8b6aaec185,
         type: 3}
       propertyPath: m_LocalRotation.w
