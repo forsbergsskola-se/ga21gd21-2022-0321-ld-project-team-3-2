@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linesInitial:
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "I heard you are displeased with the mission. \r"
-    isChoiceTrigger: 0
-  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "I want to be very clear that I am very happy with your work.\r"
+    text: "If it isn\u2019t our very own rebel. R\xF3han, is it that hard to follow
+      orders? \r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "Listen up H\xE1ron. I was asked to kill a man. This was not part of my
@@ -27,8 +25,8 @@ MonoBehaviour:
     text: "I want to go home today. \r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "This is a natural part of the job. The DPIA is grateful and you can expect
-      a bonus when you get home. \r"
+    text: "This is a natural part of the job. At least you located the incubator
+      for us. I will send out a team to collect it right away. \r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "What do you even need this incubator for? \r"
@@ -79,10 +77,7 @@ MonoBehaviour:
       lifeforms are just as conscious as you and me.
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: You are as irresponsible as I was told. This is your last expedition with
-      us. Still, your work means a lot to Fangl.
-  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: You are as irresponsible as I was told. This is your last expedition with
-      us. Still, your work means a lot to Fangl.
+      us.
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "I will tell people back on Fangl what you are doing. The people need to
       know.\r"
@@ -94,7 +89,7 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "Whatever.\r Can you just send me home?"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "We can leave tomorrow. But we have a problem.\r"
+    text: "*Sigh* We can leave tomorrow. But we have a problem.\r"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "We are running low on the mineral gallium, we need it for repairing the
       ship. You seem to traverse these lands pretty well.\r"
@@ -121,8 +116,8 @@ MonoBehaviour:
     text: "That is\u2026 grim. But I understand it. Still you can not expect me to
       kill helpless people."
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: I understand why you think of it that way. Still, your work means a lot
-      to Fangl.
+    text: I understand why you think of it that way. Still, your rebelling will cost
+      you.
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "I will tell people back on Fangl what you are doing. The people need to
       know.\r"
@@ -134,7 +129,7 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "Whatever. Can you just send me home?\r"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: 'We can leave tomorrow. But we have a problem.
+    text: '*Sigh* We can leave tomorrow. But we have a problem.
 
 '
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
@@ -144,7 +139,7 @@ MonoBehaviour:
     text: "If you go get us that gallium today, we can leave first thing in the morning.
       \r"
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "If I have to hurt one more person I\u2019ll make it cost you. \r"
+    text: "If I am asked to hurt one more person I\u2019ll make it cost you. \r"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "No more hurting anyone. There is a gallium quarry further into the valley,
       some way past Thesalon. Just head over there, get the gallium and come back.\r"

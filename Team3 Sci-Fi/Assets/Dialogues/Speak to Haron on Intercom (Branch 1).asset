@@ -81,9 +81,6 @@ MonoBehaviour:
     text: You are as irresponsible as I was told. This is your last expedition with
       us. Still, your work means a lot to Fangl.
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: You are as irresponsible as I was told. This is your last expedition with
-      us. Still, your work means a lot to Fangl.
-  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "I will tell people back on Fangl what you are doing. The people need to
       know.\r"
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
