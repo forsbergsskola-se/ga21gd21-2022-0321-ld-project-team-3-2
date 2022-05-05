@@ -17,15 +17,25 @@ MonoBehaviour:
     text: "R\xF3han? Can you hear me?\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "I hear you. Just passed by some scorched ground, there is no way I\u2019m
-      going through that. \r"
+    text: "I hear you. \r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "Yeah I get that, tires would melt. You see that building in front of you?
-      It looks like an old Pintagl\xED workshop.\r"
+    text: "H\xE1ron told me you're going to Thasalon. You might have noticed a bit
+      of an issue though. "
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: 'The path to the village is blocked by scorched earth. Your tires would
+      melt if you try going through it. '
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: And you would melt along with them...
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: But I might have a solution. It looks like you are right by an old Fangl
+      workshop. It might just contain something to improve your tires.
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "Wait, are you seeing what I am seeing?\r"
+    text: 'Wait, are you seeing what I am seeing? '
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "Sure do, H\xE1ron made sure to insert a camera into one of your eyes when
@@ -35,11 +45,17 @@ MonoBehaviour:
     text: "That\u2019s\u2026 "
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "scary. No matter, the building does not seem to have any power. \r"
+    text: 'scary. No matter. I''ll check if I can enter it. '
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: Shit. Most power is run though generators here. There should be a power
-      station around here somewhere. Look around for something like that.
+    text: 'The power might be off. In that case you have to turn it on with generators
+      that should be somewhere around. '
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: 'Alright, thanks Kahir. '
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "No worries. Good luck R\xF3han!"
     isChoiceTrigger: 0
   answer1: 
   linesBranch1: []
@@ -47,5 +63,6 @@ MonoBehaviour:
   linesBranch2: []
   onReturnDialogue:
     character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: 'There''s has to be a way to unlock that workshop somewhere here. '
-  isDialogueFinishedChoice: 0
+    text: 
+  isDialogueFinished: 1
+  talking: 0
