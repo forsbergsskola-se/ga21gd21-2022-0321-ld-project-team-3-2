@@ -129,7 +129,7 @@ MonoBehaviour:
   - {fileID: -7825656774975252769}
   MinDistance: 0
   MaxDistance: 50
-  Length: 34594
+  Length: 46594
 --- !u!114 &-7687873427271842883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   - {fileID: -2884949399318992505}
   MinDistance: 1
   MaxDistance: 20
-  Length: 34500
+  Length: 42500
 --- !u!114 &-6386943139187375686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,7 +285,7 @@ MonoBehaviour:
   - {fileID: 8280586949011649784}
   MinDistance: 0
   MaxDistance: 50
-  Length: 47027
+  Length: 45405
 --- !u!114 &-6123634302006424357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: RPM
   StudioPath: parameter:/Vehicle/RPM
-  Min: 0
+  Min: -800
   Max: 800
   Default: 0
   ID:
@@ -703,7 +703,7 @@ MonoBehaviour:
   - {fileID: 9040724246162769032}
   MinDistance: 0
   MaxDistance: 50
-  Length: 51891
+  Length: 47567
 --- !u!114 &-3814790498772518510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,7 +731,7 @@ MonoBehaviour:
   - {fileID: 7182573060734541347}
   MinDistance: 0
   MaxDistance: 50
-  Length: 34594
+  Length: 42594
 --- !u!114 &-3591104909939908479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,7 +867,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637873566350079776
+  lastModified: 637873811516148867
   FileSizes: []
   Exists: 1
 --- !u!114 &-2018297688957481780
@@ -979,7 +979,7 @@ MonoBehaviour:
   - {fileID: -5517984180013049526}
   MinDistance: 1
   MaxDistance: 20
-  Length: 34500
+  Length: 42500
 --- !u!114 &-1462599283882982112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1088,6 +1088,7 @@ MonoBehaviour:
   - {fileID: -1521670773957575327}
   - {fileID: 8953265147118086199}
   - {fileID: -940296578537501086}
+  - {fileID: 6734126515238550641}
   EditorParameters:
   - {fileID: 271399194129120926}
   - {fileID: 3951380021854401087}
@@ -1097,7 +1098,7 @@ MonoBehaviour:
   - {fileID: -2607085943357291034}
   StringsBanks:
   - {fileID: 560267498135049950}
-  cacheTime: 637873566350119769
+  cacheTime: 637873811516217423
   cacheVersion: 10
 --- !u!114 &271399194129120926
 MonoBehaviour:
@@ -1161,7 +1162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: RPM
   StudioPath: 
-  Min: 0
+  Min: -800
   Max: 800
   Default: 0
   ID:
@@ -1186,10 +1187,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637873566350119769
+  lastModified: 637873811516217423
   FileSizes:
   - Name: 
-    Value: 2166
+    Value: 2204
   Exists: 1
 --- !u!114 &600557650524340202
 MonoBehaviour:
@@ -1519,7 +1520,7 @@ MonoBehaviour:
   - {fileID: -6075449299319331230}
   MinDistance: 0
   MaxDistance: 50
-  Length: 34594
+  Length: 42594
 --- !u!114 &4908187999380180841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1678,6 +1679,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 34594
+--- !u!114 &6734126515238550641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vehicle/Vehicle Collider
+  m_EditorClassIdentifier: 
+  Path: event:/Vehicle/Vehicle Collider
+  Guid:
+    Data1: 1754934584
+    Data2: 1195311767
+    Data3: 1154582938
+    Data4: 107197165
+  Banks:
+  - {fileID: -2607085943357291034}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
 --- !u!114 &7182573060734541347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1775,7 +1803,7 @@ MonoBehaviour:
   - {fileID: -2607085943357291034}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters:
   - {fileID: -3193214894253684733}
   MinDistance: 1
