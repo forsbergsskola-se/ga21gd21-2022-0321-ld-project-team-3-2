@@ -16,7 +16,6 @@ public class VehicleUpgradeObject : MonoBehaviour
    private InteractionManager interact;
    
    private GameProgressionManager gameProgress;
-   private QuestManager questManager;
    public QuestWaypoint questWaypoint;
 
    private void Start()

@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class QuestWaypoint : MonoBehaviour
 {
     public Image questMarker;
     [SerializeField] private Transform[] target = new Transform[5];
-    [HideInInspector] public int targetArray;
+    [HideInInspector] public int targetArrayValue;
+    public TMP_Text meter;
 
     private void Start()
     {
@@ -23,9 +25,9 @@ public class QuestWaypoint : MonoBehaviour
         float minY = questMarker.GetPixelAdjustedRect().height / 2;
         float maxY = Screen.width - minY;
         
-        Vector2 pos = Camera.main.WorldToScreenPoint(target[targetArray].position);
+        Vector2 pos = Camera.main.WorldToScreenPoint(target[targetArrayValue].position);
 
-        if(Vector3.Dot((target[targetArray].position - transform.position), transform.forward) < 0)
+        if(Vector3.Dot((target[targetArrayValue].position - transform.position), transform.forward) < 0)
         {
             if(pos.x < Screen.width / 2)
             {
@@ -41,6 +43,7 @@ public class QuestWaypoint : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
         
         questMarker.transform.position = pos;
+        meter.text = Vector3.Distance(target[targetArrayValue].position, transform.position).ToString();
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
