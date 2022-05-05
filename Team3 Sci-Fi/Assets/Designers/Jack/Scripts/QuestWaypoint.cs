@@ -44,7 +44,7 @@ public class QuestWaypoint : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
         
         questMarker.transform.position = pos;
-        meter.text = ((int)Vector3.Distance(target[targetArrayValue].position, transform.position)).ToString();
+        meter.text = ((int)Vector3.Distance(target[targetArrayValue].position, transform.position)).ToString() + " m";
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
