@@ -221,7 +221,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.AABox, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"center":{"x":-0.008544921875,"y":1.514434814453125,"z":-0.1727294921875},"size":{"x":50.0,"y":50.0,"z":50.0}}'
+      m_SerializableObject: '{"center":{"x":-0.008544921875,"y":1.514435052871704,"z":-0.1727294921875},"size":{"x":50.0,"y":50.0,"z":50.0}}'
     m_Space: 0
   m_Property:
     name: bounds
@@ -584,7 +584,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Vector, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"vector":{"x":0.20000000298023225,"y":0.0,"z":0.20000000298023225}}'
+      m_SerializableObject: '{"vector":{"x":1.0,"y":2.0,"z":-1.0}}'
     m_Space: 0
   m_Property:
     name: A
@@ -745,7 +745,7 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8926484042661614576}
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 0
+  m_UICollapsed: 1
   m_UISuperCollapsed: 0
   m_MasterSlot: {fileID: 8926484042661614575}
   m_MasterData:
@@ -754,8 +754,8 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Vector, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"vector":{"x":2.0,"y":-0.25,"z":-3.690000057220459}}'
-    m_Space: 1
+      m_SerializableObject: '{"vector":{"x":-1.0,"y":1.0,"z":1.0}}'
+    m_Space: 0
   m_Property:
     name: B
     m_serializedType:
@@ -782,7 +782,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614578}
   - {fileID: 8926484042661614579}
   m_UIPosition: {x: 0, y: 0}
-  m_UICollapsed: 0
+  m_UICollapsed: 1
   m_UISuperCollapsed: 0
   m_MasterSlot: {fileID: 8926484042661614575}
   m_MasterData:
