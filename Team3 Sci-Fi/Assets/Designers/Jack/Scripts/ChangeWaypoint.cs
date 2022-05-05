@@ -16,7 +16,6 @@ public class ChangeWaypoint : MonoBehaviour
         if (isInObjectRange && Input.GetKeyDown(KeyCode.E))
         {
             questWayPoint.targetArrayValue++;
-            questWayPoint.activeQuestArrayValue++;
             Destroy(this);
         }
     }
