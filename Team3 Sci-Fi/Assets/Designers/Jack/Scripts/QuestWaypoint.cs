@@ -10,7 +10,11 @@ public class QuestWaypoint : MonoBehaviour
     public Image questMarker;
     [SerializeField] private Transform[] target = new Transform[5];
     [HideInInspector] public int targetArrayValue;
+    [SerializeField] private string[] activeQuestString = new string[10];
+    [HideInInspector] public int activeQuestArrayValue;
+    
     public TMP_Text meter;
+    public TMP_Text activeQuest;
 
     private void Start()
     {
@@ -56,8 +60,10 @@ public class QuestWaypoint : MonoBehaviour
     {
         questMarker.enabled = true;
         meter.enabled = true;
+        activeQuest.enabled = true;
         yield return new WaitForSeconds(4);
         questMarker.enabled = false;
         meter.enabled = false;
+        activeQuest.enabled = false;
     }
 }
