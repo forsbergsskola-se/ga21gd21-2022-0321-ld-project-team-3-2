@@ -61,14 +61,12 @@ public class DialogueManager : MonoBehaviour
         isTalking = true;
         interact.HideInteractMessage();
         dialogueUI.SetActive(true);
-        Debug.Log("is this happening 1");
         DisplayReturnMessage();
     }
     
 
     public void DisplayNextSentenceChoice()
     {
-        Debug.Log("is this happening 4");
         if (choiceDialogue.linesInitial.Length == 1)
         {
             DisplayReturnMessage();
@@ -90,8 +88,6 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-        
-        Debug.Log("triggerZone debug");
 
         string sentence;
         
@@ -159,12 +155,10 @@ public class DialogueManager : MonoBehaviour
     {
         if (isInMessage)
         {
-            Debug.Log("is this happening 2");
             EndDialogue();
             isInMessage = false;
             return;
         }
-        Debug.Log("is this happening 3");
         string sentence;
         
         nameText.text = choiceDialogue.onReturnDialogue.character.name;
