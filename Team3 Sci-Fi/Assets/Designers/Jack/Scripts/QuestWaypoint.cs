@@ -15,6 +15,7 @@ public class QuestWaypoint : MonoBehaviour
     private void Start()
     {
         questMarker.enabled = false;
+        meter.enabled = false;
     }
 
     void Update()
@@ -43,7 +44,7 @@ public class QuestWaypoint : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
         
         questMarker.transform.position = pos;
-        meter.text = Vector3.Distance(target[targetArrayValue].position, transform.position).ToString();
+        meter.text = ((int)Vector3.Distance(target[targetArrayValue].position, transform.position)).ToString();
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -54,7 +55,9 @@ public class QuestWaypoint : MonoBehaviour
     IEnumerator ToggleQuestMarker()
     {
         questMarker.enabled = true;
+        meter.enabled = true;
         yield return new WaitForSeconds(4);
         questMarker.enabled = false;
+        meter.enabled = false;
     }
 }
