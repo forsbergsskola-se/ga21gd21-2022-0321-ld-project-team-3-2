@@ -20,6 +20,7 @@ public class QuestWaypoint : MonoBehaviour
     {
         questMarker.enabled = false;
         meter.enabled = false;
+        activeQuest.enabled = false;
     }
 
     void Update()
@@ -49,6 +50,7 @@ public class QuestWaypoint : MonoBehaviour
         
         questMarker.transform.position = pos;
         meter.text = ((int)Vector3.Distance(target[targetArrayValue].position, transform.position)).ToString() + " m";
+        activeQuest.text = activeQuestString[activeQuestArrayValue];
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
