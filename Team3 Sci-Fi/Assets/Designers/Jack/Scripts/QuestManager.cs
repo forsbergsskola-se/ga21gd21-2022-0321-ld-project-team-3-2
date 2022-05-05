@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
+    
+    
 
     public QuestWaypoint qw;
     // Start is called before the first frame update
