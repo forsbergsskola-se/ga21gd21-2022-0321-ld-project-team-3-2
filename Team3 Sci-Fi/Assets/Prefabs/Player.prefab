@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 7270844399649354810}
   - component: {fileID: 7270844399649354806}
   - component: {fileID: 7270844399649354809}
+  - component: {fileID: 8250557047500762688}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -429,3 +430,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
   playerBody: {fileID: 7270844398037977219}
+--- !u!114 &8250557047500762688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270844399649354813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cda561f971deae40b1c3321c89e9bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMarker: {fileID: 0}
+  target: {fileID: 0}
