@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class QuestWaypoint : MonoBehaviour
 {
     public Image questMarker;
-    public Transform target;
+    [SerializeField] private Transform[] target = new Transform[5];
+    [HideInInspector] public int targetArray;
 
     private void Start()
     {
@@ -22,9 +23,9 @@ public class QuestWaypoint : MonoBehaviour
         float minY = questMarker.GetPixelAdjustedRect().height / 2;
         float maxY = Screen.width - minY;
         
-        Vector2 pos = Camera.main.WorldToScreenPoint(target.position);
+        Vector2 pos = Camera.main.WorldToScreenPoint(target[targetArray].position);
 
-        if(Vector3.Dot((target.position - transform.position), transform.forward) < 0)
+        if(Vector3.Dot((target[targetArray].position - transform.position), transform.forward) < 0)
         {
             if(pos.x < Screen.width / 2)
             {

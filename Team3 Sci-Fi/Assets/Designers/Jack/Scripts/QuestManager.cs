@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-    
-    
 
-    public QuestWaypoint qw;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] QuestWaypoint qw;
+    public int questTrack;
+
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
