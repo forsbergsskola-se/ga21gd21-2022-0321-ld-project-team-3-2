@@ -5,7 +5,8 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private CharacterController controller;
-    public float speed = 12f;
+    public float speed;
+    public float sprintSpeed;
     private Vector3 velocity;
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private Transform groundCheck;
@@ -14,7 +15,7 @@ public class Movement : MonoBehaviour
     private bool isGrounded;
     public bool jumpOn;
     [SerializeField] private float jumpForce;
-    public float sprintSpeed;
+
     
     void Update()
     {
