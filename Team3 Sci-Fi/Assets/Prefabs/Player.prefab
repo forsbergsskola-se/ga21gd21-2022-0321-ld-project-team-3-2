@@ -443,4 +443,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questMarker: {fileID: 0}
-  target: {fileID: 0}
+  target:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  targetArrayValue: 0
+  activeQuestString:
+  - Open the workshop
+  - Find a way to turn on the power
+  - Collect the tire upgrade
+  - Go to Thesalon
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  activeQuestArrayValue: 0
+  meter: {fileID: 0}
+  activeQuest: {fileID: 0}
