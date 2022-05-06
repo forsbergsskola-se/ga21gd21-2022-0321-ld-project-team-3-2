@@ -18,5 +18,11 @@ public class ChangeWaypoint : MonoBehaviour
             questWayPoint.targetArrayValue++;
             Destroy(this);
         }
+        
+    }
+
+    public void IncramentWaypointExternal()
+    {
+        questWayPoint.activeQuestArrayValue++;
     }
 }

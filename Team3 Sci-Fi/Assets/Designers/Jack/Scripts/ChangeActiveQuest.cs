@@ -16,9 +16,13 @@ public class ChangeActiveQuest : MonoBehaviour
         if (isInObjectRange && Input.GetKeyDown(KeyCode.E))
         {
             questWayPoint.activeQuestArrayValue++;
-            Debug.Log(questWayPoint.activeQuest);
             Destroy(this);
         }
+    }
+    
+    public void IncramentActiveQuestExternal()
+    {
+        questWayPoint.activeQuestArrayValue++;
     }
 }
 
