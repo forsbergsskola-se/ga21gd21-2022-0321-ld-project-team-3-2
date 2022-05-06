@@ -17,6 +17,7 @@ public class KeyPadPower : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float interactionRange;
     [SerializeField] private Animator anim;
+    [SerializeField] private QuestWaypoint qw;
     [SerializeField] private ChangeWaypoint waypoint;
     [SerializeField] private ChangeActiveQuest activeQuest;
     public string interactMessage;
@@ -96,9 +97,18 @@ public class KeyPadPower : MonoBehaviour
             thisKeypad.enabled = false;
             lampPost1.color = Color.green;
             lampPost2.color = Color.green;
-            waypoint.IncramentWaypointExternal();
-            activeQuest.IncramentActiveQuestExternal();
-            
+            if (qw.targetArrayValue == 0 && qw.activeQuestArrayValue == 0)
+            {
+                waypoint.IncramentWaypointExternal();
+                waypoint.IncramentWaypointExternal();
+                activeQuest.IncramentActiveQuestExternal();
+                activeQuest.IncramentActiveQuestExternal();
+            }
+            else
+            {
+                waypoint.IncramentWaypointExternal();
+                activeQuest.IncramentActiveQuestExternal();
+            }
         }
     }
     public void BackSpaceButton()
