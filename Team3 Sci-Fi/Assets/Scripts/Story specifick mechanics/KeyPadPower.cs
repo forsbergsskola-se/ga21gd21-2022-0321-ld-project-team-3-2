@@ -22,6 +22,7 @@ public class KeyPadPower : MonoBehaviour
     [SerializeField] private ChangeActiveQuest activeQuest;
     public string interactMessage;
     private bool inKeyPad;
+    public bool correctCode;
     private MouseLook fpsView;
     private InteractionManager interact;
     public GameObject dialogueTriggerOnComplete;
@@ -32,7 +33,7 @@ public class KeyPadPower : MonoBehaviour
 
     private void Start()
     {
-        
+        correctCode = false;
         fpsView = FindObjectOfType<MouseLook>();
         interact = FindObjectOfType<InteractionManager>();
     }
@@ -90,6 +91,7 @@ public class KeyPadPower : MonoBehaviour
             inputBox.color = Color.green;
             anim.SetTrigger("Go away");
             inKeyPad = false;
+            correctCode = true;
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
@@ -97,18 +99,6 @@ public class KeyPadPower : MonoBehaviour
             thisKeypad.enabled = false;
             lampPost1.color = Color.green;
             lampPost2.color = Color.green;
-            if (qw.targetArrayValue == 0 && qw.activeQuestArrayValue == 0)
-            {
-                waypoint.IncramentWaypointExternal();
-                waypoint.IncramentWaypointExternal();
-                activeQuest.IncramentActiveQuestExternal();
-                activeQuest.IncramentActiveQuestExternal();
-            }
-            else
-            {
-                waypoint.IncramentWaypointExternal();
-                activeQuest.IncramentActiveQuestExternal();
-            }
         }
     }
     public void BackSpaceButton()
