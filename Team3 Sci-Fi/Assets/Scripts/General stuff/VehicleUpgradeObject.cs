@@ -60,7 +60,8 @@ public class VehicleUpgradeObject : MonoBehaviour
          gameProgress.currentCheckpoint = 1;
          upgradePopup.SetTrigger("Upgrade");
          gameProgress.vehicleUpgradeLevel++;
-         questWaypoint.targetArrayValue = 1;
+         questWaypoint.targetArrayValue++;
+         questWaypoint.activeQuestArrayValue++;
          dialogueTriggerOnComplete.SetActive(true);
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
