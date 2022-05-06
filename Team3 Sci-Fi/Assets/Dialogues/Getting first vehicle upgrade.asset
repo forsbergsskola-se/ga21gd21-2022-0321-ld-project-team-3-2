@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946dfe94e17d0d1428a8a3ebe623f0fa, type: 3}
+  m_Name: Getting first vehicle upgrade
+  m_EditorClassIdentifier: 
+  linesInitial:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Hey Kahir, I opened the workshop. Found some vehicle scraps.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "Nice, is it Fangl or Krieran stuff? \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Fangl I think.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "Perfect, that should be strong enough to get past the scorched earth.
+      Try heading over there now.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I can\u2019t believe I\u2019m doing this\u2026\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "Alright buddy, I\u2019ll contact you later if it's needed!\r"
+    isChoiceTrigger: 0
+  answer1: 
+  linesBranch1: []
+  answer2: 
+  linesBranch2: []
+  onReturnDialogue:
+    character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: '-'
+  isDialogueFinished: 0
+  talking: 0

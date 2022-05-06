@@ -17,6 +17,7 @@ public class VehicleUpgradeObject : MonoBehaviour
    
    private GameProgressionManager gameProgress;
    public QuestWaypoint questWaypoint;
+   public GameObject dialogueTriggerOnComplete;
 
    private void Start()
    {
@@ -60,7 +61,7 @@ public class VehicleUpgradeObject : MonoBehaviour
          upgradePopup.SetTrigger("Upgrade");
          gameProgress.vehicleUpgradeLevel++;
          questWaypoint.targetArrayValue = 1;
-         Destroy(gameObject); //Remove this if it doesn't work.
+         dialogueTriggerOnComplete.SetActive(true);
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
       else
