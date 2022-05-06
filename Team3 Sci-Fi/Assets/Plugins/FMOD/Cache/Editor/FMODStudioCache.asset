@@ -1,54 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8897131837978101611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: parameter:/Elevation Y axen
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-8636625344141227344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Motor/RPM
-  m_EditorClassIdentifier: 
-  Name: RPM
-  StudioPath: 
-  Min: 0
-  Max: 2000
-  Default: 0
-  ID:
-    data1: 1019152161
-    data2: 988637408
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-8021733547711650101
+--- !u!114 &-8837363282759389358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,207 +10,51 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Motor
+  m_Name: event:/Ambi/Scorched Earth
   m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Motor
+  Path: event:/Ambi/Scorched Earth
   Guid:
-    Data1: -2068231052
-    Data2: 1103607541
-    Data3: 1136178051
-    Data4: 125834799
+    Data1: -1829657042
+    Data2: 1218041811
+    Data3: -111641695
+    Data4: -1791071754
   Banks:
-  - {fileID: 851592598875442860}
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0.5
+  MaxDistance: 30
+  Length: 34594
+--- !u!114 &-8476643550764983482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Flora hadling sounds
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Flora hadling sounds
+  Guid:
+    Data1: 1212578277
+    Data2: 1282144340
+    Data3: 184740279
+    Data4: -1084304530
+  Banks:
+  - {fileID: 2457082863670650764}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -8636625344141227344}
-  - {fileID: -4389076584080268106}
-  - {fileID: 5089408459654681952}
-  MinDistance: 0.1
-  MaxDistance: 2.2
-  Length: 14875
---- !u!114 &-7825656774975252769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneLF1/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 60
-  Default: 30
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-7778889794375414696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone1/ZoneLF1
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone1/ZoneLF1
-  Guid:
-    Data1: -96337609
-    Data2: 1324600744
-    Data3: 774935716
-    Data4: -613390300
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
   Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7825656774975252769}
-  MinDistance: 0
-  MaxDistance: 50
-  Length: 46594
---- !u!114 &-7687873427271842883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wind System/WindIntesty
-  m_EditorClassIdentifier: 
-  Name: WindIntesty
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 118670203
-    data2: 4129383344
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-7480336138702225565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneLF1/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-7459520066760171640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/WindIntesty
-  m_EditorClassIdentifier: 
-  Name: WindIntesty
-  StudioPath: parameter:/WindIntesty
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 118670203
-    data2: 4129383344
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-7379465812176224857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone3/ZoneRL3
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone3/ZoneRL3
-  Guid:
-    Data1: 67009021
-    Data2: 1209108013
-    Data3: -1129611605
-    Data4: 974446297
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 3886911980567074456}
-  MinDistance: 0
-  MaxDistance: 50
-  Length: 41081
---- !u!114 &-6460850242016801570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone2/ZoneCJ2
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone2/ZoneCJ2
-  Guid:
-    Data1: -1095406010
-    Data2: 1176567090
-    Data3: -1478453109
-    Data4: 1466283098
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -2884949399318992505}
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 42500
---- !u!114 &-6386943139187375686
+  Length: 2656
+--- !u!114 &-8432021841233092535
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -277,16 +73,16 @@ MonoBehaviour:
     Data3: -1872032069
     Data4: 597220779
   Banks:
-  - {fileID: -2607085943357291034}
+  - {fileID: 2457082863670650764}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 8280586949011649784}
+  - {fileID: 5178187006417414271}
   MinDistance: 0
   MaxDistance: 50
   Length: 45405
---- !u!114 &-6123634302006424357
+--- !u!114 &-7009436039207510742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,288 +92,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Vehicle Enter
+  m_Name: event:/Musik/Zone2/ZoneCJ2
   m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Vehicle Enter
+  Path: event:/Musik/Zone2/ZoneCJ2
   Guid:
-    Data1: 126515496
-    Data2: 1315989013
-    Data3: 741141416
-    Data4: 140617813
+    Data1: -1095406010
+    Data2: 1176567090
+    Data3: -1478453109
+    Data4: 1466283098
   Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-6075449299319331230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneLF2/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 60
-  Default: 30
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-6024149986228006396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambi/Scorched Earth
-  m_EditorClassIdentifier: 
-  Path: event:/Ambi/Scorched Earth
-  Guid:
-    Data1: -1829657042
-    Data2: 1218041811
-    Data3: -111641695
-    Data4: -1791071754
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0.5
-  MaxDistance: 30
-  Length: 34594
---- !u!114 &-5711416411356705721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/RPM
-  m_EditorClassIdentifier: 
-  Name: RPM
-  StudioPath: parameter:/Vehicle/RPM
-  Min: -800
-  Max: 800
-  Default: 0
-  ID:
-    data1: 1019152161
-    data2: 988637408
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-5517984180013049526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneCJ1/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 60
-  Default: 30
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-5508008569043815444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambi/Wind System
-  m_EditorClassIdentifier: 
-  Path: event:/Ambi/Wind System
-  Guid:
-    Data1: -389373641
-    Data2: 1273764428
-    Data3: 235063717
-    Data4: -1516151928
-  Banks:
-  - {fileID: -2607085943357291034}
+  - {fileID: 2457082863670650764}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -3846541429161681405}
-  - {fileID: -7687873427271842883}
-  MinDistance: 0
-  MaxDistance: 30
-  Length: 35500
---- !u!114 &-5289006750169576617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone3/ZoneLF3
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone3/ZoneLF3
-  Guid:
-    Data1: -469166592
-    Data2: 1324880697
-    Data3: -473965174
-    Data4: -16278830
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7843727447806539879}
+  - {fileID: -6435982436078188689}
   MinDistance: 1
   MaxDistance: 20
-  Length: 34594
---- !u!114 &-5234563152480966535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Motor
-  m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Motor
-  Guid:
-    Data1: -2068231052
-    Data2: 1103607541
-    Data3: 1136178051
-    Data4: 125834799
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 350475474868943830}
-  - {fileID: -3591104909939908479}
-  - {fileID: -4109222710461899136}
-  MinDistance: 0.1
-  MaxDistance: 2.2
-  Length: 17958
---- !u!114 &-5064396633903207912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneLF2/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-4661420711246066950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambi/Scorched Earth
-  m_EditorClassIdentifier: 
-  Path: event:/Ambi/Scorched Earth
-  Guid:
-    Data1: -1829657042
-    Data2: 1218041811
-    Data3: -111641695
-    Data4: -1791071754
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0.5
-  MaxDistance: 30
-  Length: 34594
---- !u!114 &-4526321474836854421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Player Geting Hurt
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Player Geting Hurt
-  Guid:
-    Data1: -1900654774
-    Data2: 1229814746
-    Data3: 228929714
-    Data4: 2030992761
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-4389076584080268106
+  Length: 42500
+--- !u!114 &-6782744342122491519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -601,58 +134,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-4322681924865498310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Player death
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Player death
-  Guid:
-    Data1: 793046664
-    Data2: 1168325005
-    Data3: 566627491
-    Data4: 1252716497
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-4109222710461899136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Motor/Car Lvl
-  m_EditorClassIdentifier: 
-  Name: Car Lvl
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 2537291187
-    data2: 3067985771
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-3846541429161681405
+--- !u!114 &-6605653131729995031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -676,135 +158,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-3846468452577032828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone1/ZoneRL1
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone1/ZoneRL1
-  Guid:
-    Data1: 1585814737
-    Data2: 1079667070
-    Data3: 564938389
-    Data4: 1947704623
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 9040724246162769032}
-  MinDistance: 0
-  MaxDistance: 50
-  Length: 47567
---- !u!114 &-3814790498772518510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone3/ZoneLF3
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone3/ZoneLF3
-  Guid:
-    Data1: -469166592
-    Data2: 1324880697
-    Data3: -473965174
-    Data4: -16278830
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7182573060734541347}
-  MinDistance: 0
-  MaxDistance: 50
-  Length: 42594
---- !u!114 &-3591104909939908479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Motor/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 60
-  Default: 30
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-3193214894253684733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneCJ3/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 60
-  Default: 30
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-3137272172361633031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneRL2/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-2884949399318992505
+--- !u!114 &-6435982436078188689
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -828,327 +182,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-2875677037867608750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Car Lvl
-  m_EditorClassIdentifier: 
-  Name: Car Lvl
-  StudioPath: parameter:/Vehicle/Car Lvl
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 2537291187
-    data2: 3067985771
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-2607085943357291034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Desktop/Master.bank
-  Name: Desktop/Master
-  StudioPath: bank:/Master
-  lastModified: 637874257551068782
-  FileSizes: []
-  Exists: 1
---- !u!114 &-2018297688957481780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambi/Flora hadling sounds
-  m_EditorClassIdentifier: 
-  Path: event:/Ambi/Flora hadling sounds
-  Guid:
-    Data1: 1212578277
-    Data2: 1282144340
-    Data3: 184740279
-    Data4: -1084304530
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2656
---- !u!114 &-1946513075293360522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Player Geting Hurt
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Player Geting Hurt
-  Guid:
-    Data1: -1900654774
-    Data2: 1229814746
-    Data3: 228929714
-    Data4: 2030992761
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1763695706194361707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone1/ZoneRL1
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone1/ZoneRL1
-  Guid:
-    Data1: 1585814737
-    Data2: 1079667070
-    Data3: 564938389
-    Data4: 1947704623
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 4294827143549356632}
-  MinDistance: 0
-  MaxDistance: 50
-  Length: 34555
---- !u!114 &-1521670773957575327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone1/ZoneCJ1
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone1/ZoneCJ1
-  Guid:
-    Data1: 1789288174
-    Data2: 1310794796
-    Data3: 1518622107
-    Data4: 1145528212
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -5517984180013049526}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 42500
---- !u!114 &-1462599283882982112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wind System/WindIntesty
-  m_EditorClassIdentifier: 
-  Name: WindIntesty
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 118670203
-    data2: 4129383344
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &-1234142488811823581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Desktop/Master.strings.bank
-  Name: Desktop/Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637864753284816757
-  FileSizes:
-  - Name: 
-    Value: 1964
-  Exists: 1
---- !u!114 &-940296578537501086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Vehicle Wind
-  m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Vehicle Wind
-  Guid:
-    Data1: 141407814
-    Data2: 1303706985
-    Data3: -510693749
-    Data4: 1863036973
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 1103729132693623847}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 560267498135049950}
-  - {fileID: -2607085943357291034}
-  EditorEvents:
-  - {fileID: -3814790498772518510}
-  - {fileID: -6386943139187375686}
-  - {fileID: 2366910215540563867}
-  - {fileID: -6024149986228006396}
-  - {fileID: -7778889794375414696}
-  - {fileID: -5508008569043815444}
-  - {fileID: -1946513075293360522}
-  - {fileID: -5234563152480966535}
-  - {fileID: -4322681924865498310}
-  - {fileID: 3064753065470275964}
-  - {fileID: 4730779764569106364}
-  - {fileID: -3846468452577032828}
-  - {fileID: 6602206290848024410}
-  - {fileID: -2018297688957481780}
-  - {fileID: -7379465812176224857}
-  - {fileID: -6460850242016801570}
-  - {fileID: 7900821374933184218}
-  - {fileID: -1521670773957575327}
-  - {fileID: 8953265147118086199}
-  - {fileID: -940296578537501086}
-  - {fileID: 6734126515238550641}
-  EditorParameters:
-  - {fileID: 271399194129120926}
-  - {fileID: 3951380021854401087}
-  - {fileID: -5711416411356705721}
-  - {fileID: 2331972871502024329}
-  MasterBanks:
-  - {fileID: -2607085943357291034}
-  StringsBanks:
-  - {fileID: 560267498135049950}
-  cacheTime: 637874257551068782
-  cacheVersion: 10
---- !u!114 &271399194129120926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: parameter:/Elevation Y axen
-  Min: 0
-  Max: 60
-  Default: 30
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &315331259269508154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneRL3/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &350475474868943830
+--- !u!114 &-5833502434936000783
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1172,256 +206,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &560267498135049950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Desktop/Master.strings.bank
-  Name: Desktop/Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637873662336894317
-  FileSizes:
-  - Name: 
-    Value: 2204
-  Exists: 1
---- !u!114 &600557650524340202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Vehicle Exit
-  m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Vehicle Exit
-  Guid:
-    Data1: 1838321369
-    Data2: 1199333207
-    Data3: 797771394
-    Data4: 1558026729
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &851592598875442860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/StreamingAssets/Desktop/Master.bank
-  Name: Desktop/Master
-  StudioPath: bank:/Master
-  lastModified: 637864753284756923
-  FileSizes: []
-  Exists: 1
---- !u!114 &1103729132693623847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Vehicle Wind/WindIntesty
-  m_EditorClassIdentifier: 
-  Name: WindIntesty
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 118670203
-    data2: 4129383344
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &1393176447341687621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambi/Wind System
-  m_EditorClassIdentifier: 
-  Path: event:/Ambi/Wind System
-  Guid:
-    Data1: -389373641
-    Data2: 1273764428
-    Data3: 235063717
-    Data4: -1516151928
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 9207035514297628507}
-  - {fileID: -1462599283882982112}
-  MinDistance: 0
-  MaxDistance: 30
-  Length: 35500
---- !u!114 &1518832119778062683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Vehicle Enter/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 60
-  Default: 30
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &2331972871502024329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Car Lvl
-  m_EditorClassIdentifier: 
-  Name: Car Lvl
-  StudioPath: parameter:/Vehicle/Car Lvl
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 2537291187
-    data2: 3067985771
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &2366910215540563867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Vehicle Enter
-  m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Vehicle Enter
-  Guid:
-    Data1: 126515496
-    Data2: 1315989013
-    Data3: 741141416
-    Data4: 140617813
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 1518832119778062683}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3000
---- !u!114 &2482286126080201453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone2/ZoneRL2
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone2/ZoneRL2
-  Guid:
-    Data1: 1784541729
-    Data2: 1242425185
-    Data3: -1872032069
-    Data4: 597220779
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -3137272172361633031}
-  MinDistance: 0
-  MaxDistance: 50
-  Length: 34594
---- !u!114 &3064753065470275964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Slides
-  m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Slides
-  Guid:
-    Data1: -602084958
-    Data2: 1335746332
-    Data3: 2051529660
-    Data4: -555602793
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &3886911980567074456
+--- !u!114 &-3902516089179282345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1445,7 +230,384 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &3951380021854401087
+--- !u!114 &-3427783775777278880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player Geting Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player Geting Hurt
+  Guid:
+    Data1: -1900654774
+    Data2: 1229814746
+    Data3: 228929714
+    Data4: 2030992761
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2148967373328574242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ZoneCJ3/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-1726964296881609325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vehicle/Vehicle Exit
+  m_EditorClassIdentifier: 
+  Path: event:/Vehicle/Vehicle Exit
+  Guid:
+    Data1: 1838321369
+    Data2: 1199333207
+    Data3: 797771394
+    Data4: 1558026729
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1635286690733226554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vehicle Enter/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-1106295516910088101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vehicle/Vehicle Collider
+  m_EditorClassIdentifier: 
+  Path: event:/Vehicle/Vehicle Collider
+  Guid:
+    Data1: 1754934584
+    Data2: 1195311767
+    Data3: 1154582938
+    Data4: 107197165
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &-179119342422191057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Flashlight
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Flashlight
+  Guid:
+    Data1: -461996321
+    Data2: 1258247971
+    Data3: -1806334052
+    Data4: 1760254340
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 8326157559198863775}
+  - {fileID: 2457082863670650764}
+  EditorEvents:
+  - {fileID: 7121588059149288956}
+  - {fileID: -8432021841233092535}
+  - {fileID: 8040487502827966276}
+  - {fileID: -8837363282759389358}
+  - {fileID: 8986276607180065773}
+  - {fileID: 6575381302218601539}
+  - {fileID: -1106295516910088101}
+  - {fileID: -7009436039207510742}
+  - {fileID: 8527804472085635384}
+  - {fileID: -3427783775777278880}
+  - {fileID: 3887144395825555251}
+  - {fileID: 785775591348020507}
+  - {fileID: 8268259785208581606}
+  - {fileID: 2117752916597058527}
+  - {fileID: 9133338319902970128}
+  - {fileID: 1151237702574459466}
+  - {fileID: -1726964296881609325}
+  - {fileID: -179119342422191057}
+  - {fileID: -8476643550764983482}
+  - {fileID: 4635591925155298278}
+  - {fileID: 8212043705597321848}
+  EditorParameters:
+  - {fileID: 7211633582477303512}
+  - {fileID: 3210666229996061721}
+  - {fileID: 5841916226271524065}
+  - {fileID: 2827427322087665128}
+  MasterBanks:
+  - {fileID: 2457082863670650764}
+  StringsBanks:
+  - {fileID: 8326157559198863775}
+  cacheTime: 637874469824976713
+  cacheVersion: 10
+--- !u!114 &785775591348020507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player death
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player death
+  Guid:
+    Data1: 793046664
+    Data2: 1168325005
+    Data3: 566627491
+    Data4: 1252716497
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1151237702574459466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone1/ZoneRL1
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone1/ZoneRL1
+  Guid:
+    Data1: 1585814737
+    Data2: 1079667070
+    Data3: 564938389
+    Data4: 1947704623
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4928854977017586139}
+  MinDistance: 0
+  MaxDistance: 50
+  Length: 47567
+--- !u!114 &2117752916597058527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone2/ZoneLF2
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone2/ZoneLF2
+  Guid:
+    Data1: -149571396
+    Data2: 1212726695
+    Data3: 1210414989
+    Data4: 1382324618
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3494366341607730795}
+  MinDistance: 0
+  MaxDistance: 50
+  Length: 42594
+--- !u!114 &2155185755841775347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ZoneLF1/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2457082863670650764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 637874469824976713
+  FileSizes: []
+  Exists: 1
+--- !u!114 &2827427322087665128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Car Lvl
+  m_EditorClassIdentifier: 
+  Name: Car Lvl
+  StudioPath: parameter:/Vehicle/Car Lvl
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 2537291187
+    data2: 3067985771
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3064128809312397349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Wind System/WindIntesty
+  m_EditorClassIdentifier: 
+  Name: WindIntesty
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 118670203
+    data2: 4129383344
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3210666229996061721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1469,7 +631,137 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &4294827143549356632
+--- !u!114 &3396548079886903066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vehicle Wind/WindIntesty
+  m_EditorClassIdentifier: 
+  Name: WindIntesty
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 118670203
+    data2: 4129383344
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3494366341607730795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ZoneLF2/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3887144395825555251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vehicle/Motor
+  m_EditorClassIdentifier: 
+  Path: event:/Vehicle/Motor
+  Guid:
+    Data1: -2068231052
+    Data2: 1103607541
+    Data3: 1136178051
+    Data4: 125834799
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5833502434936000783}
+  - {fileID: 8846050209042961545}
+  - {fileID: -6782744342122491519}
+  MinDistance: 0.1
+  MaxDistance: 2.2
+  Length: 17958
+--- !u!114 &4172238617501046657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ZoneCJ1/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &4635591925155298278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone1/ZoneCJ1
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone1/ZoneCJ1
+  Guid:
+    Data1: 1789288174
+    Data2: 1310794796
+    Data3: 1518622107
+    Data4: 1145528212
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4172238617501046657}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42500
+--- !u!114 &4928854977017586139
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1484,243 +776,6 @@ MonoBehaviour:
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &4730779764569106364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone2/ZoneLF2
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone2/ZoneLF2
-  Guid:
-    Data1: -149571396
-    Data2: 1212726695
-    Data3: 1210414989
-    Data4: 1382324618
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -6075449299319331230}
-  MinDistance: 0
-  MaxDistance: 50
-  Length: 42594
---- !u!114 &4908187999380180841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone2/ZoneLF2
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone2/ZoneLF2
-  Guid:
-    Data1: -149571396
-    Data2: 1212726695
-    Data3: 1210414989
-    Data4: 1382324618
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -5064396633903207912}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 34594
---- !u!114 &5089408459654681952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Motor/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &5670603683852953428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambi/Flora hadling sounds
-  m_EditorClassIdentifier: 
-  Path: event:/Ambi/Flora hadling sounds
-  Guid:
-    Data1: 1212578277
-    Data2: 1282144340
-    Data3: 184740279
-    Data4: -1084304530
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2656
---- !u!114 &5949760344786461721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/RPM
-  m_EditorClassIdentifier: 
-  Name: RPM
-  StudioPath: parameter:/Vehicle/RPM
-  Min: 0
-  Max: 2000
-  Default: 0
-  ID:
-    data1: 1019152161
-    data2: 988637408
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &6602206290848024410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Vehicle Exit
-  m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Vehicle Exit
-  Guid:
-    Data1: 1838321369
-    Data2: 1199333207
-    Data3: 797771394
-    Data4: 1558026729
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &6728700971439936713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone1/ZoneLF1
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone1/ZoneLF1
-  Guid:
-    Data1: -96337609
-    Data2: 1324600744
-    Data3: 774935716
-    Data4: -613390300
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7480336138702225565}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 34594
---- !u!114 &6734126515238550641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Vehicle Collider
-  m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Vehicle Collider
-  Guid:
-    Data1: 1754934584
-    Data2: 1195311767
-    Data3: 1154582938
-    Data4: 107197165
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
---- !u!114 &7182573060734541347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneLF3/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
   Max: 60
   Default: 30
   ID:
@@ -1730,86 +785,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &7475652980052050605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Player death
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Player death
-  Guid:
-    Data1: 793046664
-    Data2: 1168325005
-    Data3: 566627491
-    Data4: 1252716497
-  Banks:
-  - {fileID: 851592598875442860}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &7843727447806539879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneLF3/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &7900821374933184218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Musik/Zone3/ZoneCJ3
-  m_EditorClassIdentifier: 
-  Path: event:/Musik/Zone3/ZoneCJ3
-  Guid:
-    Data1: -1871881793
-    Data2: 1268017154
-    Data3: -925749089
-    Data4: -1892051222
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -3193214894253684733}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 34600
---- !u!114 &8280586949011649784
+--- !u!114 &5178187006417414271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1833,7 +809,164 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &8608013347518179200
+--- !u!114 &5645658946009412283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ZoneLF3/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &5841916226271524065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/RPM
+  m_EditorClassIdentifier: 
+  Name: RPM
+  StudioPath: parameter:/Vehicle/RPM
+  Min: -800
+  Max: 800
+  Default: 0
+  ID:
+    data1: 1019152161
+    data2: 988637408
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &6575381302218601539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Wind System
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Wind System
+  Guid:
+    Data1: -389373641
+    Data2: 1273764428
+    Data3: 235063717
+    Data4: -1516151928
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6605653131729995031}
+  - {fileID: 3064128809312397349}
+  MinDistance: 0
+  MaxDistance: 30
+  Length: 35500
+--- !u!114 &7121588059149288956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone3/ZoneLF3
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone3/ZoneLF3
+  Guid:
+    Data1: -469166592
+    Data2: 1324880697
+    Data3: -473965174
+    Data4: -16278830
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5645658946009412283}
+  MinDistance: 0
+  MaxDistance: 50
+  Length: 42594
+--- !u!114 &7211633582477303512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: parameter:/Elevation Y axen
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8040487502827966276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vehicle/Vehicle Enter
+  m_EditorClassIdentifier: 
+  Path: event:/Vehicle/Vehicle Enter
+  Guid:
+    Data1: 126515496
+    Data2: 1315989013
+    Data3: 741141416
+    Data4: 140617813
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1635286690733226554}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
+--- !u!114 &8212043705597321848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1852,67 +985,16 @@ MonoBehaviour:
     Data3: -1129611605
     Data4: 974446297
   Banks:
-  - {fileID: 851592598875442860}
+  - {fileID: 2457082863670650764}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 315331259269508154}
+  - {fileID: -3902516089179282345}
   MinDistance: 0
   MaxDistance: 50
-  Length: 34594
---- !u!114 &8953265147118086199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Flashlight
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Flashlight
-  Guid:
-    Data1: -461996321
-    Data2: 1258247971
-    Data3: -1806334052
-    Data4: 1760254340
-  Banks:
-  - {fileID: -2607085943357291034}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &9040724246162769032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneRL1/Elevation Y axen
-  m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
-  Min: 0
-  Max: 60
-  Default: 30
-  ID:
-    data1: 44443144
-    data2: 2883253264
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &9119151067572617692
+  Length: 41081
+--- !u!114 &8268259785208581606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1931,7 +1013,7 @@ MonoBehaviour:
     Data3: 2051529660
     Data4: -555602793
   Banks:
-  - {fileID: 851592598875442860}
+  - {fileID: 2457082863670650764}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1939,7 +1021,55 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &9207035514297628507
+--- !u!114 &8326157559198863775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.strings.bank
+  Name: Desktop/Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637874291280747076
+  FileSizes:
+  - Name: 
+    Value: 2204
+  Exists: 1
+--- !u!114 &8527804472085635384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Vehicle/Vehicle Wind
+  m_EditorClassIdentifier: 
+  Path: event:/Vehicle/Vehicle Wind
+  Guid:
+    Data1: 141407814
+    Data2: 1303706985
+    Data3: -510693749
+    Data4: 1863036973
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3396548079886903066}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8846050209042961545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1949,13 +1079,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wind System/Elevation Y axen
+  m_Name: parameter:/Motor/Elevation Y axen
   m_EditorClassIdentifier: 
   Name: Elevation Y axen
   StudioPath: 
   Min: 0
-  Max: 100
-  Default: 0
+  Max: 60
+  Default: 30
   ID:
     data1: 44443144
     data2: 2883253264
@@ -1963,3 +1093,59 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &8986276607180065773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone1/ZoneLF1
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone1/ZoneLF1
+  Guid:
+    Data1: -96337609
+    Data2: 1324600744
+    Data3: 774935716
+    Data4: -613390300
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2155185755841775347}
+  MinDistance: 0
+  MaxDistance: 50
+  Length: 46594
+--- !u!114 &9133338319902970128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Zone3/ZoneCJ3
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Zone3/ZoneCJ3
+  Guid:
+    Data1: -1871881793
+    Data2: 1268017154
+    Data3: -925749089
+    Data4: -1892051222
+  Banks:
+  - {fileID: 2457082863670650764}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2148967373328574242}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34600
