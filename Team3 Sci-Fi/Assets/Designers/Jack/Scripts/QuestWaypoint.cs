@@ -8,11 +8,10 @@ using TMPro;
 public class QuestWaypoint : MonoBehaviour
 {
     public Image questMarker;
-    [SerializeField] private Transform[] target = new Transform[5];
     [HideInInspector] public int targetArrayValue;
-    [SerializeField] private string[] activeQuestString = new string[10];
     [HideInInspector] public int activeQuestArrayValue;
-    
+    public QuestArrays qa;
+
     public TMP_Text meter;
     public TMP_Text activeQuest;
 
@@ -31,9 +30,9 @@ public class QuestWaypoint : MonoBehaviour
         float minY = questMarker.GetPixelAdjustedRect().height / 2;
         float maxY = Screen.width - minY;
         
-        Vector2 pos = Camera.main.WorldToScreenPoint(target[targetArrayValue].position);
+        Vector2 pos = Camera.main.WorldToScreenPoint(qa.target[targetArrayValue].position);
 
-        if(Vector3.Dot((target[targetArrayValue].position - transform.position), transform.forward) < 0)
+        if(Vector3.Dot((qa.target[targetArrayValue].position - transform.position), transform.forward) < 0)
         {
             if(pos.x < Screen.width / 2)
             {
@@ -49,9 +48,9 @@ public class QuestWaypoint : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, minY, maxY);
         
         questMarker.transform.position = pos;
-        meter.text = ((int)Vector3.Distance(target[targetArrayValue].position, transform.position)).ToString() + " m";
-        activeQuest.text = activeQuestString[activeQuestArrayValue];
-
+        meter.text = (int)Vector3.Distance(qa.target[targetArrayValue].position, transform.position) + " m";
+        activeQuest.text = qa.activeQuestString[activeQuestArrayValue];
+        
         if (Input.GetKeyDown(KeyCode.Q))
         {
             StartCoroutine(ToggleQuestMarker());
