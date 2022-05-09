@@ -5,11 +5,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class KeyPadPower : MonoBehaviour
+public class KeyPadPower2 : MonoBehaviour
 {
     [SerializeField] private GameObject keyPadHolder;
-    [SerializeField] private VehicleUpgradeObject vehicleUpgrade;
-    [SerializeField] private DialogueTrigger lockedDialogue;
     [SerializeField] private Image inputBox;
     [SerializeField] private TextMeshProUGUI NumberInput;
     [SerializeField] private int passwordLength;
@@ -19,26 +17,20 @@ public class KeyPadPower : MonoBehaviour
     [SerializeField] private Animator anim;
     public string interactMessage;
     private bool inKeyPad;
-    public bool correctCode;
+    public bool correctCodePuzzle2;
     private MouseLook fpsView;
     private InteractionManager interact;
-    public GameObject dialogueTriggerOnComplete;
-    public Light lampPost1;
-    public Light lampPost2;
-    
     
 
     private void Start()
     {
-        correctCode = false;
+        correctCodePuzzle2 = false;
         fpsView = FindObjectOfType<MouseLook>();
         interact = FindObjectOfType<InteractionManager>();
     }
 
     private void Update()
     {
-   
-        
         if (!Input.GetKeyDown(KeyCode.E))
         {
             return;
@@ -77,19 +69,13 @@ public class KeyPadPower : MonoBehaviour
     {
         if (NumberInput.text == correctPassword)
         {
-            lockedDialogue.enabled = false;
-            vehicleUpgrade.enabled = true;
             inputBox.color = Color.green;
             anim.SetTrigger("Go away");
             inKeyPad = false;
-            correctCode = true;
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
-            dialogueTriggerOnComplete.SetActive(true);
             thisKeypad.enabled = false;
-            lampPost1.color = Color.green;
-            lampPost2.color = Color.green;
         }
     }
     public void BackSpaceButton()
