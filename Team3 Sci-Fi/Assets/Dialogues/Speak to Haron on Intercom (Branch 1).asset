@@ -102,7 +102,7 @@ MonoBehaviour:
     text: "If I have to hurt one more person I\u2019ll make it cost you. \r"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "No more hurting anyone. There is a gallium quarry further into the valley,
-      some way past Thesalon. Just head over there, get the gallium and come back.\r"
+      some way past Thasalon. Just head over there, get the gallium and come back.\r"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Just go as far away as possible in the valley and you should find the
       place. \r"
@@ -144,7 +144,7 @@ MonoBehaviour:
     text: "If I have to hurt one more person I\u2019ll make it cost you. \r"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "No more hurting anyone. There is a gallium quarry further into the valley,
-      some way past Thesalon. Just head over there, get the gallium and come back.\r"
+      some way past Thasalon. Just head over there, get the gallium and come back.\r"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Just go as far away as possible in the valley and you should find the
       place. \r"
@@ -157,4 +157,5 @@ MonoBehaviour:
   onReturnDialogue:
     character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: 
-  isDialogueFinishedChoice: 0
+  isDialogueFinished: 0
+  talking: 0
