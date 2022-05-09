@@ -533,7 +533,7 @@ PrefabInstance:
     - target: {fileID: 782933237033418641, guid: a11525c2bdeac034dbf48d8b6aaec185,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.66
+      value: -42.44
       objectReference: {fileID: 0}
     - target: {fileID: 782933237033418641, guid: a11525c2bdeac034dbf48d8b6aaec185,
         type: 3}
@@ -543,7 +543,7 @@ PrefabInstance:
     - target: {fileID: 782933237033418641, guid: a11525c2bdeac034dbf48d8b6aaec185,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.02
+      value: -44.9
       objectReference: {fileID: 0}
     - target: {fileID: 782933237033418641, guid: a11525c2bdeac034dbf48d8b6aaec185,
         type: 3}
@@ -2547,8 +2547,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: Button7
         m_Mode: 1
         m_Arguments:
@@ -2913,8 +2913,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: Button2
         m_Mode: 1
         m_Arguments:
@@ -3527,8 +3527,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: Button4
         m_Mode: 1
         m_Arguments:
@@ -3737,8 +3737,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: Button8
         m_Mode: 1
         m_Arguments:
@@ -3832,9 +3832,6 @@ MonoBehaviour:
     m_Bits: 64
   interactionRange: 10
   anim: {fileID: 0}
-  qw: {fileID: 0}
-  waypoint: {fileID: 0}
-  activeQuest: {fileID: 0}
   interactMessage: 
   correctCode: 0
   dialogueTriggerOnComplete: {fileID: 0}
@@ -5475,8 +5472,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: Button6
         m_Mode: 1
         m_Arguments:
@@ -6442,17 +6439,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f938ab8bdfc26b45b92ec2ef884635a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyPadHolder: {fileID: 0}
-  inputBox: {fileID: 0}
-  NumberInput: {fileID: 0}
-  passwordLength: 0
-  correctPassword: 
+  keyPadHolder: {fileID: 1305072269}
+  inputBox: {fileID: 83168339}
+  NumberInput: {fileID: 1511127180}
+  passwordLength: 4
+  correctPassword: 1234
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
   interactionRange: 10
-  anim: {fileID: 0}
-  interactMessage: 
+  anim: {fileID: 1305072273}
+  interactMessage: Press E to interact
   correctCodePuzzle2: 0
 --- !u!23 &785019894
 MeshRenderer:
@@ -13538,8 +13535,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: Button3
         m_Mode: 1
         m_Arguments:
@@ -14651,6 +14648,7 @@ GameObject:
   - component: {fileID: 1305072270}
   - component: {fileID: 1305072272}
   - component: {fileID: 1305072271}
+  - component: {fileID: 1305072273}
   m_Layer: 5
   m_Name: KeyPad 2
   m_TagString: Untagged
@@ -14688,7 +14686,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 750}
+  m_SizeDelta: {x: 470, y: 725}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305072271
 MonoBehaviour:
@@ -14728,6 +14726,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305072269}
   m_CullTransparentMesh: 1
+--- !u!95 &1305072273
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305072269}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 40ece865dc5719745ab8606c1228293b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1349298523
 GameObject:
   m_ObjectHideFlags: 0
@@ -15357,8 +15375,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: BackSpaceButton
         m_Mode: 1
         m_Arguments:
@@ -15510,7 +15528,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1234
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16119,8 +16137,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: Button1
         m_Mode: 1
         m_Arguments:
@@ -17822,8 +17840,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: Button9
         m_Mode: 1
         m_Arguments:
@@ -17956,8 +17974,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: OkButton
         m_Mode: 1
         m_Arguments:
@@ -18090,8 +18108,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 324215398}
-        m_TargetAssemblyTypeName: KeyPadPower, Assembly-CSharp
+      - m_Target: {fileID: 785019893}
+        m_TargetAssemblyTypeName: KeyPadPower2, Assembly-CSharp
         m_MethodName: Button5
         m_Mode: 1
         m_Arguments:
