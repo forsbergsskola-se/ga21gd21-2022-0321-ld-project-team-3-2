@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
@@ -21,6 +22,8 @@ public class PlayerHealthManager : MonoBehaviour
     [SerializeField] private Transform vehicleFront;
     [SerializeField] private Transform vehicleBack;
     private EnterOrExitVehicle vehicleEnter;
+    [SerializeField] private Image vignette;
+    [SerializeField] private Image veins;
     public bool isDead
     {
         get;
@@ -39,6 +42,16 @@ public class PlayerHealthManager : MonoBehaviour
         {
             Death();
         }
+        
+        var vignetteColor = vignette.color;
+        var veinsColor = veins.color;
+        vignetteColor.a = Mathf.Abs(currentHealth * 0.01f-1);
+        veinsColor.a = Mathf.Abs(currentHealth * 0.01f-1) -0.2f;
+        
+        vignette.color = vignetteColor;
+        veins.color = veinsColor;
+
+
     }
 
     private void Start()
@@ -54,7 +67,7 @@ public class PlayerHealthManager : MonoBehaviour
         {
             Death();
         }
-
+        
         if (currentHealth > maxHealth * 0.67f)
         {
             healthIndicator.color = Color.cyan;
