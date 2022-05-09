@@ -12,30 +12,25 @@ public class ScorchedEarthDamageField : MonoBehaviour
     public LayerMask vehicleLayer;
     private PlayerHealthManager playerHealth;
     private Collider damageField;
-    private bool isPlayerIn;
-    private bool isVehicleIn;
-   
+    private EnterOrExitVehicle enterVehicle;
 
     private GameProgressionManager gameProgress;
 
     private void Start()
     {
+        enterVehicle = FindObjectOfType<EnterOrExitVehicle>();
         gameProgress = FindObjectOfType<GameProgressionManager>();
         playerHealth = FindObjectOfType<PlayerHealthManager>();
         damageField = GetComponent<Collider>();
-        
     }
 
     private void FixedUpdate()
     {
-        isPlayerIn = Physics.CheckBox(damageField.bounds.center,damageField.bounds.extents,quaternion.Euler(0),playerLayer);
-        isVehicleIn = Physics.CheckBox(damageField.bounds.center,damageField.bounds.extents,quaternion.Euler(0),vehicleLayer);
-        
-        if (isPlayerIn)
+        if (Physics.CheckBox(damageField.bounds.center,damageField.bounds.extents,quaternion.Euler(0),playerLayer) && !enterVehicle.inCar)
         {
             playerHealth.TakeDamage(damagePerFrame);
         }
-        else if (isVehicleIn)
+        else if (Physics.CheckBox(damageField.bounds.center,damageField.bounds.extents,quaternion.Euler(0),vehicleLayer) && enterVehicle.inCar)
         {
             if (!gameProgress.hasScorchedEarthUpgrade)
             {
