@@ -1547,6 +1547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5166340318806129478}
+  - component: {fileID: 7771631801495948222}
   m_Layer: 0
   m_Name: Bigger-FrameWithWalls
   m_TagString: Untagged
@@ -1575,6 +1576,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7771631801495948222
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5951853326150016982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.064697, y: 5.8004456, z: 5.907715}
+  m_Center: {x: 1.9351807, y: 0.36320496, z: -2.781067}
 --- !u!1 &6139113792742787651
 GameObject:
   m_ObjectHideFlags: 0
