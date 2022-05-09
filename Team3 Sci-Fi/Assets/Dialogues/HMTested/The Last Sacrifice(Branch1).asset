@@ -26,13 +26,13 @@ MonoBehaviour:
     text: "You have had your moment of heroism, but no plan.\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "Look! Look at how the hunter became the hunted! \r"
+    text: "Look! Look at how the hero became the villain!\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "How the hero became the villain!\r"
+    text: How the brave became the weak!
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "How the rebel became a corpse!\r"
+    text: How the rebel became a corpse!.
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Kahir, kill him.\r"
