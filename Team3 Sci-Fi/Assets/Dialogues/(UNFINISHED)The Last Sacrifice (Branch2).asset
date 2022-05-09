@@ -28,13 +28,10 @@ MonoBehaviour:
 '
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "Look! Look at how the runner boy became \r\n(Skriv klart meningen)"
+    text: "Look! Look at how the hero became the villain!\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "How the hero became the villain!\r"
-    isChoiceTrigger: 0
-  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "How the rebel will become a corpse.\r"
+    text: How the rebel became a corpse.
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Kahir, kill him.\r"
@@ -56,13 +53,45 @@ MonoBehaviour:
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "You\u2019re a good friend. \r"
-    isChoiceTrigger: 0
+    isChoiceTrigger: 1
   answer1: Fuck you
-  linesBranch1: []
-  answer2: 
-  linesBranch2: []
+  linesBranch1:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Fuck you Kahir, all you do is follow orders.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: And you...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Captain
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: You are nothing more than a murderer.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 'Kahir! Kill this worm! '
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: NOW!
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "I'm sorry R\xF3han."
+  answer2: It is not your fault
+  linesBranch2:
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: It is not your fault Kahir.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: I know you have to do this.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: 'But please, think about it. '
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: We can make it out of here, together.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 'Kahir! Kill this worm! '
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: NOW!
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I'm sorry R\xF3han."
   onReturnDialogue:
-    character: {fileID: 0}
+    character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: 
   isDialogueFinished: 0
   talking: 0
