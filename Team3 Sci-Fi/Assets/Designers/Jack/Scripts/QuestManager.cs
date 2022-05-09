@@ -15,7 +15,7 @@ public class QuestManager : MonoBehaviour
 
     private void PuzzleOneQuest()
     {
-        if (keyPad.correctCode)
+        if(keyPad.correctCode)
         {
             while (cw.targetArrayValue <= 1)
             {
