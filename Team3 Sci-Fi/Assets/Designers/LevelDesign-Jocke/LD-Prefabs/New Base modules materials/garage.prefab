@@ -175,7 +175,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2216137748968486446}
-  m_Layer: 0
+  - component: {fileID: 6750758107189660345}
+  - component: {fileID: 1067252197}
+  m_Layer: 8
   m_Name: garage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +191,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552225808622939284}
-  m_LocalRotation: {x: -0, y: 0.752066, z: -0, w: 0.6590877}
+  m_LocalRotation: {x: 0, y: 0.75206417, z: 0, w: 0.6590899}
   m_LocalPosition: {x: 2913.85, y: 397.38, z: 1340.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -204,6 +206,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 97.539, z: 0}
+--- !u!65 &6750758107189660345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552225808622939284}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.904377, y: 10.470154, z: 12.012499}
+  m_Center: {x: -1.7854575, y: 0.05328369, z: 0.041419476}
+--- !u!65 &1067252197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552225808622939284}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.7429314, y: 6.681885, z: 0.7921354}
+  m_Center: {x: -1.7915685, y: -0.81170654, z: 5.9761195}
 --- !u!1 &4413318286727182524
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +576,7 @@ GameObject:
   - component: {fileID: 1724585611980942667}
   - component: {fileID: 7150337894787367925}
   - component: {fileID: 8542698613236717990}
+  - component: {fileID: 6284240170903406021}
   m_Layer: 0
   m_Name: ramp_low_Plane.003
   m_TagString: Untagged
@@ -620,3 +649,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6284240170903406021
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9184108472084908832}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 408646834840645819, guid: 7f4714d5fc3371847a1cd9f7c5d11ffe, type: 3}
