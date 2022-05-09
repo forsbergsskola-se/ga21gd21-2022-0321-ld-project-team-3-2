@@ -75,16 +75,15 @@ public class PlayerHealthManager : MonoBehaviour
     public void Death()
     {
         isDead = true;
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        //Move player and vehicle to last checkpoint or game start
         if (vehicleEnter.inCar)
         {
             vehicleEnter.ExitCarOnDeath();
         }
-        vehicleFront.position = gameProgress.CheckPoints[gameProgress.currentCheckpoint].position + new Vector3(7, 1, 0);
-        vehicleBack.position = vehicleFront.position + new Vector3(0, 0, -10);
-        player.position = gameProgress.CheckPoints[gameProgress.currentCheckpoint].position;
+        vehicleFront.position = new Vector3(0, 3, 7.77f) + gameProgress.CheckPoints[gameProgress.currentCheckpoint].position;
+        vehicleBack.position = new Vector3(0, 3, -2.5f) + gameProgress.CheckPoints[gameProgress.currentCheckpoint].position;
+        player.position = gameProgress.CheckPoints[gameProgress.currentCheckpoint].position + new Vector3(3,0,0);
         isDead = false;
+        currentHealth = maxHealth;
     }
 
     private void RegenerateHealth()
