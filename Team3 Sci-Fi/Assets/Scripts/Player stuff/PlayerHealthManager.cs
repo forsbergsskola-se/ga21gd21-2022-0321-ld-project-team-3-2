@@ -32,8 +32,15 @@ public class PlayerHealthManager : MonoBehaviour
         private set;
     }
 
-    
-    
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Death();
+        }
+    }
+
     private void Start()
     {
         vehicleEnter = FindObjectOfType<EnterOrExitVehicle>();
