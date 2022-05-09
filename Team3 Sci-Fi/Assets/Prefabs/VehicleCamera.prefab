@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1748182937377609204}
   - component: {fileID: 1748182937377609208}
   - component: {fileID: 1748182937377609215}
-  - component: {fileID: 2888427224236606345}
   m_Layer: 0
   m_Name: VehicleCamera
   m_TagString: MainCamera
@@ -261,24 +260,3 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2888427224236606345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1748182937377609205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cda561f971deae40b1c3321c89e9bb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questMarker: {fileID: 0}
-  target:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  targetArrayValue: 0
-  meter: {fileID: 0}
