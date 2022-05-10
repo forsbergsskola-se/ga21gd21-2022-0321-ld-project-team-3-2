@@ -12,7 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946dfe94e17d0d1428a8a3ebe623f0fa, type: 3}
   m_Name: Kill habitant or not
   m_EditorClassIdentifier: 
-  linesInitial: []
+  linesInitial:
+  - character: {fileID: 11400000, guid: 4536830c4fdc98e478e250cc91d2b65e, type: 2}
+    text: '*Muffled screams*'
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Is someone in there?
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Better call Kahir.
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: 'Hey Kahir, you hear me? '
+    isChoiceTrigger: 0
   answer1: 
   linesBranch1: []
   answer2: 
@@ -20,4 +32,5 @@ MonoBehaviour:
   onReturnDialogue:
     character: {fileID: 0}
     text: 
-  isDialogueFinishedChoice: 0
+  isDialogueFinished: 0
+  talking: 0
