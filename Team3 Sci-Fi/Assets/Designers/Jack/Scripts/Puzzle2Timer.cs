@@ -8,7 +8,7 @@ public class Puzzle2Timer : MonoBehaviour
 
     [SerializeField] private QuestPuzzle2 waypoints;
     private Collider thisColl;
-    private int waitForSeconds = 5;
+    [SerializeField] private int waitForSeconds;
 
     private void OnTriggerEnter(Collider other)
     {
