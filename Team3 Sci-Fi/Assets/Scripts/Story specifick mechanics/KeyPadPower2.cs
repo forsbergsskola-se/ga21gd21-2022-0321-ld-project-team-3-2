@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -76,6 +77,10 @@ public class KeyPadPower2 : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
+            Destroy(waypoints.waypoint[0]);
+            Destroy(waypoints.waypoint[1]);
+            Destroy(waypoints.waypoint[2]);
+            Destroy(waypoints.waypoint[3]);
             Destroy(waypoints);
             thisKeypad.enabled = false;
         }
