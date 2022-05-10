@@ -5538,7 +5538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &614454764
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12838,7 +12838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &940740483
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13219,6 +13219,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   inCar: 0
+  interactMessage: Click to enter
 --- !u!1 &986409605
 GameObject:
   m_ObjectHideFlags: 0
@@ -19817,6 +19818,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250557047500762688, guid: 7fd0b6b716b28c143bff6e514762a999,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fd0b6b716b28c143bff6e514762a999, type: 3}
