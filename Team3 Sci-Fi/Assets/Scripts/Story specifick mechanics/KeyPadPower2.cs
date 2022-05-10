@@ -15,6 +15,7 @@ public class KeyPadPower2 : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float interactionRange;
     [SerializeField] private Animator anim;
+    [SerializeField] private QuestPuzzle2 waypoints;
     public string interactMessage;
     private bool inKeyPad;
     public bool correctCodePuzzle2;
@@ -75,6 +76,7 @@ public class KeyPadPower2 : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
+            waypoints.enabled = false;
             thisKeypad.enabled = false;
         }
     }
