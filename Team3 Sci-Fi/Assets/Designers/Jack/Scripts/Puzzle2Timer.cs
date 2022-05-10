@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Puzzle2Trigger : MonoBehaviour
+public class Puzzle2Timer : MonoBehaviour
 {
 
     [SerializeField] private QuestPuzzle2 waypoints;
