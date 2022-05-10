@@ -81,6 +81,10 @@ public class KeyPadPower2 : MonoBehaviour
             Destroy(waypoints.waypoint[1]);
             Destroy(waypoints.waypoint[2]);
             Destroy(waypoints.waypoint[3]);
+            Destroy(waypoints.meter[0]);
+            Destroy(waypoints.meter[1]);
+            Destroy(waypoints.meter[2]);
+            Destroy(waypoints.meter[3]);
             Destroy(waypoints);
             thisKeypad.enabled = false;
         }
