@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637878025449642721
+  lastModified: 637878127362855180
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -38,6 +38,30 @@ MonoBehaviour:
   ID:
     data1: 1019152161
     data2: 988637408
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-8493620774337083946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Storm System/WindIntesty
+  m_EditorClassIdentifier: 
+  Name: WindIntesty
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 118670203
+    data2: 4129383344
   Type: 0
   IsGlobal: 1
   Labels: []
@@ -282,6 +306,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-6733949071932946252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Wind Stingers/W1
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Wind Stingers/W1
+  Guid:
+    Data1: 1508901351
+    Data2: 1202577031
+    Data3: -940652655
+    Data4: 1403946481
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6500
 --- !u!114 &-6435982436078188689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,30 +457,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 42594
---- !u!114 &-5209493193185929715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wind System/WindIntesty
-  m_EditorClassIdentifier: 
-  Name: WindIntesty
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 118670203
-    data2: 4129383344
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &-4576643392685716334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,6 +563,62 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 36756
+--- !u!114 &-4224429088467426061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Events/Storm System
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Events/Storm System
+  Guid:
+    Data1: -389373641
+    Data2: 1273764428
+    Data3: 235063717
+    Data4: -1516151928
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3470194756319952504}
+  - {fileID: -8493620774337083946}
+  MinDistance: 0
+  MaxDistance: 30
+  Length: 35500
+--- !u!114 &-4152713212133590515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Wind Stingers/W2
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Wind Stingers/W2
+  Guid:
+    Data1: -1104652106
+    Data2: 1247281700
+    Data3: 1316821949
+    Data4: -411007519
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
 --- !u!114 &-3902516089179282345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +672,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 30
   Length: 35500
+--- !u!114 &-3470194756319952504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Storm System/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-3427783775777278880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,35 +751,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 45405
---- !u!114 &-2671762619029022370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Ambi/Events/Wind System
-  m_EditorClassIdentifier: 
-  Path: event:/Ambi/Events/Wind System
-  Guid:
-    Data1: -389373641
-    Data2: 1273764428
-    Data3: 235063717
-    Data4: -1516151928
-  Banks:
-  - {fileID: -8850837768259012465}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 7750411938377370627}
-  - {fileID: -5209493193185929715}
-  MinDistance: 0
-  MaxDistance: 30
-  Length: 35500
 --- !u!114 &-2511181605639596587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,6 +928,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4000
+--- !u!114 &-762724933203555785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Rock Stingers/Rs1
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Rock Stingers/Rs1
+  Guid:
+    Data1: -420173635
+    Data2: 1194330340
+    Data3: 1324071097
+    Data4: -1254969611
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4500
 --- !u!114 &-179119342422191057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,7 +1004,6 @@ MonoBehaviour:
   - {fileID: 4498303035132108534}
   - {fileID: 6593143346235765212}
   - {fileID: 7767601079858085282}
-  - {fileID: -2671762619029022370}
   - {fileID: 7851542511323158830}
   - {fileID: -4406968588321851354}
   - {fileID: 7129147249089656019}
@@ -916,16 +1020,34 @@ MonoBehaviour:
   - {fileID: 5292527328003311732}
   - {fileID: 8832930353445532379}
   - {fileID: 8959014098096824577}
+  - {fileID: 1793498439247381022}
+  - {fileID: 804486661947548921}
+  - {fileID: -4224429088467426061}
+  - {fileID: 5733162934573373321}
+  - {fileID: 2412012329153476509}
+  - {fileID: 593664959238701440}
+  - {fileID: -4152713212133590515}
+  - {fileID: -762724933203555785}
+  - {fileID: 960858665247788447}
+  - {fileID: 4401375585890759672}
+  - {fileID: 8607082397601329618}
+  - {fileID: 8269014448092431065}
+  - {fileID: 8016994035723295667}
+  - {fileID: -6733949071932946252}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
   - {fileID: -8183846672216892051}
   - {fileID: 7866439850892110245}
+  - {fileID: 7415210799763033229}
+  - {fileID: 4739537352647945457}
+  - {fileID: 6579093793075083091}
+  - {fileID: 8221247209176052110}
   MasterBanks:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637878025449702999
+  cacheTime: 637878127362930944
   cacheVersion: 10
 --- !u!114 &204275656317449320
 MonoBehaviour:
@@ -978,6 +1100,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &593664959238701440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Wind Stingers/W3
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Wind Stingers/W3
+  Guid:
+    Data1: 1618983071
+    Data2: 1128924173
+    Data3: 668257967
+    Data4: -76467792
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9000
 --- !u!114 &640986894949626050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,6 +1181,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &804486661947548921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Rock Stingers/Rs2
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Rock Stingers/Rs2
+  Guid:
+    Data1: 1895283240
+    Data2: 1196553401
+    Data3: -1307858000
+    Data4: -1603607698
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &960858665247788447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Rock Stingers/Rs3
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Rock Stingers/Rs3
+  Guid:
+    Data1: -1656478272
+    Data2: 1101144169
+    Data3: 2060305849
+    Data4: 206863984
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6500
 --- !u!114 &1151237702574459466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1088,6 +1291,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 50
   Length: 43100
+--- !u!114 &1793498439247381022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Rock Stingers/Ps2
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Rock Stingers/Ps2
+  Guid:
+    Data1: -1005881050
+    Data2: 1212205363
+    Data3: -1211646071
+    Data4: 575488859
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &2117752916597058527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1183,11 +1413,38 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637878025449702999
+  lastModified: 637878127362930944
   FileSizes:
   - Name: 
-    Value: 2306
+    Value: 3178
   Exists: 1
+--- !u!114 &2412012329153476509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Wind Stingers/W4
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Wind Stingers/W4
+  Guid:
+    Data1: 1250158716
+    Data2: 1131092779
+    Data3: 306890652
+    Data4: 927341297
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
 --- !u!114 &2457082863670650764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1527,6 +1784,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &4401375585890759672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Wind Stingers/W5
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Wind Stingers/W5
+  Guid:
+    Data1: -1512034359
+    Data2: 1150064917
+    Data3: -921158001
+    Data4: 946255024
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10000
 --- !u!114 &4498303035132108534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1582,6 +1866,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 50
   Length: 42500
+--- !u!114 &4739537352647945457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vol Ambiens
+  m_EditorClassIdentifier: 
+  Name: Vol Ambiens
+  StudioPath: parameter:/Volym/Vol Ambiens
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 3701463038
+    data2: 4187278003
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &4746315513065739385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1705,6 +2013,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &5733162934573373321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Wind Stingers/Wlong
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Wind Stingers/Wlong
+  Guid:
+    Data1: -885272482
+    Data2: 1188783177
+    Data3: -210601590
+    Data4: 238964108
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 25405
 --- !u!114 &5841916226271524065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1725,6 +2060,30 @@ MonoBehaviour:
   ID:
     data1: 1019152161
     data2: 988637408
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &6579093793075083091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vol Music
+  m_EditorClassIdentifier: 
+  Name: Vol Music
+  StudioPath: parameter:/Volym/Vol Music
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 4127535556
+    data2: 3993962213
   Type: 0
   IsGlobal: 1
   Labels: []
@@ -1911,7 +2270,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &7750411938377370627
+--- !u!114 &7415210799763033229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1921,16 +2280,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wind System/Elevation Y axen
+  m_Name: parameter:/Vol Master
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: 
+  Name: Vol Master
+  StudioPath: parameter:/Volym/Vol Master
   Min: 0
-  Max: 60
-  Default: 30
+  Max: 100
+  Default: 100
   ID:
-    data1: 44443144
-    data2: 2883253264
+    data1: 3822193974
+    data2: 3768469794
   Type: 0
   IsGlobal: 1
   Labels: []
@@ -2041,6 +2400,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &8016994035723295667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Rock Stingers/Ps1
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Rock Stingers/Ps1
+  Guid:
+    Data1: 553495520
+    Data2: 1327215630
+    Data3: 382394263
+    Data4: -229596556
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3250
 --- !u!114 &8040487502827966276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2097,6 +2483,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 41081
+--- !u!114 &8221247209176052110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vol Vehicle
+  m_EditorClassIdentifier: 
+  Name: Vol Vehicle
+  StudioPath: parameter:/Volym/Vol Vehicle
+  Min: 0
+  Max: 100
+  Default: 100
+  ID:
+    data1: 815901795
+    data2: 2071845986
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &8233084680352947556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2148,6 +2558,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8269014448092431065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Rock Stingers/Ps3
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Rock Stingers/Ps3
+  Guid:
+    Data1: 60000469
+    Data2: 1160508992
+    Data3: 439611280
+    Data4: 1428296486
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
 --- !u!114 &8326157559198863775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2196,6 +2633,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8607082397601329618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambi/Stingers/Wind Stingers/W6
+  m_EditorClassIdentifier: 
+  Path: event:/Ambi/Stingers/Wind Stingers/W6
+  Guid:
+    Data1: -1989545015
+    Data2: 1276616797
+    Data3: 384897189
+    Data4: 249705328
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11500
 --- !u!114 &8638092143615476301
 MonoBehaviour:
   m_ObjectHideFlags: 0
