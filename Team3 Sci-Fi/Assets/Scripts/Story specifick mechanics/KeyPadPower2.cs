@@ -16,7 +16,7 @@ public class KeyPadPower2 : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float interactionRange;
     [SerializeField] private Animator anim;
-    [SerializeField] private QuestPuzzle2 waypoints;
+    [SerializeField] private QuestPuzzle2 quest;
     public string interactMessage;
     private bool inKeyPad;
     public bool correctCodePuzzle2;
@@ -77,11 +77,11 @@ public class KeyPadPower2 : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
-            Destroy(waypoints.waypoint[0]);
-            Destroy(waypoints.waypoint[1]);
-            Destroy(waypoints.waypoint[2]);
-            Destroy(waypoints.waypoint[3]);
-            Destroy(waypoints);
+            for (int i = 0; i < quest.waypoint.Length; i++)
+            {
+                Destroy(quest.waypoint[i]);
+                Destroy(quest.meter[i]);
+            }
             thisKeypad.enabled = false;
         }
     }
