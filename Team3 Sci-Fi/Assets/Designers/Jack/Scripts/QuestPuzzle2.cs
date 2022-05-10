@@ -12,6 +12,11 @@ public class QuestPuzzle2 : MonoBehaviour
     
     public TMP_Text[] meter = new TMP_Text[4];
 
+    private void Start()
+    {
+        enabled = false;
+    }
+
     private void Update()
     {
         QuestMarkerOne();

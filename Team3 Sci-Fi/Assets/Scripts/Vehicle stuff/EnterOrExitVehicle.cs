@@ -16,8 +16,12 @@ public class EnterOrExitVehicle : MonoBehaviour
     public LayerMask PlayerLayer;
     public bool inCar;
     private bool isInCarRange;
+    private InteractionManager interact;
+    public string interactMessage;
+    private bool enterCarCD = false;
     void Start()
     {
+        interact = FindObjectOfType<InteractionManager>();
         playerTransform = player.GetComponent<Transform>();
         motorSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vehicle/Motor");
     }
@@ -26,20 +30,39 @@ public class EnterOrExitVehicle : MonoBehaviour
     {
         isInCarRange = Physics.CheckSphere(transform.position, carEnterRange, PlayerLayer);
 
-        if (inCar && Input.GetKeyDown(KeyCode.E))
+        if (inCar && Input.GetKeyDown(KeyCode.Mouse0) && enterCarCD)
         {
-            ExitCar();  
+            ExitCar();
+            StartCoroutine(Pause());
         }
-        else if (isInCarRange && !inCar && Input.GetKeyDown(KeyCode.E))
+    }
+    
+    private void OnMouseOver()
+    {
+        if (isInCarRange && !inCar)
+        {
+            interact.ShowInteractMessage(interactMessage);
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        if (isInCarRange && !inCar && !enterCarCD)
         {
             EnterCar();
+            StartCoroutine(Pause());
         }
+    }
 
-        // if (inCar)
-        // {
-        //     
-        // }
-        
+    IEnumerator Pause()
+    {
+        yield return new WaitForSeconds(0.5f);
+        enterCarCD = !enterCarCD;
+    }
+
+    private void OnMouseExit()
+    {
+        interact.HideInteractMessage();
     }
 
     private void EnterCar()
@@ -48,7 +71,7 @@ public class EnterOrExitVehicle : MonoBehaviour
         inCar = true;
         player.SetActive(false);
         vehicleCamera.SetActive(true);
-       
+        interact.HideInteractMessage();
         motorSound.start();
         FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Enter");
     }
@@ -59,7 +82,6 @@ public class EnterOrExitVehicle : MonoBehaviour
         vehicleCamera.SetActive(false);
         playerTransform.position = transform.position + exitCarPosition;
         player.SetActive(true);
-        
         motorSound.stop(STOP_MODE.IMMEDIATE);
         FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Exit");
     }
