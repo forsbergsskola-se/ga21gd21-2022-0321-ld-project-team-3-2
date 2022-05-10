@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 7270844399649354809}
   - component: {fileID: 8250557047500762688}
   - component: {fileID: 6850271310504018612}
+  - component: {fileID: 6225885179482364669}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -478,7 +479,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354f67113c89a834d939d534ed0eb4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleTwo:
+  waypoint:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  target:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  meter:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &6225885179482364669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270844399649354813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354f67113c89a834d939d534ed0eb4aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoint:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
