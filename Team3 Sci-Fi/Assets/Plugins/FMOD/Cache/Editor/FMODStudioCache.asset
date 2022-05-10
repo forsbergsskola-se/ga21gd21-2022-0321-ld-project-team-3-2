@@ -108,7 +108,7 @@ MonoBehaviour:
   Parameters:
   - {fileID: -6435982436078188689}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 50
   Length: 42500
 --- !u!114 &-6782744342122491519
 MonoBehaviour:
@@ -439,7 +439,7 @@ MonoBehaviour:
   - {fileID: 2457082863670650764}
   StringsBanks:
   - {fileID: 8326157559198863775}
-  cacheTime: 637877972833583876
+  cacheTime: 637877989253101480
   cacheVersion: 10
 --- !u!114 &204275656317449320
 MonoBehaviour:
@@ -590,7 +590,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637877972833523979
+  lastModified: 637877989253041410
   FileSizes: []
   Exists: 1
 --- !u!114 &2827427322087665128
@@ -844,7 +844,7 @@ MonoBehaviour:
   Parameters:
   - {fileID: 4172238617501046657}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 50
   Length: 42500
 --- !u!114 &4928854977017586139
 MonoBehaviour:
@@ -1092,7 +1092,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637877972833583876
+  lastModified: 637877989253101480
   FileSizes:
   - Name: 
     Value: 2306
@@ -1198,10 +1198,10 @@ MonoBehaviour:
   Banks:
   - {fileID: 2457082863670650764}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters:
   - {fileID: -2148967373328574242}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 50
   Length: 43100
