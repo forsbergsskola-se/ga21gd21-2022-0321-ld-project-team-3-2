@@ -76,7 +76,7 @@ public class KeyPadPower2 : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
-            waypoints.enabled = false;
+            Destroy(waypoints);
             thisKeypad.enabled = false;
         }
     }
