@@ -30,7 +30,7 @@ MonoBehaviour:
   answer2: 
   linesBranch2: []
   onReturnDialogue:
-    character: {fileID: 0}
-    text: 
+    character: {fileID: 11400000, guid: 4536830c4fdc98e478e250cc91d2b65e, type: 2}
+    text: '*Muffled Screams*'
   isDialogueFinished: 0
-  talking: 0
+  talking: 1

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linesInitial:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "Hey Kahir. H\xE1ron sent me, he said you needed some help.\r"
+    text: Good morning Kahir.
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "R\xF3han! Good to see you.\r"
@@ -64,5 +64,5 @@ MonoBehaviour:
   onReturnDialogue:
     character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "Speak to H\xE1ron. He'll give you something to do. "
-  isDialogueFinished: 0
+  isDialogueFinished: 1
   talking: 0
