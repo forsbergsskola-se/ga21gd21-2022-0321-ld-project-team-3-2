@@ -93,5 +93,7 @@ public class EnterOrExitVehicle : MonoBehaviour
         vehicleCamera.SetActive(false);
         player.SetActive(true);
         motorSound.stop(STOP_MODE.IMMEDIATE);
+        enterCarCD = !enterCarCD;
+        StopAllCoroutines();
     }
 }

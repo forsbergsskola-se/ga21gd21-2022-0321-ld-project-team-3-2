@@ -6,7 +6,7 @@ using UnityEngine;
 public class DialogueTriggerStartOfGame : MonoBehaviour
 {
     public float dialogueRange;
-    private BoxCollider thisColl;
+    public Collider startTriggerZone;
     private DialogueManager dialogueManager;
     public ChoiceDialogue choiceDialogue;
     private float distance;
@@ -26,7 +26,7 @@ public class DialogueTriggerStartOfGame : MonoBehaviour
     {
         dialogueManager.StartDialogue(choiceDialogue);
         choiceDialogue.talking = true;
-        thisColl.enabled = false;
+        startTriggerZone.enabled = false;
     }
 
     private void Update()
