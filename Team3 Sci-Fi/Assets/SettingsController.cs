@@ -11,21 +11,25 @@ public class SettingsController : MonoBehaviour
     private PlayerHealthManager healthManager;
     private bool inMenu;
     private MouseLook fpsView;
+    private Movement playerMove;
 
     private void Start()
     {
+        playerMove = FindObjectOfType<Movement>();
         healthManager = FindObjectOfType<PlayerHealthManager>();
         fpsView = FindObjectOfType<MouseLook>();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !inMenu)
         {
             OpenMenu();
         }
-
-        // close menu by running resume button
+        else if (Input.GetKeyDown(KeyCode.Escape) && inMenu)
+        {
+            ResumeButton();
+        }
     }
 
     private void OpenMenu()
@@ -46,7 +50,12 @@ public class SettingsController : MonoBehaviour
     {
         // unpause game
         // do sound snapshot
-        // close options
+        
+        //close options
+        inMenu = false;
+        fpsView.enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        SettingsAnim.SetTrigger("CloseMenu");
     }
 
     public void MainMenuButton()
@@ -62,8 +71,18 @@ public class SettingsController : MonoBehaviour
 
     public void RespawnButton()
     {
-        //close by running resumebutton
+        ResumeButton();
         healthManager.Death();
+        StopAllCoroutines();
+        StartCoroutine(DelayedDeath());
     }
-    
+
+    private IEnumerator DelayedDeath()
+    {
+        playerMove.enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        healthManager.Death();
+        playerMove.enabled = true;
+    }
+
 }
