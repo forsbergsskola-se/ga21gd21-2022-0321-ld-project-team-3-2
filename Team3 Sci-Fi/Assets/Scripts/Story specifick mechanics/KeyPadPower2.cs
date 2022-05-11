@@ -76,13 +76,13 @@ public class KeyPadPower2 : MonoBehaviour
             inKeyPad = false;
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
-            KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
+            KeyPadPower2 thisKeypad = GetComponent<KeyPadPower2>();
+            enabled = false;
             for (int i = 0; i < quest.waypoint.Length; i++)
             {
                 Destroy(quest.waypoint[i]);
                 Destroy(quest.meter[i]);
             }
-            thisKeypad.enabled = false;
         }
     }
     public void BackSpaceButton()
