@@ -11,6 +11,7 @@ public class EnterOrExitVehicle : MonoBehaviour
     [SerializeField] private float carEnterRange = 10f;
     [SerializeField] private Vector3 exitCarPosition;
 
+    private SettingsController settings;
     private FMOD.Studio.EventInstance motorSound;
     private Transform playerTransform;
     public LayerMask PlayerLayer;
@@ -21,6 +22,7 @@ public class EnterOrExitVehicle : MonoBehaviour
     private bool enterCarCD = false;
     void Start()
     {
+        settings = FindObjectOfType<SettingsController>();
         interact = FindObjectOfType<InteractionManager>();
         playerTransform = player.GetComponent<Transform>();
         motorSound = FMODUnity.RuntimeManager.CreateInstance("event:/Vehicle/Motor");
@@ -30,7 +32,7 @@ public class EnterOrExitVehicle : MonoBehaviour
     {
         isInCarRange = Physics.CheckSphere(transform.position, carEnterRange, PlayerLayer);
 
-        if (inCar && Input.GetKeyDown(KeyCode.Mouse0) && enterCarCD)
+        if (inCar && Input.GetKeyDown(KeyCode.Mouse0) && enterCarCD && !settings.inMenu)
         {
             ExitCar();
             StartCoroutine(Pause());
@@ -47,7 +49,7 @@ public class EnterOrExitVehicle : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (isInCarRange && !inCar && !enterCarCD)
+        if (isInCarRange && !inCar && !enterCarCD && !settings.inMenu)
         {
             EnterCar();
             StartCoroutine(Pause());

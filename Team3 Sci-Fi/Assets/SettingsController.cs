@@ -9,7 +9,7 @@ public class SettingsController : MonoBehaviour
 
     [SerializeField] private Animator SettingsAnim;
     private PlayerHealthManager healthManager;
-    private bool inMenu;
+    [HideInInspector] public bool inMenu;
     private MouseLook fpsView;
     private Movement playerMove;
 
@@ -34,7 +34,9 @@ public class SettingsController : MonoBehaviour
 
     private void OpenMenu()
     {
-        // pause game
+        //pause the game
+        Time.timeScale = 0;
+        
         // do sound snapshot
         
         // bring up options
@@ -49,6 +51,8 @@ public class SettingsController : MonoBehaviour
     public void ResumeButton()
     {
         // unpause game
+        Time.timeScale = 1;
+        
         // do sound snapshot
         
         //close options
