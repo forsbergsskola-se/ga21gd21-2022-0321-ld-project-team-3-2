@@ -77,14 +77,11 @@ public class KeyPadPower2 : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
-            Destroy(quest.waypoint[0]);
-            Destroy(quest.waypoint[1]);
-            Destroy(quest.waypoint[2]);
-            Destroy(quest.waypoint[3]);
-            Destroy(quest.meter[0]);
-            Destroy(quest.meter[1]);
-            Destroy(quest.meter[2]);
-            Destroy(quest.meter[3]);
+            for (int i = 0; i < quest.waypoint.Length; i++)
+            {
+                Destroy(quest.waypoint[i]);
+                Destroy(quest.meter[i]);
+            }
             thisKeypad.enabled = false;
         }
     }
