@@ -12214,11 +12214,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 810670579}
     m_Modifications:
-    - target: {fileID: 4005464788529028656, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 24267654}
     - target: {fileID: 4005464788704803962, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -12329,15 +12324,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialouge box
       objectReference: {fileID: 0}
-    - target: {fileID: 4005464788704803963, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4005464789003621744, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 24267654}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea62ada45cd3a9a46ac239fcf5df25b6, type: 3}
