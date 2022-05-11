@@ -12,6 +12,7 @@ public class QuestWaypoint : MonoBehaviour
     [HideInInspector] public int activeQuestArrayValue;
     [SerializeField] public string[] activeQuestString = new string[10];
     [SerializeField] public Transform[] target = new Transform[5];
+    [SerializeField] public EnterOrExitVehicle isInCar;
 
     public TMP_Text meter;
     public TMP_Text activeQuest;
@@ -25,47 +26,57 @@ public class QuestWaypoint : MonoBehaviour
 
     void Update()
     {
-        float minX = questMarker.GetPixelAdjustedRect().width / 2;
-        float maxX = Screen.width - minX;
-        
-        float minY = questMarker.GetPixelAdjustedRect().height / 2;
-        float maxY = Screen.width - minY;
-        
-        Vector2 pos = Camera.main.WorldToScreenPoint(target[targetArrayValue].position);
+        if (isInCar.inCar)
+        {
 
-        if(Vector3.Dot((target[targetArrayValue].position - transform.position), transform.forward) < 0)
+        }
+        else
         {
-            if(pos.x < Screen.width / 2)
+            float minX = questMarker.GetPixelAdjustedRect().width / 2;
+            float maxX = Screen.width - minX;
+            float minY = questMarker.GetPixelAdjustedRect().height / 2;
+            float maxY = Screen.width - minY;
+        
+            Vector2 pos = Camera.main.WorldToScreenPoint(target[targetArrayValue].position);
+
+            if(Vector3.Dot((target[targetArrayValue].position - transform.position), transform.forward) < 0)
             {
-                pos.x = maxX;
+                if(pos.x < Screen.width / 2)
+                {
+                    pos.x = maxX;
+                }
+                else
+                {
+                    pos.x = minX;
+                }
             }
-            else
+        
+            pos.x = Mathf.Clamp(pos.x, minX, maxX);
+            pos.y = Mathf.Clamp(pos.y, minY, maxY);
+        
+            questMarker.transform.position = pos;
+            meter.text = (int)Vector3.Distance(target[targetArrayValue].position, transform.position) + " m";
+            activeQuest.text = activeQuestString[activeQuestArrayValue];
+        
+            if (Input.GetKeyDown(KeyCode.Q))
             {
-                pos.x = minX;
+                StartCoroutine(ToggleQuestMarker());
             }
         }
-        
-        pos.x = Mathf.Clamp(pos.x, minX, maxX);
-        pos.y = Mathf.Clamp(pos.y, minY, maxY);
-        
-        questMarker.transform.position = pos;
-        meter.text = (int)Vector3.Distance(target[targetArrayValue].position, transform.position) + " m";
-        activeQuest.text = activeQuestString[activeQuestArrayValue];
-        
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            StartCoroutine(ToggleQuestMarker());
-        }
+
     }
 
     IEnumerator ToggleQuestMarker()
     {
-        questMarker.enabled = true;
-        meter.enabled = true;
-        activeQuest.enabled = true;
-        yield return new WaitForSeconds(4);
-        questMarker.enabled = false;
-        meter.enabled = false;
-        activeQuest.enabled = false;
+        if (!isInCar.inCar)
+        {
+            questMarker.enabled = true;
+            meter.enabled = true;
+            activeQuest.enabled = true;
+            yield return new WaitForSeconds(4);
+            questMarker.enabled = false;
+            meter.enabled = false;
+            activeQuest.enabled = false;
+        }
     }
 }

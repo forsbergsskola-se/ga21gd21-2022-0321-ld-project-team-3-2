@@ -449,17 +449,20 @@ MonoBehaviour:
   targetArrayValue: 0
   activeQuestArrayValue: 0
   activeQuestString:
+  - "Speak to H\xE1ron"
   - Open the workshop
   - Find a way to turn on the power
   - Collect the tire upgrade
   - Go to Thesalon
-  - 
-  - 
+  - (For playable) Open the workshop and get the vehicle hull
   - 
   - 
   - 
   - 
   target:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -507,6 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoint:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
