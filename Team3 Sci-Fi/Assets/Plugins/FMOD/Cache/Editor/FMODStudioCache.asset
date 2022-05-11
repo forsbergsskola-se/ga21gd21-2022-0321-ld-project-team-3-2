@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637878177160803491
+  lastModified: 637878650233826429
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -202,6 +202,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-7637437459145819280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Health regeneration
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Health regeneration
+  Guid:
+    Data1: 1490753071
+    Data2: 1106377557
+    Data3: 648055464
+    Data4: 1606127118
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4324
 --- !u!114 &-7063383862422796470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +477,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: -5864901502315060826}
@@ -562,7 +589,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 36756
+  Length: 64756
 --- !u!114 &-4224429088467426061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +771,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: 8233084680352947556}
@@ -1007,7 +1034,6 @@ MonoBehaviour:
   - {fileID: 7851542511323158830}
   - {fileID: -4406968588321851354}
   - {fileID: 7129147249089656019}
-  - {fileID: 8638092143615476301}
   - {fileID: -4510658271559377691}
   - {fileID: -8410525391991835753}
   - {fileID: 640986894949626050}
@@ -1016,7 +1042,6 @@ MonoBehaviour:
   - {fileID: 1417690152309843010}
   - {fileID: 2293363825426553170}
   - {fileID: 7816750784905983383}
-  - {fileID: 7179744911403195502}
   - {fileID: 5292527328003311732}
   - {fileID: 8832930353445532379}
   - {fileID: 8959014098096824577}
@@ -1034,6 +1059,8 @@ MonoBehaviour:
   - {fileID: 8269014448092431065}
   - {fileID: 8016994035723295667}
   - {fileID: -6733949071932946252}
+  - {fileID: -7637437459145819280}
+  - {fileID: 381509471592132376}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
@@ -1047,7 +1074,7 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637878177160913589
+  cacheTime: 637878650233866610
   cacheVersion: 10
 --- !u!114 &204275656317449320
 MonoBehaviour:
@@ -1076,6 +1103,33 @@ MonoBehaviour:
   MinDistance: 0.5
   MaxDistance: 30
   Length: 34594
+--- !u!114 &381509471592132376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Items/Flashlight
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Items/Flashlight
+  Guid:
+    Data1: -461996321
+    Data2: 1258247971
+    Data3: -1806334052
+    Data4: 1760254340
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &489993728600644859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,12 +1202,36 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &736173968906834510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ps1/RPM
+  m_EditorClassIdentifier: 
+  Name: RPM
+  StudioPath: 
+  Min: -800
+  Max: 800
+  Default: 0
+  ID:
+    data1: 1019152161
+    data2: 988637408
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &785775591348020507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,7 +1362,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: 489993728600644859}
@@ -1413,10 +1491,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637878177160913589
+  lastModified: 637878650233866610
   FileSizes:
   - Name: 
-    Value: 3178
+    Value: 3104
   Exists: 1
 --- !u!114 &2412012329153476509
 MonoBehaviour:
@@ -1712,30 +1790,6 @@ MonoBehaviour:
   MinDistance: 0.1
   MaxDistance: 2.2
   Length: 17958
---- !u!114 &3997454607021107637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Vehicle Wind/WindIntesty
-  m_EditorClassIdentifier: 
-  Name: WindIntesty
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 118670203
-    data2: 4129383344
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &4172238617501046657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2212,40 +2266,13 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: -6829361696547466420}
   MinDistance: 1
   MaxDistance: 50
   Length: 42500
---- !u!114 &7179744911403195502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Player/Flashlight
-  m_EditorClassIdentifier: 
-  Path: event:/Player/Flashlight
-  Guid:
-    Data1: -461996321
-    Data2: 1258247971
-    Data3: -1806334052
-    Data4: 1760254340
-  Banks:
-  - {fileID: -8850837768259012465}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &7211633582477303512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2423,7 +2450,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 736173968906834510}
   MinDistance: 1
   MaxDistance: 20
   Length: 3250
@@ -2584,7 +2612,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2500
+  Length: 2156
 --- !u!114 &8326157559198863775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2660,34 +2688,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11500
---- !u!114 &8638092143615476301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Vehicle/Vehicle Wind
-  m_EditorClassIdentifier: 
-  Path: event:/Vehicle/Vehicle Wind
-  Guid:
-    Data1: 141407814
-    Data2: 1303706985
-    Data3: -510693749
-    Data4: 1863036973
-  Banks:
-  - {fileID: -8850837768259012465}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 3997454607021107637}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &8832930353445532379
 MonoBehaviour:
   m_ObjectHideFlags: 0
