@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637878845119864334
+  lastModified: 637879490873713760
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -530,11 +530,12 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6145079195747325136}
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 6486
 --- !u!114 &-4428701621973211614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1061,6 +1062,7 @@ MonoBehaviour:
   - {fileID: -6733949071932946252}
   - {fileID: -7637437459145819280}
   - {fileID: 381509471592132376}
+  - {fileID: 5760442568316106185}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
@@ -1074,7 +1076,7 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637878845119864334
+  cacheTime: 637879490873743681
   cacheVersion: 10
 --- !u!114 &204275656317449320
 MonoBehaviour:
@@ -1129,7 +1131,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1375
 --- !u!114 &489993728600644859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,10 +1493,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637878650233866610
+  lastModified: 637879490873743681
   FileSizes:
   - Name: 
-    Value: 3104
+    Value: 3208
   Exists: 1
 --- !u!114 &2412012329153476509
 MonoBehaviour:
@@ -2094,6 +2096,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 25405
+--- !u!114 &5760442568316106185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Items/Quest PickUp
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Items/Quest PickUp
+  Guid:
+    Data1: 510984637
+    Data2: 1292562304
+    Data3: 250397341
+    Data4: 328380241
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 218
 --- !u!114 &5841916226271524065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2117,6 +2146,33 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 1
   Labels: []
+  Exists: 1
+--- !u!114 &6145079195747325136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player Geting Hurt/Player Geting Hurt
+  m_EditorClassIdentifier: 
+  Name: Player Geting Hurt
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3341477372
+    data2: 784960185
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Normal
+  - Light
+  - Max
   Exists: 1
 --- !u!114 &6579093793075083091
 MonoBehaviour:
@@ -2715,7 +2771,7 @@ MonoBehaviour:
   - {fileID: 3045224098168618962}
   MinDistance: 0
   MaxDistance: 50
-  Length: 42500
+  Length: 42824
 --- !u!114 &8846050209042961545
 MonoBehaviour:
   m_ObjectHideFlags: 0
