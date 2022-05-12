@@ -9,10 +9,10 @@ using UnityEngine.UI;
 
 public class PlayerHealthManager : MonoBehaviour
 {
+
+    [Header("This script should not be attached to the player prefab")] [Header("")] 
     
-    [Header("This script should not be attached to the player prefab")]
-    [Header("")]
-    
+    [SerializeField] private Animator anim;
     public float maxHealth = 100f;
     private bool isTakingDamage;
     public float healthRegenSpeed;
@@ -82,7 +82,19 @@ public class PlayerHealthManager : MonoBehaviour
 
     public void Death()
     {
-        isDead = true;
+        
+        if (isDead == false)
+        {
+            isDead = true;
+            StartCoroutine(DeathAnim());
+            
+        }
+    }
+
+    IEnumerator DeathAnim()
+    {
+        anim.SetTrigger("Die");
+        yield return new WaitForSeconds(1f);
         if (vehicleEnter.inCar)
         {
             vehicleEnter.ExitCarOnDeath();
@@ -90,8 +102,8 @@ public class PlayerHealthManager : MonoBehaviour
         vehicleFront.position = new Vector3(0, 3, 7.77f) + gameProgress.CheckPoints[gameProgress.currentCheckpoint].position;
         vehicleBack.position = new Vector3(0, 3, -2.5f) + gameProgress.CheckPoints[gameProgress.currentCheckpoint].position;
         player.position = gameProgress.CheckPoints[gameProgress.currentCheckpoint].position + new Vector3(3,0,0);
-        isDead = false;
         currentHealth = maxHealth;
+        isDead = false;
     }
 
     private void RegenerateHealth()
