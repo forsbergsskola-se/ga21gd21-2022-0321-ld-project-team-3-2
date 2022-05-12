@@ -46,6 +46,7 @@ public class EnterOrExitVehicle : MonoBehaviour
         if (isInCarRange && !inCar)
         {
             interact.ShowInteractMessage(interactMessage);
+            mouseIcon.SetActive(true);
         }
     }
 
@@ -67,6 +68,7 @@ public class EnterOrExitVehicle : MonoBehaviour
     private void OnMouseExit()
     {
         interact.HideInteractMessage();
+        mouseIcon.SetActive(false);
     }
 
     private void EnterCar()
