@@ -12,7 +12,6 @@ public class VehicleUpgradeObject : MonoBehaviour
    private bool isInObjectRange;
    public float pickUpRange;
    public LayerMask playerLayer;
-   public Animator upgradePopup;
    private InteractionManager interact;
    
    private GameProgressionManager gameProgress;
@@ -58,7 +57,6 @@ public class VehicleUpgradeObject : MonoBehaviour
       {
          gameProgress.hasScorchedEarthUpgrade = true;
          gameProgress.currentCheckpoint = 1;
-         upgradePopup.SetTrigger("Upgrade");
          gameProgress.vehicleUpgradeLevel++;
          questWaypoint.targetArrayValue++;
          questWaypoint.activeQuestArrayValue++;
