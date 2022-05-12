@@ -17,7 +17,7 @@ public class QuestManager : MonoBehaviour
     {
         if(keyPad.correctCode)
         {
-            while (cw.targetArrayValue <= 2)
+            while (cw.targetArrayValue <= 4)
             {
                 cw.targetArrayValue++;
                 cw.activeQuestArrayValue++;
