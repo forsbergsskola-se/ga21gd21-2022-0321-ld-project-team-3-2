@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 946dfe94e17d0d1428a8a3ebe623f0fa, type: 3}
-  m_Name: The Last Sacrifice (Branch 3)
+  m_Name: The Last Sacrifice (Branch 1)
   m_EditorClassIdentifier: 
   linesInitial:
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "Um, H\xE1ron\r"
+    text: "Um, H\xE1ron."
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Rohan, I see you made it out.\r"
@@ -23,9 +23,7 @@ MonoBehaviour:
     text: "What do you expect will happen now?\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: 'You have had your moment of heroism, but no plan.
-
-'
+    text: "You have had your moment of heroism, but no plan.\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Look! Look at how the hero became the villain!\r"
@@ -34,7 +32,7 @@ MonoBehaviour:
     text: How the brave became the weak!
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: How the rebel became a corpse.
+    text: How the rebel became a corpse!.
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Kahir, kill him.\r"
@@ -43,40 +41,57 @@ MonoBehaviour:
     text: "Yes Captain.\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "Kahir, please don\u2019t.\r"
+    text: "I would probably think twice about that Kahir. \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: 'The quarry was not all rocks. *Shows bomb*
+
+'
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: '*Shows bomb*
+
+'
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I am not afraid of using it. \r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Hahahahahaha! A showdown.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: How... Thrilling.
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "I am sorry R\xF3han. You should never have come back here.\r"
+    text: "I don't want to do this to you R\xF3han.\r"
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: "I liked you.\r"
     isChoiceTrigger: 1
-  answer1: "Kill H\xE1ron!"
+  answer1: Detonate bomb
   linesBranch1:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: ' Kahir, I do not deserve this. And neither do you, you know that!'
+    text: I know Kahir.
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "Do the right thing, shoot H\xE1ron instead!"
-  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: Kahir! Kill this worm!
-  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: NOW!
-  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: ...
-  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "I can\u2019t do this anymore H\xE1ron."
-  answer2: You are being deceived
+    text: I know.
+  answer2: "Don\u2019t shoot me!"
   linesBranch2:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "Please Kahir, you are being deceived. H\xE1ron just wants you to follow
-      orders."
+    text: I'm not the one at fault here! Kahir, we can get out of here together.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Shoot H\xE1ron, not me!"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "Kahir! Kill this worm!\r"
-  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: NOW!
+    text: "Kahir, kill this worm. Now!\r"
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: ...
+    text: "\u2026"
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "I can\u2019t do this anymore H\xE1ron."
+    text: "I am sorry R\xF3han."
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: I see...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: I will not let this be how it ends.
   onReturnDialogue:
-    character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    character: {fileID: 0}
     text: 
   isDialogueFinished: 0
   talking: 0
