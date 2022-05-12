@@ -12,7 +12,8 @@ public class DialogueTrigger : MonoBehaviour
     private GameObject player;
     private InteractionManager interact;
     public string interactMessage;
-    
+    private bool withinRange;
+
     void Start()
     {
         interact = FindObjectOfType<InteractionManager>();
@@ -21,8 +22,29 @@ public class DialogueTrigger : MonoBehaviour
         dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        interact.ShowInteractMessage(interactMessage);
+        withinRange = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        interact.HideInteractMessage();
+        withinRange = false;
+        if (dialogueManager.isTalking && choiceDialogue.talking)
+        {
+            dialogueManager.CancelDialogue();
+            choiceDialogue.talking = false;
+        }
+    }
+
     private void Update()
     {
+        if (!withinRange)
+        {
+            return;
+        }
         distance = Vector3.Distance(player.transform.position, transform.position);
         
         if (distance <= dialogueRange && Input.GetKeyDown(KeyCode.E))
@@ -50,23 +72,22 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
 
-        if (distance > dialogueRange && dialogueManager.isTalking && choiceDialogue.talking)
-        {
-            dialogueManager.CancelDialogue();
-            choiceDialogue.talking = false;
-        }
+        // if (distance > dialogueRange && dialogueManager.isTalking && choiceDialogue.talking)
+        // {
+        //     
+        // }
     }
 
-    private void OnMouseOver()
-    {
-        if (distance <= dialogueRange && !dialogueManager.isTalking && enabled)
-        {
-            interact.ShowInteractMessage(interactMessage);
-        }
-    }
-
-    private void OnMouseExit()
-    {
-        interact.HideInteractMessage();
-    }
+    // private void OnMouseOver()
+    // {
+    //     if (distance <= dialogueRange && !dialogueManager.isTalking && enabled)
+    //     {
+    //         interact.ShowInteractMessage(interactMessage);
+    //     }
+    // }
+    //
+    // private void OnMouseExit()
+    // {
+    //     interact.HideInteractMessage();
+    // }
 }
