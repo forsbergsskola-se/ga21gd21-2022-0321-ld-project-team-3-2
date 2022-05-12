@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public float dialogueRange;
+    public float dialogueRange = 100f;
     private DialogueManager dialogueManager;
     public ChoiceDialogue choiceDialogue;
     private float distance;
