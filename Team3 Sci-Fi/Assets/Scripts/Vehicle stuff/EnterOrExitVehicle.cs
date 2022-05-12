@@ -96,6 +96,7 @@ public class EnterOrExitVehicle : MonoBehaviour
     {
         inCar = false;
         vehicleCamera.SetActive(false);
+        playerTransform.position = transform.position + exitCarPosition;
         player.SetActive(true);
         motorSound.stop(STOP_MODE.IMMEDIATE);
         enterCarCD = !enterCarCD;
