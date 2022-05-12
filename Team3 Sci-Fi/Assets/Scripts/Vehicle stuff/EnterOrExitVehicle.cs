@@ -11,6 +11,7 @@ public class EnterOrExitVehicle : MonoBehaviour
     [SerializeField] private float carEnterRange = 10f;
     [SerializeField] private Vector3 exitCarPosition;
     [SerializeField] private QuestWaypoint qw;
+    [SerializeField] private GameObject mouseIcon;
 
     private SettingsController settings;
     private FMOD.Studio.EventInstance motorSound;
