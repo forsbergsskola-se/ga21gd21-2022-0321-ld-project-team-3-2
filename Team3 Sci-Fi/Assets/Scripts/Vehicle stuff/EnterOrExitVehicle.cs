@@ -10,6 +10,7 @@ public class EnterOrExitVehicle : MonoBehaviour
     [SerializeField] private GameObject vehicleCamera;
     [SerializeField] private float carEnterRange = 10f;
     [SerializeField] private Vector3 exitCarPosition;
+    [SerializeField] private QuestWaypoint qw;
 
     private SettingsController settings;
     private FMOD.Studio.EventInstance motorSound;
@@ -69,8 +70,8 @@ public class EnterOrExitVehicle : MonoBehaviour
 
     private void EnterCar()
     {
-        
         inCar = true;
+        qw.EnterVehicleToggle();
         player.SetActive(false);
         vehicleCamera.SetActive(true);
         interact.HideInteractMessage();
