@@ -75,11 +75,10 @@ MonoBehaviour:
   answer1: This is insanity
   linesBranch1:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: This is insanity, propaganda? You know just as well as me that artificial
-      lifeforms are just as conscious as you and me.
+    text: This is insanity, propaganda? You're saying we will torture innocent people!?
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: You are as irresponsible as I was told. This is your last expedition with
-      us. Still, your work means a lot to Fangl.
+    text: You are as irresponsible as I was told. Still, your work means a lot to
+      Fangl.
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "I will tell people back on Fangl what you are doing. The people need to
       know.\r"
@@ -87,7 +86,7 @@ MonoBehaviour:
     text: "But now I just want to go home. \r"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "You are not telling a single person about this operation, understood?\r
-      That would be a crime against Fangl. You will be killed."
+      That would be a crime against Fangl. You will be executed."
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "Whatever.\r Can you just send me home?"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
@@ -108,6 +107,13 @@ MonoBehaviour:
       place. \r"
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "I\u2019m taking the rover.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 'That will be necessary. The area is blocked by a sandstorm. '
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 'See if you can find some scraps to put on that hull of your car. We have
+      found a workshop right there is Thasalon. I''ll mark it on your tracker. '
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: I'll get it.
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Good. Honor to Dega-\r"
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
@@ -150,6 +156,13 @@ MonoBehaviour:
       place. \r"
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "I\u2019m taking the rover.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 'That will be necessary. The area is blocked by a sandstorm. '
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 'See if you can find some scraps to put on that hull of your car. We have
+      found a workshop right there is Thasalon. I''ll mark it on your tracker. '
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: I'll get it.
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: Good. Honor to Dega-
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}

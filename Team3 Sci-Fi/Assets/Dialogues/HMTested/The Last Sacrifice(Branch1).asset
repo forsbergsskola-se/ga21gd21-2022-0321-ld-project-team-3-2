@@ -49,16 +49,21 @@ MonoBehaviour:
 '
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: '*Shows bomb*
+
+'
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "I am not afraid of using it. \r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Hahahahahaha! A showdown.\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
-    text: "How interesting. \r"
+    text: How... Thrilling.
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "I didn\u2019t want to do this to you R\xF3han.\r"
+    text: "I don't want to do this to you R\xF3han.\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "I liked you.\r"
@@ -72,15 +77,17 @@ MonoBehaviour:
   answer2: "Don\u2019t shoot me!"
   linesBranch2:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "Don\u2019t shoot me! Kill H\xE1ron instead!\r"
+    text: I'm not the one at fault here! Kahir, we can get out of here together.
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: Kahir, we can get out of here together.
+    text: "Shoot H\xE1ron, not me!"
   - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
     text: "Kahir, kill this worm. Now!\r"
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "\u2026"
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "I am sorry R\xF3han."
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: I see...
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: I will not let this be how it ends.
   onReturnDialogue:

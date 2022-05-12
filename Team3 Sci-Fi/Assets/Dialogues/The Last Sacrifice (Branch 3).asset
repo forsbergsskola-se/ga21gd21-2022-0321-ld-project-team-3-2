@@ -9,8 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ac2c35c4204b0a4b8af37817db230b2, type: 3}
-  m_Name: Haron
+  m_Script: {fileID: 11500000, guid: 946dfe94e17d0d1428a8a3ebe623f0fa, type: 3}
+  m_Name: The Last Sacrifice (Branch 3)
   m_EditorClassIdentifier: 
-  name: "H\xE1ron"
-  icon: {fileID: 21300000, guid: 4814a661999422d4ba305451856f29bf, type: 3}
+  linesInitial: []
+  answer1: 
+  linesBranch1: []
+  answer2: 
+  linesBranch2: []
+  onReturnDialogue:
+    character: {fileID: 0}
+    text: 
+  isDialogueFinished: 0
+  talking: 0
