@@ -73,6 +73,7 @@ public class EnterOrExitVehicle : MonoBehaviour
         inCar = true;
         qw.EnterVehicleToggle();
         player.SetActive(false);
+        player.transform.position = new Vector3(1000, 1000, 1000);
         vehicleCamera.SetActive(true);
         interact.HideInteractMessage();
         motorSound.start();

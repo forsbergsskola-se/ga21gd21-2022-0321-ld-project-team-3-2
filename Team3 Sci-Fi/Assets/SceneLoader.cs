@@ -8,6 +8,6 @@ public class SceneLoader : MonoBehaviour
     public int sceneIndexToLoad;
     public void LoadMain()
     {
-        SceneManager.LoadScene(sceneIndexToLoad);
+        SceneManager.LoadSceneAsync(sceneIndexToLoad);
     }
 }
