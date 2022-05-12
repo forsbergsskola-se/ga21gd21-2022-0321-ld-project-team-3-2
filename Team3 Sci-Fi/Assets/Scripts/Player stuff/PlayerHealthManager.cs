@@ -45,7 +45,7 @@ public class PlayerHealthManager : MonoBehaviour
         var vignetteColor = vignette.color;
         var veinsColor = veins.color;
         vignetteColor.a = Mathf.Abs(currentHealth * 0.01f-1);
-        veinsColor.a = Mathf.Abs(currentHealth * 0.01f-1) -0.2f;
+        veinsColor.a = Mathf.Abs(currentHealth * 0.01f-1);
         
         vignette.color = vignetteColor;
         veins.color = veinsColor;
