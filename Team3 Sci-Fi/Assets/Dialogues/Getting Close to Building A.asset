@@ -31,21 +31,24 @@ MonoBehaviour:
     text: And you would melt along with them...
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: But I might have a solution. It looks like you are right by an old Fangl
+    text: But I might have a solution. It looks like you are close to an old Fangl
       workshop. It might just contain something to improve your tires.
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: 'Wait, are you seeing what I am seeing? '
+    text: 'Wait, can you see where I am? '
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
-    text: "Sure do, H\xE1ron made sure to insert a camera into one of your eyes when
-      you were asleep. \r"
+    text: "Sure do, H\xE1ron made sure to insert a tracking chip into you when you
+      were asleep. \r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "That\u2019s\u2026 "
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: 'scary. No matter. I''ll check if I can enter it. '
+    text: 'scary. '
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: 'No matter. I''ll check if I can enter it. '
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: 'The power might be off. In that case you have to turn it on with generators
