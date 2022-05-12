@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637879490873713760
+  lastModified: 637879678314443534
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -52,9 +52,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Storm System/WindIntesty
+  m_Name: parameter:/Storm System/DistensWind
   m_EditorClassIdentifier: 
-  Name: WindIntesty
+  Name: DistensWind
   StudioPath: 
   Min: 0
   Max: 100
@@ -535,7 +535,7 @@ MonoBehaviour:
   - {fileID: 6145079195747325136}
   MinDistance: 1
   MaxDistance: 20
-  Length: 6486
+  Length: 4324
 --- !u!114 &-4428701621973211614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,10 +789,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/WindIntesty
+  m_Name: parameter:/DistensWind
   m_EditorClassIdentifier: 
-  Name: WindIntesty
-  StudioPath: parameter:/WindIntesty
+  Name: DistensWind
+  StudioPath: parameter:/DistensWind
   Min: 0
   Max: 100
   Default: 0
@@ -929,6 +929,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-1249083454919779501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ui/Clicks
+  m_EditorClassIdentifier: 
+  Path: event:/Ui/Clicks
+  Guid:
+    Data1: -1955349796
+    Data2: 1198058300
+    Data3: 548834233
+    Data4: 1147500530
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-1106295516910088101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1063,6 +1090,9 @@ MonoBehaviour:
   - {fileID: -7637437459145819280}
   - {fileID: 381509471592132376}
   - {fileID: 5760442568316106185}
+  - {fileID: 5094529744236572279}
+  - {fileID: 7361059122790452845}
+  - {fileID: -1249083454919779501}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
@@ -1076,7 +1106,7 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637879490873743681
+  cacheTime: 637879678314483570
   cacheVersion: 10
 --- !u!114 &204275656317449320
 MonoBehaviour:
@@ -1471,11 +1501,11 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: 6777192512450647955}
-  MinDistance: 0
+  MinDistance: 0.4
   MaxDistance: 50
   Length: 47567
 --- !u!114 &2302851425273624952
@@ -1493,10 +1523,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637879490873743681
+  lastModified: 637879678314483570
   FileSizes:
   - Name: 
-    Value: 3208
+    Value: 3452
   Exists: 1
 --- !u!114 &2412012329153476509
 MonoBehaviour:
@@ -1994,6 +2024,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &5094529744236572279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialog/Kahir/Ka Dialog
+  m_EditorClassIdentifier: 
+  Path: event:/Dialog/Kahir/Ka Dialog
+  Guid:
+    Data1: 939378544
+    Data2: 1267111886
+    Data3: -1671765878
+    Data4: 209040795
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &5178187006417414271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2162,7 +2219,7 @@ MonoBehaviour:
   Name: Player Geting Hurt
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 1
   Default: 0
   ID:
     data1: 3341477372
@@ -2170,7 +2227,6 @@ MonoBehaviour:
   Type: 2
   IsGlobal: 0
   Labels:
-  - Normal
   - Light
   - Max
   Exists: 1
@@ -2353,6 +2409,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &7361059122790452845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialog/Haron/Ha Dialog
+  m_EditorClassIdentifier: 
+  Path: event:/Dialog/Haron/Ha Dialog
+  Guid:
+    Data1: -2611523
+    Data2: 1213265380
+    Data3: 784731789
+    Data4: -1162453066
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1736
 --- !u!114 &7415210799763033229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2398,7 +2481,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: 4746315513065739385}
