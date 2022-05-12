@@ -51,6 +51,10 @@ MonoBehaviour:
   answer2Text: {fileID: 0}
   choices: {fileID: 0}
   icon: {fileID: 0}
-  dialogueFinished: 0
+  mouseLook: {fileID: 0}
+  interact: {fileID: 0}
+  choiceText: {fileID: 0}
+  continueText: {fileID: 0}
   inChoice: 0
   isTalking: 0
+  timeBetweenLetters: 0.015
