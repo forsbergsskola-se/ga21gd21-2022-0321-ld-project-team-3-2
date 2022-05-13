@@ -21,7 +21,7 @@ MonoBehaviour:
   answer2: 
   linesBranch2: []
   onReturnDialogue:
-    character: {fileID: 0}
-    text: 
-  isDialogueFinished: 0
+    character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Damn it, locked. Gotta find a way to open this.
+  isDialogueFinished: 1
   talking: 0
