@@ -16,7 +16,11 @@ public class KeyPadPower2 : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float interactionRange;
     [SerializeField] private Animator anim;
+    [SerializeField] private VehicleUpgradeObject vehicleUpgrade;
     [SerializeField] private QuestPuzzle2 quest;
+    [SerializeField] private GameObject triggerDoor;
+    [SerializeField] private ChangeWaypoint waypoint;
+    [SerializeField] private ChangeActiveQuest activeQuest;
     public string interactMessage;
     private bool inKeyPad;
     public bool correctCodePuzzle2;
