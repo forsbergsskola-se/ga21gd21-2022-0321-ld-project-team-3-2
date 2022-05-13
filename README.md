@@ -22,7 +22,7 @@ The Art Team:
 
 The Sound Team:
 
-* Robert Larsson, Lead Sound Designer, Engineer - [LinkedIn](https://www.linkedin.com/mwlite/in/robert-larsson-36029a51) [SoundCloud](https://soundcloud.com/dj-printa)
+* Robert Larsson, Lead Sound Designer, Engineer - [LinkedIn](https://www.linkedin.com/mwlite/in/robert-larsson-36029a51) - [SoundCloud](https://soundcloud.com/dj-printa)
 * Carl Johansson, Sound Designer, Engineer - [LinkedIn]
 * Ludvig Frendin, Sound Designer, Engineer - [LinkedIn](https://www.linkedin.com/in/ludvig-frendin-10b5b023a/)
 
