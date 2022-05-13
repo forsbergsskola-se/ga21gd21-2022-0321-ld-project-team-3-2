@@ -18,7 +18,6 @@ public class KeyPadPower2 : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private VehicleUpgradeObject vehicleUpgrade;
     [SerializeField] private QuestPuzzle2 quest;
-    [SerializeField] private GameObject triggerDoor;
     [SerializeField] private DialogueTrigger lockedDialogue;
     [SerializeField] private ChangeWaypoint waypoint;
     [SerializeField] private ChangeActiveQuest activeQuest;
@@ -77,10 +76,10 @@ public class KeyPadPower2 : MonoBehaviour
         if (NumberInput.text == correctPassword)
         {
             inputBox.color = Color.green;
-            triggerDoor.SetActive(true);
             lockedDialogue.enabled = false;
             waypoint.IncramentWaypointExternal();
             activeQuest.IncramentActiveQuestExternal();
+            vehicleUpgrade.enabled = true;
             anim.SetTrigger("Go away");
             inKeyPad = false;
             Cursor.lockState = CursorLockMode.Locked;

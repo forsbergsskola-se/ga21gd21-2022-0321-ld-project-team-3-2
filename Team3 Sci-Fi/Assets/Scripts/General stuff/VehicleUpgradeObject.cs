@@ -16,7 +16,8 @@ public class VehicleUpgradeObject : MonoBehaviour
    
    private GameProgressionManager gameProgress;
    public QuestWaypoint questWaypoint;
-   public GameObject dialogueTriggerOnComplete;
+   public GameObject dialogue1TriggerOnComplete;
+   public GameObject dialogue2TriggerOnComplete;
 
    private void Start()
    {
@@ -51,6 +52,9 @@ public class VehicleUpgradeObject : MonoBehaviour
       {
          gameProgress.hasSandstormUpgrade = true;
          gameProgress.vehicleUpgradeLevel++;
+         questWaypoint.targetArrayValue++;
+         questWaypoint.activeQuestArrayValue++;
+         dialogue2TriggerOnComplete.SetActive(true);
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
       else if (reinforcedTireUpgrade)
@@ -60,7 +64,7 @@ public class VehicleUpgradeObject : MonoBehaviour
          gameProgress.vehicleUpgradeLevel++;
          questWaypoint.targetArrayValue++;
          questWaypoint.activeQuestArrayValue++;
-         dialogueTriggerOnComplete.SetActive(true);
+         dialogue1TriggerOnComplete.SetActive(true);
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
       else
