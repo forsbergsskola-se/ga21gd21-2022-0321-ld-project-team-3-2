@@ -77,6 +77,7 @@ public class KeyPadPower2 : MonoBehaviour
         {
             inputBox.color = Color.green;
             lockedDialogue.enabled = false;
+            correctCodePuzzle2 = true;
             waypoint.IncramentWaypointExternal();
             activeQuest.IncramentActiveQuestExternal();
             vehicleUpgrade.enabled = true;

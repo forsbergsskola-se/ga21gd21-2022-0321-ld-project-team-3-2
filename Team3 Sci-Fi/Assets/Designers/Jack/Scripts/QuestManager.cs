@@ -7,10 +7,12 @@ public class QuestManager : MonoBehaviour
 {
     [SerializeField] private QuestWaypoint cw;
     [SerializeField] private KeyPadPower keyPad;
+    [SerializeField] private KeyPadPower2 keyPad2;
 
     private void Update()
     {
         PuzzleOneQuest();
+        PuzzleTwoQuest();
     }
 
     private void PuzzleOneQuest()
@@ -24,6 +26,23 @@ public class QuestManager : MonoBehaviour
             }
 
             keyPad.correctCode = false;
+        }
+    }
+
+    private void PuzzleTwoQuest()
+    {
+        if(keyPad2.correctCodePuzzle2)
+        {
+            while (cw.activeQuestArrayValue <= 7)
+            {
+                cw.activeQuestArrayValue++;
+            }
+            while (cw.targetArrayValue <= 6)
+            {
+                cw.targetArrayValue++;
+            }
+
+            keyPad2.correctCodePuzzle2 = false;
         }
     }
 }
