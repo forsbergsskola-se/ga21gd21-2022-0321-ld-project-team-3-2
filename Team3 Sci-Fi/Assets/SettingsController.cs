@@ -8,10 +8,12 @@ public class SettingsController : MonoBehaviour
 {
 
     [SerializeField] private Animator SettingsAnim;
+    [SerializeField] private Animator OptionsMenuAnim;
     private PlayerHealthManager healthManager;
     [HideInInspector] public bool inMenu;
     private MouseLook fpsView;
     private Movement playerMove;
+    private bool inSettings;
 
     private void Start()
     {
@@ -26,9 +28,15 @@ public class SettingsController : MonoBehaviour
         {
             OpenMenu();
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && inMenu)
+        else if (Input.GetKeyDown(KeyCode.Escape) && inMenu && !inSettings)
         {
             ResumeButton();
+        }
+        else if (Input.GetKeyDown(KeyCode.Escape) && inMenu && inSettings)
+        {
+            inSettings = false;
+            OptionsMenuAnim.SetTrigger("CloseSettings");
+            SettingsAnim.SetTrigger("OpenState");
         }
     }
 
@@ -70,6 +78,9 @@ public class SettingsController : MonoBehaviour
     public void OptionsMenuButton()
     {
         //Close options and open new object
+        SettingsAnim.SetTrigger("SettingsTime");
+        OptionsMenuAnim.SetTrigger("OpenSettings");
+        inSettings = true;
         //Dont unpause or boot out of menu
     }
 

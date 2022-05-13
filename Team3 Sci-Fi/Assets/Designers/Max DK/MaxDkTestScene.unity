@@ -255,6 +255,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 782933237033418640, guid: a11525c2bdeac034dbf48d8b6aaec185,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 782933237033418641, guid: a11525c2bdeac034dbf48d8b6aaec185,
         type: 3}
       propertyPath: m_RootOrder
@@ -1554,7 +1559,7 @@ RectTransform:
   - {fileID: 1298252351}
   - {fileID: 401514814}
   m_Father: {fileID: 810670579}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1811,7 +1816,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &254511918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3823,9 +3828,9 @@ RectTransform:
   - {fileID: 2991895697965517184}
   - {fileID: 614454764}
   - {fileID: 324662108}
+  - {fileID: 128842661}
   - {fileID: 811403306}
   - {fileID: 1056543128}
-  - {fileID: 128842661}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13399,7 +13404,7 @@ PrefabInstance:
     - target: {fileID: 1593950626032491572, guid: 98e59e42daa2f4b4a92ea507fd92985e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1593950626032491572, guid: 98e59e42daa2f4b4a92ea507fd92985e,
         type: 3}
@@ -14357,7 +14362,7 @@ PrefabInstance:
     - target: {fileID: 4289170182700111422, guid: 8cbbef5cd554d694286a04816db0481b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4289170182878980921, guid: 8cbbef5cd554d694286a04816db0481b,
         type: 3}
@@ -14586,6 +14591,11 @@ PrefabInstance:
       propertyPath: SettingsAnim
       value: 
       objectReference: {fileID: 324662110}
+    - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
+        type: 3}
+      propertyPath: OptionsMenuAnim
+      value: 
+      objectReference: {fileID: 128842664}
     - target: {fileID: 5758760520115245998, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
         type: 3}
       propertyPath: m_Name
@@ -14932,7 +14942,7 @@ PrefabInstance:
     - target: {fileID: 6206427073849825460, guid: ad8ed143a5c764849a7c4d11557ddfbf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6206427073849825460, guid: ad8ed143a5c764849a7c4d11557ddfbf,
         type: 3}
