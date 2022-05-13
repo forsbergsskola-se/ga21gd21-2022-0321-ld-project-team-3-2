@@ -26,8 +26,8 @@ MonoBehaviour:
     text: My man! Need any help?
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: "I\u2019m in Thasalon, and I think I found the incubator. We have a problem
-      though.\r"
+    text: "I\u2019m in Thasalon, and I think I found the incubator and unlocked the
+      door to it. We have a problem though.\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "Can you hear that Kahir? Someone is in there.\r"
@@ -39,7 +39,7 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "No worries though, just turn the generator off. \r"
     isChoiceTrigger: 0
-  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: "What do you mean?\r"
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
@@ -84,5 +84,5 @@ MonoBehaviour:
   onReturnDialogue:
     character: {fileID: 11400000, guid: 4536830c4fdc98e478e250cc91d2b65e, type: 2}
     text: '*Muffled Screams*'
-  isDialogueFinished: 0
-  talking: 1
+  isDialogueFinished: 1
+  talking: 0

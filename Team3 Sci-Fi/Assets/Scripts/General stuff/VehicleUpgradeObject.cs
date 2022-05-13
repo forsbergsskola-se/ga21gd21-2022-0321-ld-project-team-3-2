@@ -13,7 +13,7 @@ public class VehicleUpgradeObject : MonoBehaviour
    public float pickUpRange;
    public LayerMask playerLayer;
    private InteractionManager interact;
-   
+
    private GameProgressionManager gameProgress;
    public QuestWaypoint questWaypoint;
    public GameObject dialogueTriggerOnComplete;
@@ -51,6 +51,7 @@ public class VehicleUpgradeObject : MonoBehaviour
       {
          gameProgress.hasSandstormUpgrade = true;
          gameProgress.vehicleUpgradeLevel++;
+         Debug.Log("Upgrade Vehicle");
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
       else if (reinforcedTireUpgrade)
