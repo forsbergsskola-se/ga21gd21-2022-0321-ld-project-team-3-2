@@ -48,7 +48,7 @@ public class OpenStories : MonoBehaviour
             mouse.enabled = false;
             isReading = true;
             story.SetActive(true);
-            text.text = storyText;
+            StartCoroutine(TypeSentence(storyText));
         }
         else if (Input.GetKeyDown(KeyCode.E) && isReading)
         {
@@ -57,6 +57,17 @@ public class OpenStories : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             mouse.enabled = true;
             story.SetActive(false);
+            StopAllCoroutines();
+        }
+    }
+    
+    IEnumerator TypeSentence (string sentence)
+    {
+        text.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            text.text += letter;
+            yield return new WaitForSeconds(0.025f);
         }
     }
 }
