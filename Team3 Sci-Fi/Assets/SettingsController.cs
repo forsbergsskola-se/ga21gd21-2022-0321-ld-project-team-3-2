@@ -73,6 +73,29 @@ public class SettingsController : MonoBehaviour
         //Dont unpause or boot out of menu
     }
 
+    public void Resolution1920x1080()
+    {
+        
+    }
+    public void Resolution1600x900()
+    {
+        
+    }
+    public void Resolution2560x1440()
+    {
+        
+    }
+    public void Fullscreen()
+    {
+        
+    }
+    public void Windowed()
+    {
+        
+    }
+    
+    
+
     public void RespawnButton()
     {
         ResumeButton();
