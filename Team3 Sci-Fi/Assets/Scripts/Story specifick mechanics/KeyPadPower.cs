@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class KeyPadPower : MonoBehaviour
 {
-    [SerializeField] private GameObject keyPadHolder;
     [SerializeField] private VehicleUpgradeObject vehicleUpgrade;
     [SerializeField] private DialogueTrigger lockedDialogue;
     [SerializeField] private TextMeshProUGUI NumberInput;
