@@ -7,10 +7,8 @@ using UnityEngine.UI;
 
 public class KeyPadPower : MonoBehaviour
 {
-    [SerializeField] private GameObject keyPadHolder;
     [SerializeField] private VehicleUpgradeObject vehicleUpgrade;
     [SerializeField] private DialogueTrigger lockedDialogue;
-    [SerializeField] private Image inputBox;
     [SerializeField] private TextMeshProUGUI NumberInput;
     [SerializeField] private int passwordLength;
     [SerializeField] private string correctPassword;
@@ -46,15 +44,15 @@ public class KeyPadPower : MonoBehaviour
 
         if (Physics.CheckSphere(transform.position, interactionRange, playerLayer) && inKeyPad)
         {
-            keyPadHolder.SetActive(false);
             inKeyPad = false;
+            anim.SetTrigger("Close keypad");
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
         }
         else if (Physics.CheckSphere(transform.position, interactionRange, playerLayer) && !inKeyPad)
         {
-            keyPadHolder.SetActive(true);
             inKeyPad = true;
+            anim.SetTrigger("Open keypad");
             Cursor.lockState = CursorLockMode.None;
             fpsView.enabled = false;
         }
@@ -79,10 +77,9 @@ public class KeyPadPower : MonoBehaviour
         {
             lockedDialogue.enabled = false;
             vehicleUpgrade.enabled = true;
-            inputBox.color = Color.green;
-            anim.SetTrigger("Go away");
             inKeyPad = false;
             correctCode = true;
+            anim.SetTrigger("Close keypad");
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
