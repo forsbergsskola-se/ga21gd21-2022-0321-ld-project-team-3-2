@@ -1,3 +1,7 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +10,6 @@ public class KeyPadPower2 : MonoBehaviour
 {
     [SerializeField] private GameObject keyPadHolder;
     [SerializeField] private Image inputBox;
-    [SerializeField] private VehicleUpgradeObject vehicleUpgrade;
     [SerializeField] private TextMeshProUGUI NumberInput;
     [SerializeField] private int passwordLength;
     [SerializeField] private string correctPassword;
@@ -14,8 +17,6 @@ public class KeyPadPower2 : MonoBehaviour
     [SerializeField] private float interactionRange;
     [SerializeField] private Animator anim;
     [SerializeField] private QuestPuzzle2 quest;
-    [SerializeField] private GameObject dialogueDoor;
-    [SerializeField] private DialogueTrigger trigger;
     public string interactMessage;
     private bool inKeyPad;
     public bool correctCodePuzzle2;
@@ -70,9 +71,6 @@ public class KeyPadPower2 : MonoBehaviour
     {
         if (NumberInput.text == correctPassword)
         {
-            vehicleUpgrade.enabled = true;
-            dialogueDoor.SetActive(true);
-            trigger.enabled = false;
             inputBox.color = Color.green;
             anim.SetTrigger("Go away");
             inKeyPad = false;
