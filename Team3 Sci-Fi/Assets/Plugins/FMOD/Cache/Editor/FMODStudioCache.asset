@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637880334676907303
+  lastModified: 637882118984673520
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -309,6 +309,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-6794284539735108321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Items/Vehicle UG 2
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Items/Vehicle UG 2
+  Guid:
+    Data1: -798138146
+    Data2: 1165047196
+    Data3: 198265002
+    Data4: 136539495
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6782744342122491519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,6 +479,30 @@ MonoBehaviour:
   ID:
     data1: 1019152161
     data2: 988637408
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-5596934618118941980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Lyra/Elevation Y axen
+  m_EditorClassIdentifier: 
+  Name: Elevation Y axen
+  StudioPath: 
+  Min: 0
+  Max: 60
+  Default: 30
+  ID:
+    data1: 44443144
+    data2: 2883253264
   Type: 0
   IsGlobal: 1
   Labels: []
@@ -1093,6 +1144,10 @@ MonoBehaviour:
   - {fileID: 5094529744236572279}
   - {fileID: 7361059122790452845}
   - {fileID: -1249083454919779501}
+  - {fileID: 8767838094475605853}
+  - {fileID: 7189804010215441688}
+  - {fileID: 69954978412824198}
+  - {fileID: -6794284539735108321}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
@@ -1102,12 +1157,40 @@ MonoBehaviour:
   - {fileID: 4739537352647945457}
   - {fileID: 6579093793075083091}
   - {fileID: 8221247209176052110}
+  - {fileID: 3925864101165352784}
   MasterBanks:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637880334676907303
+  cacheTime: 637882118984753306
   cacheVersion: 10
+--- !u!114 &69954978412824198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialog/Mufeld skream
+  m_EditorClassIdentifier: 
+  Path: event:/Dialog/Mufeld skream
+  Guid:
+    Data1: -846359469
+    Data2: 1313598186
+    Data3: -968548730
+    Data4: 148419072
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &204275656317449320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1523,10 +1606,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637879658795267604
+  lastModified: 637882118984753306
   FileSizes:
   - Name: 
-    Value: 3452
+    Value: 3630
   Exists: 1
 --- !u!114 &2412012329153476509
 MonoBehaviour:
@@ -1822,6 +1905,30 @@ MonoBehaviour:
   MinDistance: 0.1
   MaxDistance: 2.2
   Length: 17958
+--- !u!114 &3925864101165352784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Player Geting Hurt
+  m_EditorClassIdentifier: 
+  Name: Player Geting Hurt
+  StudioPath: parameter:/Player Geting Hurt
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3341477372
+    data2: 784960185
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &4172238617501046657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,8 +2331,8 @@ MonoBehaviour:
   ID:
     data1: 3341477372
     data2: 784960185
-  Type: 2
-  IsGlobal: 0
+  Type: 1
+  IsGlobal: 1
   Labels:
   - Light
   - Max
@@ -2385,6 +2492,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 50
   Length: 42500
+--- !u!114 &7189804010215441688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Items/Vehicle UG 1
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Items/Vehicle UG 1
+  Guid:
+    Data1: 1327469649
+    Data2: 1114481911
+    Data3: -1452430667
+    Data4: 647601671
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4727
 --- !u!114 &7211633582477303512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2827,6 +2961,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11500
+--- !u!114 &8767838094475605853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Lyra
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Lyra
+  Guid:
+    Data1: 899841040
+    Data2: 1090265211
+    Data3: -1439851376
+    Data4: -1867867167
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5596934618118941980}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 216311
 --- !u!114 &8832930353445532379
 MonoBehaviour:
   m_ObjectHideFlags: 0
