@@ -12,6 +12,7 @@ public class OpenStories : MonoBehaviour
     [SerializeField] private MouseLook mouse;
     [SerializeField] private GameObject story;
     [SerializeField] private TMP_Text text;
+    public float waitForSeconds;
     
 
     private bool withinRange;
@@ -64,10 +65,11 @@ public class OpenStories : MonoBehaviour
     IEnumerator TypeSentence (string sentence)
     {
         text.text = "";
+        yield return new WaitForSeconds(0.5f);
         foreach (char letter in sentence.ToCharArray())
         {
             text.text += letter;
-            yield return new WaitForSeconds(0.025f);
+            yield return new WaitForSeconds(waitForSeconds);
         }
     }
 }

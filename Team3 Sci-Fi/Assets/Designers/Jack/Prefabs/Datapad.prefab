@@ -115,6 +115,7 @@ MonoBehaviour:
   mouse: {fileID: 0}
   story: {fileID: 0}
   text: {fileID: 0}
+  waitForSeconds: 0.008
   storyText: "Hej Max, vad \xE4r det fr\xF6 j\xE4vla fel p\xE5 dig?\r\n\r\nHelt seri\xF6st,
     abow va due sk\xF6n\r\nSeri\xF6\xF6\xF6st\r\nIngen photoshop \xE5 bling bling\r\nHelt
     naturlig riktig real ting\r\n\r\nVA G\xD6RU MED DI NGR\xD6\xD6\xD6T \r\n(seri\xF6\xF6\xF6st)\r\n\r\nDU
