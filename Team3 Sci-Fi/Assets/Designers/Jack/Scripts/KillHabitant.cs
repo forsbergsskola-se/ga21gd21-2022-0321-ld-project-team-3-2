@@ -13,7 +13,7 @@ public class KillHabitant : MonoBehaviour
     public bool withinRange;
     private void OnTriggerEnter(Collider other)
     {
-        interact.ShowInteractMessage("Press E to turn of generator");
+        interact.ShowInteractMessage("Press E to turn  off generator");
         withinRange = true;
     }
     private void OnTriggerExit(Collider other)
