@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637882889389367310
+  lastModified: 637882974827283292
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -295,9 +295,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneCJ2/Elevation Y axen
+  m_Name: parameter:/ZoneCJ2/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -421,9 +421,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneLF2/Elevation Y axen
+  m_Name: parameter:/ZoneLF2/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -445,10 +445,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Elevation Y axen
+  m_Name: parameter:/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
-  StudioPath: parameter:/Elevation Y axen
+  Name: YX
+  StudioPath: parameter:/YX
   Min: 0
   Max: 60
   Default: 30
@@ -493,9 +493,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Lyra/Elevation Y axen
+  m_Name: parameter:/Lyra/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -545,9 +545,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneRL3/Elevation Y axen
+  m_Name: parameter:/ZoneRL3/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -761,9 +761,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Storm System/Elevation Y axen
+  m_Name: parameter:/Storm System/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -830,6 +830,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 50
   Length: 45405
+--- !u!114 &-2671188085988503581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialog/Typing sound
+  m_EditorClassIdentifier: 
+  Path: event:/Dialog/Typing sound
+  Guid:
+    Data1: -144733931
+    Data2: 1259127667
+    Data3: 1100458896
+    Data4: -243427395
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3013
 --- !u!114 &-2511181605639596587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,9 +915,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneLF3/Elevation Y axen
+  m_Name: parameter:/ZoneLF3/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -1148,6 +1175,8 @@ MonoBehaviour:
   - {fileID: 7189804010215441688}
   - {fileID: 69954978412824198}
   - {fileID: -6794284539735108321}
+  - {fileID: -2671188085988503581}
+  - {fileID: 1028114386006135303}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
@@ -1162,7 +1191,7 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637882889389396877
+  cacheTime: 637882974827363313
   cacheVersion: 10
 --- !u!114 &69954978412824198
 MonoBehaviour:
@@ -1255,9 +1284,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneCJ3/Elevation Y axen
+  m_Name: parameter:/ZoneCJ3/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -1428,6 +1457,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6500
+--- !u!114 &1028114386006135303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Endings/Gunz
+  m_EditorClassIdentifier: 
+  Path: event:/Endings/Gunz
+  Guid:
+    Data1: 1678928059
+    Data2: 1113449257
+    Data3: -529773399
+    Data4: -1742825555
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6100
 --- !u!114 &1151237702574459466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1606,10 +1662,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637882889389396877
+  lastModified: 637882974827363313
   FileSizes:
   - Name: 
-    Value: 3630
+    Value: 3702
   Exists: 1
 --- !u!114 &2412012329153476509
 MonoBehaviour:
@@ -1690,9 +1746,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneCJ1/Elevation Y axen
+  m_Name: parameter:/ZoneCJ1/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -1786,9 +1842,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Motor/Elevation Y axen
+  m_Name: parameter:/Motor/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -2093,9 +2149,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneLF1/Elevation Y axen
+  m_Name: parameter:/ZoneLF1/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -2152,12 +2208,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
+  Is3D: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3013
+  Length: 1500
 --- !u!114 &5178187006417414271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2398,9 +2454,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneRL1/Elevation Y axen
+  m_Name: parameter:/ZoneRL1/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -2422,9 +2478,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Vehicle Enter/Elevation Y axen
+  m_Name: parameter:/Vehicle Enter/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
@@ -2564,12 +2620,12 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 0
-  Is3D: 1
-  IsOneShot: 0
+  Is3D: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3013
+  Length: 1736
 --- !u!114 &7415210799763033229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2675,7 +2731,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4000
+  Length: 2700
 --- !u!114 &7866439850892110245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2818,9 +2874,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ZoneRL2/Elevation Y axen
+  m_Name: parameter:/ZoneRL2/YX
   m_EditorClassIdentifier: 
-  Name: Elevation Y axen
+  Name: YX
   StudioPath: 
   Min: 0
   Max: 60
