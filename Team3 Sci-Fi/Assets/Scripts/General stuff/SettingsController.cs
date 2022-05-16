@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SettingsController : MonoBehaviour
 {
@@ -78,6 +79,7 @@ public class SettingsController : MonoBehaviour
     {
         //send player to MainMenu
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
+        SceneManager.LoadScene(0);
     }
 
     public void OptionsMenuButton()

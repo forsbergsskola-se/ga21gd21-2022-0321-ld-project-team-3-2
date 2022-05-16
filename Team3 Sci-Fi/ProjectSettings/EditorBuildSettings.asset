@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/MainMenu.unity
     guid: a5a718ed58de7f5479fa64fd9f902d7d
   - enabled: 1
-    path: Assets/IntroScene.unity
-    guid: fd35fdab9a0926548b6c306dcf59b229
-  - enabled: 1
     path: Assets/Designers/LevelDesign-Jocke/Level design.unity
     guid: a351efc720a5afc48983b3d5b1ff11bb
   m_configObjects: {}

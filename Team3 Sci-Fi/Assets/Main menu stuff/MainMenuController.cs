@@ -12,10 +12,11 @@ public class MainMenuController : MonoBehaviour
     public FMODUnity.EventReference clickSoundPlaceEventHere;
     private FMOD.Studio.EventInstance clickSoundInstance;
     public int sceneIndexToLoad;
-    public Animator textAnim;
+    private Animator textAnim;
     
     private void Start()
     {
+        textAnim = GetComponent<Animator>();
         clickSoundInstance = FMODUnity.RuntimeManager.CreateInstance(clickSoundPlaceEventHere);
     }
     
@@ -29,9 +30,10 @@ public class MainMenuController : MonoBehaviour
 
     IEnumerator StartMenuText()
     {
-        enabled = false;
         textAnim.SetTrigger("start");
         yield return new WaitForSeconds(textScrollTime);
+        textAnim.SetTrigger("stop");
+        yield return new WaitForSeconds(3f);
         SceneManager.LoadSceneAsync(sceneIndexToLoad);
     }
     
