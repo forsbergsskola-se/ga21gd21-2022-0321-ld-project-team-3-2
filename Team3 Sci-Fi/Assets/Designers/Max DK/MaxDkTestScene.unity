@@ -1039,7 +1039,10 @@ MonoBehaviour:
   answer1Text: {fileID: 1739278115}
   answer2Text: {fileID: 1978427699}
   choices: {fileID: 49042906}
-  icon: {fileID: 1260012416}
+  rohanPortrait: {fileID: 356707890}
+  haronPortrait: {fileID: 1967351966}
+  habitantPortrait: {fileID: 602213423}
+  kahirPortrait: {fileID: 1904720459}
   mouseLook: {fileID: 1895819983}
   interact: {fileID: 1502764218}
   choiceText: {fileID: 614179629}
@@ -2696,6 +2699,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 9.858, z: 0}
+--- !u!1 &356707890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4005464788490314801, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8634252049637583298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &395908083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,6 +3224,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 585721300}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &602213423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3839449327677066064, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8634252049637583298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &614179629 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7512689302372843635, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
@@ -9891,6 +9906,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stories Template
       objectReference: {fileID: 0}
+    - target: {fileID: 1572049853646009144, guid: 82ec7332ba71b494fb6fe130521f954e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3883148704980897179, guid: 82ec7332ba71b494fb6fe130521f954e,
         type: 3}
       propertyPath: m_Pivot.x
@@ -10300,6 +10320,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
+  interactMessage: 
   questWaypoint: {fileID: 0}
   dialogue1TriggerOnComplete: {fileID: 0}
   dialogue2TriggerOnComplete: {fileID: 0}
@@ -10784,18 +10805,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 7, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1260012416 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4005464788490314803, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-    type: 3}
-  m_PrefabInstance: {fileID: 8634252049637583298}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1269727589
 GameObject:
   m_ObjectHideFlags: 0
@@ -13337,6 +13346,18 @@ Transform:
   m_Father: {fileID: 2020922148}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 53.754, y: 0, z: 0}
+--- !u!1 &1904720459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7068636833105893180, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8634252049637583298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1967351966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7292858754757126835, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8634252049637583298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1978427699 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4005464787620207923, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
@@ -15451,11 +15472,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 810670579}
     m_Modifications:
-    - target: {fileID: 4005464787917221668, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4005464788704803962, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -15566,50 +15582,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialouge box
       objectReference: {fileID: 0}
-    - target: {fileID: 4005464788704803963, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5765304854685735386, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 24267654}
-    - target: {fileID: 5765304854685735386, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Answer2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8771480371684317487, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8771480371684317487, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8771480371684317487, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 24267654}
-    - target: {fileID: 8771480371684317487, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8771480371684317487, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Answer1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8771480371684317487, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: DialogueManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea62ada45cd3a9a46ac239fcf5df25b6, type: 3}

@@ -15,7 +15,10 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI answer1Text;
     public TextMeshProUGUI answer2Text;
     public GameObject choices;
-    public Image icon;
+    public GameObject rohanPortrait;
+    public GameObject haronPortrait;
+    public GameObject habitantPortrait;
+    public GameObject kahirPortrait;
     public MouseLook mouseLook;
     public InteractionManager interact;
     public GameObject choiceText;
@@ -112,19 +115,19 @@ public class DialogueManager : MonoBehaviour
         if (answerNum == 1)
         {
             nameText.text = choiceDialogue.linesBranch1[dialogueTracker].character.name;
-            icon.sprite = choiceDialogue.linesBranch1[dialogueTracker].character.icon;
+            SetPortraitLineArray(choiceDialogue.linesBranch1);
             sentence = choiceDialogue.linesBranch1[dialogueTracker].text;
         }
         else if (answerNum == 2)
         {
             nameText.text = choiceDialogue.linesBranch2[dialogueTracker].character.name;
-            icon.sprite = choiceDialogue.linesBranch2[dialogueTracker].character.icon;
+            SetPortraitLineArray(choiceDialogue.linesBranch2);
             sentence = choiceDialogue.linesBranch2[dialogueTracker].text;
         }
         else
         {
             nameText.text = choiceDialogue.linesInitial[dialogueTracker].character.name;
-            icon.sprite = choiceDialogue.linesInitial[dialogueTracker].character.icon;
+            SetPortraitChoiceArray(choiceDialogue.linesInitial);
             sentence = choiceDialogue.linesInitial[dialogueTracker].text;
         }
         typingSounds.stop(STOP_MODE.IMMEDIATE);
@@ -182,7 +185,7 @@ public class DialogueManager : MonoBehaviour
         string sentence;
         
         nameText.text = choiceDialogue.onReturnDialogue.character.name;
-        icon.sprite = choiceDialogue.onReturnDialogue.character.icon;
+        SetPortraitLine(choiceDialogue.onReturnDialogue);
         sentence = choiceDialogue.onReturnDialogue.text;
         
         typingSounds.stop(STOP_MODE.IMMEDIATE);
@@ -204,6 +207,31 @@ public class DialogueManager : MonoBehaviour
 
         typingSounds.stop(STOP_MODE.IMMEDIATE);
     }
+
+    private void SetPortraitLineArray(Line[] branch)
+    {
+        habitantPortrait.SetActive(branch[dialogueTracker].character.isHabitant);
+        haronPortrait.SetActive(branch[dialogueTracker].character.isHaron);
+        kahirPortrait.SetActive(branch[dialogueTracker].character.isKahir);
+        rohanPortrait.SetActive(branch[dialogueTracker].character.isRohan);
+    }
+
+    private void SetPortraitLine(Line returnMessage)
+    {
+        habitantPortrait.SetActive(returnMessage.character.isHabitant);
+        haronPortrait.SetActive(returnMessage.character.isHaron);
+        kahirPortrait.SetActive(returnMessage.character.isKahir);
+        rohanPortrait.SetActive(returnMessage.character.isRohan);
+    }
+
+    private void SetPortraitChoiceArray(ChoiceLine[] choiceBranch)
+    {
+        habitantPortrait.SetActive(choiceBranch[dialogueTracker].character.isHabitant);
+        haronPortrait.SetActive(choiceBranch[dialogueTracker].character.isHaron);
+        kahirPortrait.SetActive(choiceBranch[dialogueTracker].character.isKahir);
+        rohanPortrait.SetActive(choiceBranch[dialogueTracker].character.isRohan);
+    }
+    
     public void CancelDialogue()
     {
         isTalking = false;

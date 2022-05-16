@@ -8,6 +8,8 @@ public class Characters : ScriptableObject
 {
     public bool isHaron;
     public bool isKahir;
+    public bool isHabitant;
+    public bool isRohan;
     public string name;
-    public Sprite icon;
+    
 }
