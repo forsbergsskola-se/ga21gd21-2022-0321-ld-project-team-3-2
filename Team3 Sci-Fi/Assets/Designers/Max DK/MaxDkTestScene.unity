@@ -2562,7 +2562,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 128842662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 530039270}
+        m_TargetAssemblyTypeName: SettingsController, Assembly-CSharp
+        m_MethodName: Windowed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &335057262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9123,7 +9135,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 128842662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 530039270}
+        m_TargetAssemblyTypeName: SettingsController, Assembly-CSharp
+        m_MethodName: Resolution1920x1080
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &940993874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9654,7 +9678,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 128842662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 530039270}
+        m_TargetAssemblyTypeName: SettingsController, Assembly-CSharp
+        m_MethodName: Resolution2560x1440
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1001035466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10139,7 +10175,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 128842662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 530039270}
+        m_TargetAssemblyTypeName: SettingsController, Assembly-CSharp
+        m_MethodName: Fullscreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1076880751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13034,7 +13082,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 128842662}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 530039270}
+        m_TargetAssemblyTypeName: SettingsController, Assembly-CSharp
+        m_MethodName: Resolution1600x900
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1865599502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14764,14 +14824,51 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
         type: 3}
+      propertyPath: checkedBox
+      value: 
+      objectReference: {fileID: 21300000, guid: 207e99bdfcca4774e8e42834f29313cd,
+        type: 3}
+    - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
+        type: 3}
       propertyPath: SettingsAnim
       value: 
       objectReference: {fileID: 324662110}
     - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
         type: 3}
+      propertyPath: uncheckedBox
+      value: 
+      objectReference: {fileID: 21300000, guid: 981ac9946d2056c4bb3f18da6d75697c,
+        type: 3}
+    - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
+        type: 3}
       propertyPath: OptionsMenuAnim
       value: 
       objectReference: {fileID: 128842664}
+    - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
+        type: 3}
+      propertyPath: checkBox1600x900
+      value: 
+      objectReference: {fileID: 1269727591}
+    - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
+        type: 3}
+      propertyPath: checkBoxWindowed
+      value: 
+      objectReference: {fileID: 401514815}
+    - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
+        type: 3}
+      propertyPath: checkBox1920x1080
+      value: 
+      objectReference: {fileID: 690693734}
+    - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
+        type: 3}
+      propertyPath: checkBox2560x1440
+      value: 
+      objectReference: {fileID: 656052070}
+    - target: {fileID: 5758760520115245996, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
+        type: 3}
+      propertyPath: checkBoxFullscreen
+      value: 
+      objectReference: {fileID: 1298252352}
     - target: {fileID: 5758760520115245998, guid: 5d8bd8aa51d258f4fa656c3680e5a6c5,
         type: 3}
       propertyPath: m_Name
@@ -15581,6 +15678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dialouge box
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005464788704803963, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5765304854685735386, guid: ea62ada45cd3a9a46ac239fcf5df25b6,
         type: 3}
