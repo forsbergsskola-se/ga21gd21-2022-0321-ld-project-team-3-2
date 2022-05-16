@@ -18,6 +18,7 @@ public class VehicleUpgradeObject : MonoBehaviour
    public QuestWaypoint questWaypoint;
    public GameObject dialogue1TriggerOnComplete;
    public GameObject dialogue2TriggerOnComplete;
+   public GameObject notKillHabitantZone; 
 
    private void Start()
    {
@@ -55,6 +56,7 @@ public class VehicleUpgradeObject : MonoBehaviour
          questWaypoint.targetArrayValue++;
          questWaypoint.activeQuestArrayValue++;
          dialogue2TriggerOnComplete.SetActive(true);
+         notKillHabitantZone.SetActive(true);
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
       else if (reinforcedTireUpgrade)

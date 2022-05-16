@@ -9,6 +9,9 @@ public class QuestManager : MonoBehaviour
     [SerializeField] private KeyPadPower keyPad;
     [SerializeField] private KeyPadPower2 keyPad2;
 
+    public bool killedHabitant;
+    public bool hasBomb;
+
     private void Update()
     {
         PuzzleOneQuest();
