@@ -49,6 +49,101 @@ MonoBehaviour:
     text: "Where is he? Hiding somewhere? \r"
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "Not sure. I\u2019ll ask him to contact you on the intercom.\r\n"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: 'Good. Make sure he calls now! '
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: Coming right up.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: What is taking him so long?
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "If it isn\u2019t our very own rebel. R\xF3han, is it that hard to follow
+      orders? \r\n"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Listen up H\xE1ron. I was asked to kill a man. This was not part of my
+      job description. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I want to go home today. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "This is a natural part of the job. At least you located the incubator
+      for us. I will send out a team to collect it right away. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "What do you even need this incubator for? \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "I guess it is time to explain this to you. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "You are very much aware of our difficult situation in the war. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "The incubator might just be our last hope of survival.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "How is that? \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Our hopes of winning this war using weapons or diplomacy died a long time
+      ago.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "The life that the incubator can create is almost indistinguishable from
+      an actual Krieran habitant. We can use this fact to our advantage.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We will use the artificial life as propaganda. It will be put into a cell
+      under harsh circumstances, treating it like a war criminal.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "It will all be filmed, live footage televised on all screens on every
+      street of Kriera. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We then tell the Krieran government that we have many more Krierans, hundreds
+      maybe thousands.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "In exchange for their lives we will require that the invasion is ceased.
+      \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Understand R\xF3han, your work might just save our whole planet. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: This is insanity, propaganda? You know that artificial lifeforms are just
+      as conscious as you and me.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: You are as irresponsible as I was told. This is your last expedition with
+      us.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I will tell people back on Fangl what you are doing. The people need to
+      know.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "But now I just want to go home. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "You are not telling a single person about this operation, understood?
+      That would be a crime against Fangl. You will be executed.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Whatever. Can you just send me home?\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "*Sigh* We can leave tomorrow. But we have a problem.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We are running low on the mineral gallium, we need it for repairing the
+      ship. You seem to traverse these lands pretty well.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "If you go get us that gallium today, we can leave first thing in the morning.
+      \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "If I am asked to hurt one more person I\u2019ll make it cost you. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "No more hurting anyone. There is a gallium quarry further into the valley,
+      some way past Thasalon. Just head over there, get the gallium and come back.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Just go as far away as possible in the valley and you should find the
+      place. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I\u2019m taking the rover.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Good. Honor to Dega-\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: '*click*'
   answer2: Screw you!
   linesBranch2:
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
@@ -73,6 +168,98 @@ MonoBehaviour:
     text: "Where is he? Hiding somewhere? \r"
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "Not sure. I\u2019ll ask him to contact you on the intercom.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: Good. Make sure he calls now!
+  - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: Coming right up.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: 'What is taking him so long? '
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: ...
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "If it isn\u2019t our very own rebel. R\xF3han, is it that hard to follow
+      orders? \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Listen up H\xE1ron. I was asked to kill a man. This was not part of my
+      job description. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I want to go home today. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "This is a natural part of the job. At least you located the incubator
+      for us. I will send out a team to collect it right away. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "What do you even need this incubator for? \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "I guess it is time to explain this to you. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "You are very much aware of our difficult situation in the war. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: The incubator might just be our last hope of survival.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "How is that? \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Our hopes of winning this war using weapons or diplomacy died a long time
+      ago.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "The life that the incubator can create is almost indistinguishable from
+      an actual Krieran habitant. We can use this fact to our advantage.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We will use the artificial life as propaganda.  It will be put into a
+      cell under harsh circumstances, treating it like a war criminal.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "It will all be filmed, live footage televised on all screens on every
+      street of Kriera. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We then tell the Krieran government that we have many more Krierans, hundreds
+      maybe  thousands.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "In exchange for their lives we will require that the invasion is ceased.
+      \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Understand R\xF3han, your work might just save our whole planet. "
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: This is insanity, propaganda? You know that artificial lifeforms are just
+      as conscious as you and me.
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: You are as irresponsible as I was told. This is your last expedition with
+      us.
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I will tell people back on Fangl what you are doing. The people need to
+      know.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: 'But now I just want to go home. '
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "You are not telling a single person about this operation, understood?
+      That would be a crime against Fangl. You will be killed.\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "Whatever. Can you just send me home?\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "*Sigh* We can leave tomorrow. But we have a problem.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "We are running low on the mineral gallium, we need it for repairing the
+      ship. You seem to traverse these lands pretty well.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: 'If you go get us that gallium today, we can leave first thing in the morning. '
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "If I am asked to hurt one more person I\u2019ll make it cost you. \r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "No more hurting anyone. There is a gallium quarry further into the valley,
+      some way past Thasalon. Just head over there, get the gallium and come back.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Just go as far away as possible in the valley and you should find the
+      place. \r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: "I\u2019m taking the rover.\r"
+  - character: {fileID: 11400000, guid: 2a75b9d1e86f469409e03ca32717b226, type: 2}
+    text: "Good. Honor to Dega-\r"
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: '*click*'
   onReturnDialogue:
     character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "I spoke to H\xE1ron. He'll contact you any second if he hasn't already."
