@@ -24,7 +24,7 @@ public class DialogueTriggerZone : MonoBehaviour
 
     void Update()
     {
-        if (dialogueManager.isTalking && Input.GetKeyDown(KeyCode.E) && choiceDialogue.talking)
+        if (dialogueManager.isTalking && Input.GetKeyDown(KeyCode.E) && choiceDialogue.talking && !dialogueManager.inChoice)
         {
             dialogueManager.DisplayNextSentenceChoice();
         }

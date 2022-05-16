@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac2c35c4204b0a4b8af37817db230b2, type: 3}
   m_Name: Habitant
   m_EditorClassIdentifier: 
+  isHaron: 0
+  isKahir: 0
+  isHabitant: 1
+  isRohan: 0
   name: ???
-  icon: {fileID: 21300000, guid: 31004acc6b29c8f4d99fd7ecc17f838d, type: 3}

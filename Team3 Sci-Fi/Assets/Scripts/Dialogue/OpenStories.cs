@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,14 +11,22 @@ public class OpenStories : MonoBehaviour
     [SerializeField] private InteractionManager interact;
     [SerializeField] private CharacterController movement;
     [SerializeField] private MouseLook mouse;
-    [SerializeField] private GameObject story;
     [SerializeField] private TMP_Text text;
+    [SerializeField] private Animator anim;
     public float waitForSeconds;
     
 
     private bool withinRange;
     private bool isReading;
     [TextArea(10, 10)] public string storyText;
+    private FMOD.Studio.EventInstance typingSounds;
+
+
+    private void Start()
+    {
+        typingSounds = FMODUnity.RuntimeManager.CreateInstance("event:/Dialog/Typing sound");
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         interact.ShowInteractMessage("Press E to read");
@@ -44,11 +53,13 @@ public class OpenStories : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && !isReading)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Items/Quest PickUp");
             movement.enabled = false;
             Cursor.lockState = CursorLockMode.None;
             mouse.enabled = false;
             isReading = true;
-            story.SetActive(true);
+            interact.HideInteractMessage();
+            anim.SetTrigger("StoriesIn");
             StartCoroutine(TypeSentence(storyText));
         }
         else if (Input.GetKeyDown(KeyCode.E) && isReading)
@@ -57,7 +68,8 @@ public class OpenStories : MonoBehaviour
             movement.enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             mouse.enabled = true;
-            story.SetActive(false);
+            anim.SetTrigger("StoriesOut");
+            typingSounds.stop(STOP_MODE.IMMEDIATE);
             StopAllCoroutines();
         }
     }
@@ -65,11 +77,13 @@ public class OpenStories : MonoBehaviour
     IEnumerator TypeSentence (string sentence)
     {
         text.text = "";
+        typingSounds.start();
         yield return new WaitForSeconds(0.5f);
         foreach (char letter in sentence.ToCharArray())
         {
             text.text += letter;
             yield return new WaitForSeconds(waitForSeconds);
         }
+        typingSounds.stop(STOP_MODE.IMMEDIATE);
     }
 }

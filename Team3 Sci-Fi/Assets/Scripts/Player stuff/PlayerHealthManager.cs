@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
@@ -23,6 +24,7 @@ public class PlayerHealthManager : MonoBehaviour
     private EnterOrExitVehicle vehicleEnter;
     [SerializeField] private Image vignette;
     [SerializeField] private Image veins;
+    private FMOD.Studio.EventInstance regenSound;
     public bool isDead
     {
         get;
@@ -50,6 +52,15 @@ public class PlayerHealthManager : MonoBehaviour
         vignette.color = vignetteColor;
         veins.color = veinsColor;
 
+        if (!isTakingDamage && currentHealth < maxHealth)
+        {
+            regenSound.start();
+        }
+        else
+        {
+            regenSound.stop(STOP_MODE.IMMEDIATE);
+        }
+
 
     }
 
@@ -58,6 +69,7 @@ public class PlayerHealthManager : MonoBehaviour
         vehicleEnter = FindObjectOfType<EnterOrExitVehicle>();
         currentHealth = maxHealth;
         gameProgress = FindObjectOfType<GameProgressionManager>();
+        regenSound = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Health regeneration");
     }
 
     private void FixedUpdate()
@@ -82,19 +94,18 @@ public class PlayerHealthManager : MonoBehaviour
 
     public void Death()
     {
-        
         if (isDead == false)
         {
             isDead = true;
             StartCoroutine(DeathAnim());
-            
         }
     }
 
     IEnumerator DeathAnim()
     {
         anim.SetTrigger("Die");
-        yield return new WaitForSeconds(1f);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Player death");
+        yield return new WaitForSeconds(2f);
         if (vehicleEnter.inCar)
         {
             vehicleEnter.ExitCarOnDeath();

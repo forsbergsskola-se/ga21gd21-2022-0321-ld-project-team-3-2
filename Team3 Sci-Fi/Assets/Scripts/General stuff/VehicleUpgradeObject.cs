@@ -13,6 +13,7 @@ public class VehicleUpgradeObject : MonoBehaviour
    public float pickUpRange;
    public LayerMask playerLayer;
    private InteractionManager interact;
+   public string interactMessage;
    
    private GameProgressionManager gameProgress;
    public QuestWaypoint questWaypoint;
@@ -32,7 +33,7 @@ public class VehicleUpgradeObject : MonoBehaviour
 
       if (isInObjectRange)
       {
-         interact.ShowInteractMessage("Press E to interact");
+         interact.ShowInteractMessage(interactMessage);
       }
       else
       {
@@ -55,6 +56,7 @@ public class VehicleUpgradeObject : MonoBehaviour
          gameProgress.vehicleUpgradeLevel++;
          questWaypoint.targetArrayValue++;
          questWaypoint.activeQuestArrayValue++;
+         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Items/Vehicle UG 1");
          dialogue2TriggerOnComplete.SetActive(true);
          notKillHabitantZone.SetActive(true);
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
@@ -66,6 +68,7 @@ public class VehicleUpgradeObject : MonoBehaviour
          gameProgress.vehicleUpgradeLevel++;
          questWaypoint.targetArrayValue++;
          questWaypoint.activeQuestArrayValue++;
+         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Items/Vehicle UG 2");
          dialogue1TriggerOnComplete.SetActive(true);
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }

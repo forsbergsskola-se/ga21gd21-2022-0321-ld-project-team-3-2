@@ -17,7 +17,10 @@ MonoBehaviour:
     text: '*Painful Screams*'
     isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: Holy shit! I'm sorry!
+    text: I'm so sorry!
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
+    text: 'What have I done? '
     isChoiceTrigger: 0
   answer1: 
   linesBranch1: []
