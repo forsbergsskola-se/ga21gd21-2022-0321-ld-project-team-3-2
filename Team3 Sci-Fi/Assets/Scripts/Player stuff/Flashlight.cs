@@ -20,12 +20,14 @@ public class Flashlight : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.F) && flashlight.enabled == false && InCar.inCar == false)
         {
             flickTrigger = flickerChance.Next(1, 4);
             if (flickTrigger <= 2)
             {
                 flashlight.enabled = true;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Items/Flashlight");
             }
             else
             {
@@ -34,6 +36,7 @@ public class Flashlight : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.F) && flashlight.enabled && InCar.inCar == false)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Items/Flashlight");
             flashlight.enabled = false;
         }
 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,25 +29,35 @@ public class DialogueManager : MonoBehaviour
 
     public float timeBetweenLetters;
 
-   
-
+    private FMOD.Studio.EventInstance typingSounds;
 
     void Start()
     {
-        dialogueTracker = 0;
+        dialogueTracker = 0; 
         dialogueUI.SetActive(false);
+        typingSounds = FMODUnity.RuntimeManager.CreateInstance("event:/Dialog/Typing sound");
     }
 
     public void StartDialogue(ChoiceDialogue choiceDia)
     {
         choiceDialogue = choiceDia;
         choiceDialogue.isDialogueFinished = false;
-       
         
         isTalking = true;
+
+        if (choiceDialogue.onReturnDialogue.character.isKahir)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/Kahir/Ka Dialog");
+        }
+        else if (choiceDialogue.onReturnDialogue.character.isHaron)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/Haron/Ha Dialog");
+        }
+        
+        
+        
         interact.HideInteractMessage();
         dialogueUI.SetActive(true);
-
         
         answer1Text.text = choiceDialogue.answer1;
         answer2Text.text = choiceDialogue.answer2;
@@ -57,7 +68,14 @@ public class DialogueManager : MonoBehaviour
     {
         
         choiceDialogue = choice;
-       
+        if (choiceDialogue.onReturnDialogue.character.isKahir)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/Kahir/Ka Dialog");
+        }
+        else if (choiceDialogue.onReturnDialogue.character.isHaron)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/Haron/Ha Dialog");
+        }
         isTalking = true;
         interact.HideInteractMessage();
         dialogueUI.SetActive(true);
@@ -109,7 +127,7 @@ public class DialogueManager : MonoBehaviour
             icon.sprite = choiceDialogue.linesInitial[dialogueTracker].character.icon;
             sentence = choiceDialogue.linesInitial[dialogueTracker].text;
         }
-        
+        typingSounds.stop(STOP_MODE.IMMEDIATE);
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
         if (answerNum == 0 && choiceDialogue.linesInitial[dialogueTracker].isChoiceTrigger)
@@ -165,6 +183,7 @@ public class DialogueManager : MonoBehaviour
         icon.sprite = choiceDialogue.onReturnDialogue.character.icon;
         sentence = choiceDialogue.onReturnDialogue.text;
         
+        typingSounds.stop(STOP_MODE.IMMEDIATE);
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
         
@@ -174,11 +193,14 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence (string sentence)
     {
         speechText.text = "";
+        typingSounds.start();
         foreach (char letter in sentence.ToCharArray())
         {
             speechText.text += letter;
             yield return new WaitForSeconds(timeBetweenLetters);
         }
+
+        typingSounds.stop(STOP_MODE.IMMEDIATE);
     }
     public void CancelDialogue()
     {
@@ -186,6 +208,14 @@ public class DialogueManager : MonoBehaviour
         dialogueUI.SetActive(false);
         dialogueTracker = 0;
         answerNum = 0;
+        if (choiceDialogue.onReturnDialogue.character.isKahir)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/Kahir/Ka Dialog");
+        }
+        else if (choiceDialogue.onReturnDialogue.character.isHaron)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/Haron/Ha Dialog");
+        }
         inChoice = false;
         choices.SetActive(false);
         if (Cursor.lockState == CursorLockMode.None)
@@ -197,6 +227,14 @@ public class DialogueManager : MonoBehaviour
     
     public void EndDialogue()
     {
+        if (choiceDialogue.onReturnDialogue.character.isKahir)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/Kahir/Ka Dialog");
+        }
+        else if (choiceDialogue.onReturnDialogue.character.isHaron)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/Haron/Ha Dialog");
+        }
         choiceDialogue.isDialogueFinished = true;
         answerNum = 0;
         isTalking = false;
