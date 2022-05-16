@@ -146,6 +146,7 @@ public class DialogueManager : MonoBehaviour
     public void Answer1()
     {
         continueText.SetActive(true);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         choiceText.SetActive(false);
         answerNum = 1;
         dialogueTracker = 0;
@@ -158,6 +159,7 @@ public class DialogueManager : MonoBehaviour
     public void Answer2()
     {
         continueText.SetActive(true);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         choiceText.SetActive(false);
         answerNum = 2;
         dialogueTracker = 0;

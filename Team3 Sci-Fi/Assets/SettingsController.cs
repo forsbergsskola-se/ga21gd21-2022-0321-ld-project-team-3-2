@@ -30,7 +30,11 @@ public class SettingsController : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && inMenu && !inSettings)
         {
-            ResumeButton();
+            Time.timeScale = 1;
+            inMenu = false;
+            fpsView.enabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            SettingsAnim.SetTrigger("CloseMenu");
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && inMenu && inSettings)
         {
@@ -44,7 +48,6 @@ public class SettingsController : MonoBehaviour
     {
         //pause the game
         Time.timeScale = 0;
-        
         // do sound snapshot
         
         // bring up options
@@ -59,6 +62,7 @@ public class SettingsController : MonoBehaviour
     public void ResumeButton()
     {
         // unpause game
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         Time.timeScale = 1;
         
         // do sound snapshot
@@ -73,11 +77,12 @@ public class SettingsController : MonoBehaviour
     public void MainMenuButton()
     {
         //send player to MainMenu
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
     }
 
     public void OptionsMenuButton()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Enter");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         //Close options and open new object
         SettingsAnim.SetTrigger("SettingsTime");
         OptionsMenuAnim.SetTrigger("OpenSettings");
@@ -87,23 +92,23 @@ public class SettingsController : MonoBehaviour
 
     public void Resolution1920x1080()
     {
-        
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
     }
     public void Resolution1600x900()
     {
-        
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
     }
     public void Resolution2560x1440()
     {
-        
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
     }
     public void Fullscreen()
     {
-        
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
     }
     public void Windowed()
     {
-        
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
     }
     
     

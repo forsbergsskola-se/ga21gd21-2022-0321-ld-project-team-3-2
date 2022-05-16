@@ -71,6 +71,7 @@ public class KeyPadPower2 : MonoBehaviour
 
     public void OkButton()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text == correctPassword)
         {
             lockedDialogue.enabled = false;
@@ -93,50 +94,60 @@ public class KeyPadPower2 : MonoBehaviour
     }
     public void BackSpaceButton()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         NumberInput.text = "";
     }
     public void Button1()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text.Length >= passwordLength) return;
         NumberInput.text += "1";
     }
     public void Button2()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text.Length >= passwordLength) return;
         NumberInput.text += "2";
     }
     public void Button3()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text.Length >= passwordLength) return;
         NumberInput.text += "3";
     }
     public void Button4()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text.Length >= passwordLength) return;
         NumberInput.text += "4";
     }
     public void Button5()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text.Length >= passwordLength) return;
         NumberInput.text += "5";
     }
     public void Button6()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text.Length >= passwordLength) return;
         NumberInput.text += "6";
     }
     public void Button7()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text.Length >= passwordLength) return;
         NumberInput.text += "7";
     }
     public void Button8()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text.Length >= passwordLength) return;
         NumberInput.text += "8";
     }
     public void Button9()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         if (NumberInput.text.Length >= passwordLength) return;
         NumberInput.text += "9";
     }
