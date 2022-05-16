@@ -13,6 +13,7 @@ public class VehicleUpgradeObject : MonoBehaviour
    public float pickUpRange;
    public LayerMask playerLayer;
    private InteractionManager interact;
+   public string interactMessage;
    
    private GameProgressionManager gameProgress;
    public QuestWaypoint questWaypoint;
@@ -32,7 +33,7 @@ public class VehicleUpgradeObject : MonoBehaviour
 
       if (isInObjectRange)
       {
-         interact.ShowInteractMessage("Press E to interact");
+         interact.ShowInteractMessage(interactMessage);
       }
       else
       {
