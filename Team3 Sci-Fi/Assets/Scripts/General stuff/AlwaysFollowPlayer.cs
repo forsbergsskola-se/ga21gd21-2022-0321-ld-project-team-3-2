@@ -10,6 +10,7 @@ public class AlwaysFollowPlayer : MonoBehaviour
     [SerializeField] private float mapLowestPoint;
     private float playerElevation;
     private EnterOrExitVehicle enterExitVehicleScript;
+    private float elevationParameter;
 
     private void Start()
     {
@@ -19,10 +20,9 @@ public class AlwaysFollowPlayer : MonoBehaviour
     void Update()
     {
         
-        
        
         playerElevation = playerPos.position.y;
-        float elevationParameter = playerElevation - mapLowestPoint;
+        elevationParameter = playerElevation - mapLowestPoint;
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Elevation Y axen", elevationParameter);
 
 

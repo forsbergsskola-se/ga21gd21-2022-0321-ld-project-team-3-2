@@ -77,6 +77,7 @@ public class SettingsController : MonoBehaviour
 
     public void OptionsMenuButton()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Vehicle/Vehicle Enter");
         //Close options and open new object
         SettingsAnim.SetTrigger("SettingsTime");
         OptionsMenuAnim.SetTrigger("OpenSettings");
