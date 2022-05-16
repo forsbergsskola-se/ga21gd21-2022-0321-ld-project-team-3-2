@@ -8,6 +8,8 @@ public class Timer : MonoBehaviour
     [SerializeField] private ChangeActiveQuest qa;
     [SerializeField] private GameObject waypoint;
     [SerializeField] private GameObject activeQuest;
+
+    public float waitForSeconds;
     private void OnTriggerEnter(Collider other)
     {
         StartCoroutine(TimerStart());
@@ -17,7 +19,7 @@ public class Timer : MonoBehaviour
     {
         waypoint.SetActive(false);
         activeQuest.SetActive(false);
-        yield return new WaitForSeconds(60);
+        yield return new WaitForSeconds(waitForSeconds);
         waypoint.SetActive(true);
         activeQuest.SetActive(true);
         qw.IncramentWaypointExternal();
