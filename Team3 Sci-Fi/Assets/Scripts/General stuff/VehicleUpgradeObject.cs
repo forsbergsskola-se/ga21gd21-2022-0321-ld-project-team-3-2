@@ -55,6 +55,7 @@ public class VehicleUpgradeObject : MonoBehaviour
          gameProgress.vehicleUpgradeLevel++;
          questWaypoint.targetArrayValue++;
          questWaypoint.activeQuestArrayValue++;
+         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Items/Vehicle UG 1");
          dialogue2TriggerOnComplete.SetActive(true);
          notKillHabitantZone.SetActive(true);
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
@@ -66,6 +67,7 @@ public class VehicleUpgradeObject : MonoBehaviour
          gameProgress.vehicleUpgradeLevel++;
          questWaypoint.targetArrayValue++;
          questWaypoint.activeQuestArrayValue++;
+         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Items/Vehicle UG 2");
          dialogue1TriggerOnComplete.SetActive(true);
          FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Car Lvl", gameProgress.vehicleUpgradeLevel);
       }
