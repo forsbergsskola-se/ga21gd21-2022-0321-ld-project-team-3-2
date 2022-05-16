@@ -58,6 +58,7 @@ public class OpenStories : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             mouse.enabled = false;
             isReading = true;
+            interact.HideInteractMessage();
             anim.SetTrigger("StoriesIn");
             StartCoroutine(TypeSentence(storyText));
         }
