@@ -9,6 +9,8 @@ public class KillHabitant : MonoBehaviour
     [SerializeField] private GameObject kahirKillDialogueTrigger;
     [SerializeField] private GameObject screamTrigger;
     [SerializeField] private QuestManager qm;
+    [SerializeField] private ChangeWaypoint qw;
+    [SerializeField] private ChangeActiveQuest qa;
 
     public bool withinRange;
     private void OnTriggerEnter(Collider other)
@@ -20,7 +22,6 @@ public class KillHabitant : MonoBehaviour
     {
         interact.HideInteractMessage();
         withinRange = false;
-        
     }
     
     private void Update()
@@ -42,6 +43,8 @@ public class KillHabitant : MonoBehaviour
         kahirNotKillDialogueTrigger.SetActive(false);
         kahirKillDialogueTrigger.SetActive(true);
         screamTrigger.SetActive(true);
+        qa.IncramentActiveQuestExternal();
+        qw.IncramentWaypointExternal();
         Destroy(this);
     }
 }

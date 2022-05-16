@@ -9,7 +9,9 @@ public class ChangeActiveQuestTrigger : MonoBehaviour
     [SerializeField] public ChangeActiveQuest ca;
     private void OnTriggerEnter(Collider other)
     {
+        
         ca.IncramentActiveQuestExternal();
         thisColl.enabled = false;
+        Destroy(this);
     }
 }
