@@ -11,8 +11,8 @@ public class OpenStories : MonoBehaviour
     [SerializeField] private InteractionManager interact;
     [SerializeField] private CharacterController movement;
     [SerializeField] private MouseLook mouse;
-    [SerializeField] private GameObject story;
     [SerializeField] private TMP_Text text;
+    [SerializeField] private Animator anim;
     public float waitForSeconds;
     
 
@@ -58,7 +58,7 @@ public class OpenStories : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             mouse.enabled = false;
             isReading = true;
-            story.SetActive(true);
+            anim.SetTrigger("StoriesIn");
             StartCoroutine(TypeSentence(storyText));
         }
         else if (Input.GetKeyDown(KeyCode.E) && isReading)
@@ -67,7 +67,7 @@ public class OpenStories : MonoBehaviour
             movement.enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             mouse.enabled = true;
-            story.SetActive(false);
+            anim.SetTrigger("StoriesOut");
             typingSounds.stop(STOP_MODE.IMMEDIATE);
             StopAllCoroutines();
         }
