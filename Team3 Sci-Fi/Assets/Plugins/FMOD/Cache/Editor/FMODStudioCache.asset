@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637883743325922618
+  lastModified: 637883822022397805
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -301,7 +301,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -427,7 +427,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -451,7 +451,7 @@ MonoBehaviour:
   StudioPath: parameter:/YX
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -499,7 +499,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -551,7 +551,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -767,7 +767,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -856,7 +856,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3013
+  Length: 3000
 --- !u!114 &-2511181605639596587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,7 +921,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1000
+  Length: 480
 --- !u!114 &-1106295516910088101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1177,6 +1177,7 @@ MonoBehaviour:
   - {fileID: -6794284539735108321}
   - {fileID: -2671188085988503581}
   - {fileID: 1028114386006135303}
+  - {fileID: 4859583528738868283}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
@@ -1191,7 +1192,7 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637883743325974975
+  cacheTime: 637883822022487826
   cacheVersion: 10
 --- !u!114 &69954978412824198
 MonoBehaviour:
@@ -1290,7 +1291,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -1662,10 +1663,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637883743325974975
+  lastModified: 637883822022487826
   FileSizes:
   - Name: 
-    Value: 3702
+    Value: 3698
   Exists: 1
 --- !u!114 &2412012329153476509
 MonoBehaviour:
@@ -1752,7 +1753,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -1848,7 +1849,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -2155,7 +2156,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -2163,6 +2164,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &4859583528738868283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Endings/Explotion
+  m_EditorClassIdentifier: 
+  Path: event:/Endings/Explotion
+  Guid:
+    Data1: -907313321
+    Data2: 1083852632
+    Data3: 55634825
+    Data4: 10022122
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4928854977017586139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2460,7 +2488,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -2484,7 +2512,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
@@ -2880,7 +2908,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 60
-  Default: 30
+  Default: 0
   ID:
     data1: 44443144
     data2: 2883253264
