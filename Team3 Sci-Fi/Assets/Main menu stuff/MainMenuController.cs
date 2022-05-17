@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuController : MonoBehaviour
 {
 
-
+    public GameObject musicObject;
     public float textScrollTime;
     public FMODUnity.EventReference clickSoundPlaceEventHere;
     private FMOD.Studio.EventInstance clickSoundInstance;
@@ -34,6 +34,7 @@ public class MainMenuController : MonoBehaviour
         yield return new WaitForSeconds(textScrollTime);
         textAnim.SetTrigger("stop");
         yield return new WaitForSeconds(3f);
+        Destroy(musicObject);
         SceneManager.LoadSceneAsync(sceneIndexToLoad);
     }
     
