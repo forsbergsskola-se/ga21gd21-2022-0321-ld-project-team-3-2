@@ -19,6 +19,7 @@ public class KeyPadPower2 : MonoBehaviour
     [SerializeField] private DialogueTrigger lockedDialogue;
     [SerializeField] private ChangeWaypoint waypoint;
     [SerializeField] private ChangeActiveQuest activeQuest;
+    [SerializeField] private Collider generatorCollider;
     public string interactMessage;
     private bool inKeyPad;
     public bool correctCodePuzzle2;
@@ -82,6 +83,7 @@ public class KeyPadPower2 : MonoBehaviour
             inKeyPad = false;
             anim.SetTrigger("Close keypad");
             Cursor.lockState = CursorLockMode.Locked;
+            generatorCollider.enabled = true;
             fpsView.enabled = true;
             KeyPadPower2 thisKeypad = GetComponent<KeyPadPower2>();
             enabled = false;
