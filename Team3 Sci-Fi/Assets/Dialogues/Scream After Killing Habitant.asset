@@ -16,6 +16,12 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 4536830c4fdc98e478e250cc91d2b65e, type: 2}
     text: '*Painful Screams*'
     isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 4536830c4fdc98e478e250cc91d2b65e, type: 2}
+    text: '*Muffled* I can''t breathe!'
+    isChoiceTrigger: 0
+  - character: {fileID: 11400000, guid: 4536830c4fdc98e478e250cc91d2b65e, type: 2}
+    text: '*Muffled* Help!'
+    isChoiceTrigger: 0
   - character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
     text: I'm so sorry!
     isChoiceTrigger: 0
