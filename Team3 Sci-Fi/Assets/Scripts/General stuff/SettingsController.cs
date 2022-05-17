@@ -162,7 +162,25 @@ public class SettingsController : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         Screen.fullScreen = false;
     }
-    
+
+
+    public void SetVolumeMaster(float master)
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Vol Master", master);
+    }
+    public void SetVolumeMusic(float music)
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Vol Music", music);
+    }
+    public void SetVolumeAmbience(float ambience)
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Vol Ambiens", ambience);
+    }
+    public void SetVolumeVehicle(float vehicle)
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Vol Vehicle", vehicle);
+    }
+
     
 
     public void RespawnButton()
