@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8855279782787310499
+--- !u!114 &-9195310648546629523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/Pause Main
+  m_Name: snapshot:/Esq M
   m_EditorClassIdentifier: 
-  Path: snapshot:/Pause Main
+  Path: snapshot:/Esq M
   Guid:
-    Data1: 1649366074
-    Data2: 1293087790
-    Data3: -2141145965
-    Data4: 1930305548
+    Data1: 210812673
+    Data2: 1115758323
+    Data3: 1236021680
+    Data4: 1420963567
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637883975399679728
+  lastModified: 637884052167826176
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -229,6 +229,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-7981892341817481516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musik/Main M
+  m_EditorClassIdentifier: 
+  Path: event:/Musik/Main M
+  Guid:
+    Data1: 1991885709
+    Data2: 1272449459
+    Data3: 1453615807
+    Data4: -2118962242
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 57152
 --- !u!114 &-7637437459145819280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1177,8 +1204,8 @@ MonoBehaviour:
   - {fileID: -2671188085988503581}
   - {fileID: 1028114386006135303}
   - {fileID: 4859583528738868283}
-  - {fileID: 4753060091057936397}
-  - {fileID: -8855279782787310499}
+  - {fileID: -9195310648546629523}
+  - {fileID: -7981892341817481516}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
@@ -1193,7 +1220,7 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637883975399739752
+  cacheTime: 637884052167866068
   cacheVersion: 10
 --- !u!114 &69954978412824198
 MonoBehaviour:
@@ -1216,7 +1243,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1664,10 +1691,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637883975399739752
+  lastModified: 637884052167866068
   FileSizes:
   - Name: 
-    Value: 3760
+    Value: 3742
   Exists: 1
 --- !u!114 &2412012329153476509
 MonoBehaviour:
@@ -2165,33 +2192,6 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &4753060091057936397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: snapshot:/In game
-  m_EditorClassIdentifier: 
-  Path: snapshot:/In game
-  Guid:
-    Data1: -116163320
-    Data2: 1237941997
-    Data3: -597620557
-    Data4: -2121808819
-  Banks:
-  - {fileID: -8850837768259012465}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
 --- !u!114 &4859583528738868283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2393,7 +2393,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -3174,7 +3174,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -8850837768259012465}
   IsStream: 1
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: -4576643392685716334}
