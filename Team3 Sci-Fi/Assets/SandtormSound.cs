@@ -20,7 +20,7 @@ public class SandtormSound : MonoBehaviour
     {
 
         distanceToStorm = Vector3.Distance(playerTrans.position, transform.position);
-        distanceToStorm = Math.Clamp(distanceToStorm, 0, 100);
+        distanceToStorm = Math.Clamp(distanceToStorm, 0, 300);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("DistensWind", distanceToStorm);
 
 
