@@ -25,6 +25,9 @@ public class PlayerHealthManager : MonoBehaviour
     [SerializeField] private Image vignette;
     [SerializeField] private Image veins;
     private FMOD.Studio.EventInstance regenSound;
+    private FMOD.Studio.EventInstance hurtSound;
+    private bool isHurtSoundPlaying;
+    private bool isRegenSoundPlaying;
     public bool isDead
     {
         get;
@@ -52,20 +55,28 @@ public class PlayerHealthManager : MonoBehaviour
         vignette.color = vignetteColor;
         veins.color = veinsColor;
 
-        if (!isTakingDamage && currentHealth < maxHealth)
+        
+
+        if (currentHealth <= maxHealth * 0.5)
         {
-            regenSound.start();
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("PGH",1);
         }
         else
         {
-            regenSound.stop(STOP_MODE.IMMEDIATE);
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("PGH",0);
         }
+        
+       
 
 
     }
 
+    
+    
+
     private void Start()
     {
+        hurtSound = FMODUnity.RuntimeManager.CreateInstance("event:/Player/Player Geting Hurt");
         vehicleEnter = FindObjectOfType<EnterOrExitVehicle>();
         currentHealth = maxHealth;
         gameProgress = FindObjectOfType<GameProgressionManager>();
@@ -79,6 +90,8 @@ public class PlayerHealthManager : MonoBehaviour
             Death();
         }
         
+        
+        
      
         RegenerateHealth();
         isTakingDamage = false;
@@ -89,6 +102,14 @@ public class PlayerHealthManager : MonoBehaviour
     public void TakeDamage(float damage)
     {
         isTakingDamage = true;
+
+        if (!isHurtSoundPlaying)
+        {
+            hurtSound.start();
+        }
+        isHurtSoundPlaying = true;
+        
+            
         currentHealth -= damage;
     }
 
@@ -119,9 +140,22 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void RegenerateHealth()
     {
+        
         if (!isDead && !isTakingDamage && currentHealth < 100f)
         {
+            isHurtSoundPlaying = false;
+            hurtSound.stop(STOP_MODE.ALLOWFADEOUT);
+            if (!isRegenSoundPlaying)
+            {
+                regenSound.start();
+            }
+            isRegenSoundPlaying = true;
             currentHealth += maxHealth * (healthRegenSpeed / 1000f);
+        }
+        else
+        {
+            isRegenSoundPlaying = false;
+            regenSound.stop(STOP_MODE.IMMEDIATE);
         }
     }
 }
