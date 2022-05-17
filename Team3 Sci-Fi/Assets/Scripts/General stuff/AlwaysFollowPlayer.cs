@@ -23,7 +23,11 @@ public class AlwaysFollowPlayer : MonoBehaviour
        
         playerElevation = playerPos.position.y;
         elevationParameter = playerElevation - mapLowestPoint;
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Elevation test",elevationParameter);
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("YX",elevationParameter);
+        }
+        
 
 
         if (enterExitVehicleScript.inCar)
