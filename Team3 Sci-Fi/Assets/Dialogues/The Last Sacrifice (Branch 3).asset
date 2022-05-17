@@ -76,7 +76,7 @@ MonoBehaviour:
   - character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
     text: "I can\u2019t do this anymore H\xE1ron."
   onReturnDialogue:
-    character: {fileID: 11400000, guid: 0e4bbb82e1af8ae43a8ee4723d5cd765, type: 2}
-    text: 
+    character: {fileID: 11400000, guid: 55f75781bd33f504cafd94d585d0e055, type: 2}
+    text: Hej
   isDialogueFinished: 0
   talking: 0
