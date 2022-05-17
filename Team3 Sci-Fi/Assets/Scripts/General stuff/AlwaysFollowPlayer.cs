@@ -11,10 +11,36 @@ public class AlwaysFollowPlayer : MonoBehaviour
     private float playerElevation;
     private EnterOrExitVehicle enterExitVehicleScript;
     public float elevationParameter;
+    
+    private FMOD.Studio.PARAMETER_ID yxParam;
+    
+    private FMOD.Studio.EventInstance yInst;
+    
+    private FMOD.Studio.PLAYBACK_STATE state;
 
-    private void Start()
+
+    // Start is called before the first frame update
+    void Start()
     {
+        FMOD.Studio.EventDescription yxParamEventDesc;
+        
+        yInst.getDescription(out yxParamEventDesc);
+        
+        FMOD.Studio.PARAMETER_DESCRIPTION yxParamDescription;
+        
+        yxParamEventDesc.getParameterDescriptionByName("YX", out yxParamDescription);
+        
+        yxParam = yxParamDescription.id;
+
         enterExitVehicleScript = vehiclePos.GetComponent<EnterOrExitVehicle>();
+    }
+
+
+   
+
+    private void FixedUpdate()
+    {
+        
     }
 
     void Update()
@@ -23,10 +49,8 @@ public class AlwaysFollowPlayer : MonoBehaviour
        
         playerElevation = playerPos.position.y;
         elevationParameter = playerElevation - mapLowestPoint;
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("YX",elevationParameter);
-        }
+        
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByID(yxParam,elevationParameter);
         
 
 
