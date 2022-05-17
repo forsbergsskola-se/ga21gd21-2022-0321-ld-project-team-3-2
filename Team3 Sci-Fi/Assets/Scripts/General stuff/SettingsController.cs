@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,6 +24,7 @@ public class SettingsController : MonoBehaviour
     public Image checkBoxWindowed;
     public Sprite checkedBox;
     public Sprite uncheckedBox;
+    private FMOD.Studio.EventInstance pauseSnapshot;
 
     private void Start()
     {
@@ -30,7 +32,7 @@ public class SettingsController : MonoBehaviour
         healthManager = FindObjectOfType<PlayerHealthManager>();
         fpsView = FindObjectOfType<MouseLook>();
         Screen.SetResolution(1920,1080,Screen.fullScreen);
-        
+        pauseSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Esq M");
         Screen.fullScreen = true;
         
     }
@@ -76,6 +78,7 @@ public class SettingsController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Escape) && inMenu && !inSettings)
         {
             Time.timeScale = 1;
+            pauseSnapshot.stop(STOP_MODE.IMMEDIATE);
             inMenu = false;
             fpsView.enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
@@ -93,7 +96,10 @@ public class SettingsController : MonoBehaviour
     {
         //pause the game
         Time.timeScale = 0;
+        pauseSnapshot.start();
         // do sound snapshot
+        
+        
         
         // bring up options
         inMenu = true;
@@ -109,6 +115,7 @@ public class SettingsController : MonoBehaviour
         // unpause game
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         Time.timeScale = 1;
+        pauseSnapshot.stop(STOP_MODE.IMMEDIATE);
         
         // do sound snapshot
         
