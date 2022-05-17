@@ -50,7 +50,7 @@ public class AlwaysFollowPlayer : MonoBehaviour
         playerElevation = playerPos.position.y;
         elevationParameter = playerElevation - mapLowestPoint;
         
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByID(yxParam,elevationParameter);
+        // FMODUnity.RuntimeManager.StudioSystem.setParameterByID(yxParam,elevationParameter);
         
 
 

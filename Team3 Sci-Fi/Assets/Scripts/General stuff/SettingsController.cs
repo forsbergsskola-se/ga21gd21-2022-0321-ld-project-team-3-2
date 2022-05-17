@@ -112,6 +112,9 @@ public class SettingsController : MonoBehaviour
         
         // do sound snapshot
         
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("YX", 0);
+        
+        
         //close options
         inMenu = false;
         fpsView.enabled = true;
