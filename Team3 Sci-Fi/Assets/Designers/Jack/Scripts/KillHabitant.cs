@@ -40,6 +40,7 @@ public class KillHabitant : MonoBehaviour
     private void TurnOffGenerator()
     {
         qm.killedHabitant = true;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Dialog/Mufeld skream");
         kahirNotKillDialogueTrigger.SetActive(false);
         kahirKillDialogueTrigger.SetActive(true);
         screamTrigger.SetActive(true);
