@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         
         
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Test test", 15);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("YX", 15);
         
         if (isGrounded && velocity.y < 0)
         {
