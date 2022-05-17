@@ -43,13 +43,11 @@ public class particleWheel : MonoBehaviour
         else if(belowThreshold) 
         {
             particlesPlaying = false;
-            Debug.Log("stopping particles");
             dustParticles.Stop();
         }
     }
     private void SpawnParticles()
     {
-        Debug.Log("Starting particles");
         dustParticles.Play();
     }
 }
