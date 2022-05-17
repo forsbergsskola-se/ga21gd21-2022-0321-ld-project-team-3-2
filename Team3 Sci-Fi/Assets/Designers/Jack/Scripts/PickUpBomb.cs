@@ -46,7 +46,7 @@ public class PickUpBomb : MonoBehaviour
             qm.hasBomb = true;
             dialogue.SetActive(true);
             bombMesh.enabled = false;
-            thisColl.size = new Vector3(1, 1, 1);
+            thisColl.size = new Vector3(0.01f, 0.01f, 0.01f);
         }
     }
 }
