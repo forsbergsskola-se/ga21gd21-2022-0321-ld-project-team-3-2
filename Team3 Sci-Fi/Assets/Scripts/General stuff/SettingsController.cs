@@ -47,7 +47,7 @@ public class SettingsController : MonoBehaviour
             checkBoxWindowed.sprite = checkedBox;
             checkBoxFullscreen.sprite = uncheckedBox;
         }
-
+        
         if (Screen.currentResolution.width == 1920)
         {
             checkBox1920x1080.sprite = checkedBox;
@@ -122,6 +122,7 @@ public class SettingsController : MonoBehaviour
     public void MainMenuButton()
     {
         //send player to MainMenu
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Vol Music", 0);
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         SceneManager.LoadScene(0);
     }
