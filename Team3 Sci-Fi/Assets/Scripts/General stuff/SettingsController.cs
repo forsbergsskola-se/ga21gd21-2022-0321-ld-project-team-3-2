@@ -129,6 +129,9 @@ public class SettingsController : MonoBehaviour
     public void MainMenuButton()
     {
         //send player to MainMenu
+        Time.timeScale = 1;
+        inMenu = false;
+        pauseSnapshot.stop(STOP_MODE.IMMEDIATE);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Vol Music", 0);
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         SceneManager.LoadScene(0);
