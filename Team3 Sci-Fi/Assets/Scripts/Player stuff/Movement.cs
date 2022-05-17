@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     private bool isGrounded;
     public bool jumpOn;
     [SerializeField] private float jumpForce;
+    [SerializeField] private Animator anim;
 
     
     void Update()
@@ -39,14 +40,28 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             controller.Move(move * sprintSpeed * Time.deltaTime);
+            if (move.magnitude > 0.1f)
+            {
+                anim.speed = 1.75f;
+            }
         }
         else
         {
             controller.Move(move * speed * Time.deltaTime);
+            anim.speed = 1f;
         }
-        
-       
 
+        if (move.magnitude > 0.1f)
+        {
+            anim.SetBool("IsMoving", true);
+        }
+        else
+        {
+            anim.SetBool("IsMoving", false);
+        }
+
+        
+        
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
