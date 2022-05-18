@@ -11,7 +11,7 @@ public class PickUpBomb : MonoBehaviour
     [SerializeField] private GameObject dialogue;
     [SerializeField] private GameObject bomb;
     [SerializeField] private InteractionManager interact;
-    [SerializeField] private MeshRenderer bombMesh;
+    [SerializeField] private GameObject bombObject;
     [SerializeField] private BoxCollider thisColl;
     
     public bool withinRange;
@@ -45,7 +45,7 @@ public class PickUpBomb : MonoBehaviour
             interact.HideInteractMessage();
             qm.hasBomb = true;
             dialogue.SetActive(true);
-            bombMesh.enabled = false;
+            bombObject.SetActive(false);
             thisColl.size = new Vector3(0.01f, 0.01f, 0.01f);
         }
     }
