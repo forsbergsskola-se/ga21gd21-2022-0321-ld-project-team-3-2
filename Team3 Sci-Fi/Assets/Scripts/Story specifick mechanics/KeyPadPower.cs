@@ -46,6 +46,7 @@ public class KeyPadPower : MonoBehaviour
         {
             inKeyPad = false;
             anim.SetTrigger("Close keypad");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Zoop");
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
         }
@@ -53,6 +54,7 @@ public class KeyPadPower : MonoBehaviour
         {
             inKeyPad = true;
             anim.SetTrigger("Open keypad");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Zoop");
             Cursor.lockState = CursorLockMode.None;
             fpsView.enabled = false;
         }
@@ -82,6 +84,7 @@ public class KeyPadPower : MonoBehaviour
             inKeyPad = false;
             correctCode = true;
             anim.SetTrigger("Close keypad");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Zoop");
             Cursor.lockState = CursorLockMode.Locked;
             fpsView.enabled = true;
             KeyPadPower thisKeypad = GetComponent<KeyPadPower>();
