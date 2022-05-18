@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637884052167826176
+  lastModified: 637884698521827201
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -1206,6 +1206,7 @@ MonoBehaviour:
   - {fileID: 4859583528738868283}
   - {fileID: -9195310648546629523}
   - {fileID: -7981892341817481516}
+  - {fileID: 4942749117585258599}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
@@ -1220,7 +1221,7 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637884052167866068
+  cacheTime: 637884698521927201
   cacheVersion: 10
 --- !u!114 &69954978412824198
 MonoBehaviour:
@@ -1691,10 +1692,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637884052167866068
+  lastModified: 637884698521927201
   FileSizes:
   - Name: 
-    Value: 3742
+    Value: 3788
   Exists: 1
 --- !u!114 &2412012329153476509
 MonoBehaviour:
@@ -2243,6 +2244,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &4942749117585258599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ui/Zoop
+  m_EditorClassIdentifier: 
+  Path: event:/Ui/Zoop
+  Guid:
+    Data1: -268160092
+    Data2: 1078490398
+    Data3: -32452186
+    Data4: 1563076018
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 540
 --- !u!114 &5094529744236572279
 MonoBehaviour:
   m_ObjectHideFlags: 0
