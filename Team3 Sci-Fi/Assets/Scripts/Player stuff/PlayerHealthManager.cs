@@ -65,10 +65,6 @@ public class PlayerHealthManager : MonoBehaviour
         {
             FMODUnity.RuntimeManager.StudioSystem.setParameterByName("PGH",0);
         }
-        
-       
-
-
     }
 
     
@@ -125,6 +121,7 @@ public class PlayerHealthManager : MonoBehaviour
     IEnumerator DeathAnim()
     {
         anim.SetTrigger("Die");
+        hurtSound.stop(STOP_MODE.IMMEDIATE);
         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Player death");
         yield return new WaitForSeconds(2f);
         if (vehicleEnter.inCar)
