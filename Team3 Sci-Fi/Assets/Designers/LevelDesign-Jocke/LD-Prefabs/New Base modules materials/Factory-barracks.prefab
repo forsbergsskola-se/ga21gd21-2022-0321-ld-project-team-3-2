@@ -8556,6 +8556,7 @@ GameObject:
   - component: {fileID: 3187882770811869112}
   - component: {fileID: 2362399519402395025}
   - component: {fileID: 7667366097624434612}
+  - component: {fileID: 36881723939209246}
   m_Layer: 0
   m_Name: Floor_Low (5)
   m_TagString: Untagged
@@ -8628,6 +8629,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &36881723939209246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5390862604987277303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05396412, y: 0.12486116, z: 0.0014855425}
+  m_Center: {x: 0.02558873, y: 0.060504083, z: -0.0007427691}
 --- !u!1 &5496415422827311603
 GameObject:
   m_ObjectHideFlags: 0
