@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using FMOD.Studio;
-
+using UnityEngine.SceneManagement;
 public class Ending4Text : MonoBehaviour
 {
 
     [SerializeField] private TMP_Text[] text;
     [SerializeField] private Animator anim;
+    [SerializeField] private Animator gameLogoAnim;
     private EventInstance typingSounds; 
     [TextArea(3, 10)] public string[] storyText = new string[10];
     [TextArea(3, 10)] public string[] storyTextTwo = new string[10];
@@ -54,7 +55,7 @@ public class Ending4Text : MonoBehaviour
     
     IEnumerator TypeSentenceTwo (string[] sentence)
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
         for (int i = 0; i < text.Length; i++)
         {
             text[i].text = "";
@@ -71,7 +72,10 @@ public class Ending4Text : MonoBehaviour
 
         yield return new WaitForSeconds(5);
         anim.SetTrigger("Fade Out");
-        
-        //PLAY GAME NAME
+        yield return new WaitForSeconds(2);
+        gameLogoAnim.SetTrigger("PlayLogo");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Logo");
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(0);
     }
 }
