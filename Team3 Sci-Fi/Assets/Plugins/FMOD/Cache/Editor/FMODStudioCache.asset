@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 637884698521827201
+  lastModified: 637884917010065840
   FileSizes: []
   Exists: 1
 --- !u!114 &-8717103769768532660
@@ -85,7 +85,7 @@ MonoBehaviour:
   StudioPath: 
   Min: 0
   Max: 300
-  Default: 0
+  Default: 300
   ID:
     data1: 118670203
     data2: 4129383344
@@ -927,7 +927,7 @@ MonoBehaviour:
   StudioPath: parameter:/DistensWind
   Min: 0
   Max: 300
-  Default: 0
+  Default: 300
   ID:
     data1: 118670203
     data2: 4129383344
@@ -1207,6 +1207,7 @@ MonoBehaviour:
   - {fileID: -9195310648546629523}
   - {fileID: -7981892341817481516}
   - {fileID: 4942749117585258599}
+  - {fileID: 2636049969306851097}
   EditorParameters:
   - {fileID: -5850436356481366126}
   - {fileID: -2511181605639596587}
@@ -1221,7 +1222,7 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   StringsBanks:
   - {fileID: 2302851425273624952}
-  cacheTime: 637884698521927201
+  cacheTime: 637884917010065840
   cacheVersion: 10
 --- !u!114 &69954978412824198
 MonoBehaviour:
@@ -1692,10 +1693,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Desktop/Master.strings.bank
   Name: Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637884698521927201
+  lastModified: 637884860236025688
   FileSizes:
   - Name: 
-    Value: 3788
+    Value: 3824
   Exists: 1
 --- !u!114 &2412012329153476509
 MonoBehaviour:
@@ -1742,6 +1743,33 @@ MonoBehaviour:
   lastModified: 637878020671821974
   FileSizes: []
   Exists: 1
+--- !u!114 &2636049969306851097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ui/Logo
+  m_EditorClassIdentifier: 
+  Path: event:/Ui/Logo
+  Guid:
+    Data1: -1181040211
+    Data2: 1268240589
+    Data3: 920742559
+    Data4: 162963929
+  Banks:
+  - {fileID: -8850837768259012465}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2827427322087665128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2297,7 +2325,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1500
+  Length: 1600
 --- !u!114 &5178187006417414271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3123,7 +3151,7 @@ MonoBehaviour:
   - {fileID: -8850837768259012465}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters:
   - {fileID: -5596934618118941980}
   MinDistance: 1
