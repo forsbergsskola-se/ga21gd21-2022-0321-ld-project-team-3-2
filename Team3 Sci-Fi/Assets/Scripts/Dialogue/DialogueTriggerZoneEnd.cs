@@ -17,6 +17,7 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
         qm = FindObjectOfType<QuestManager>();
         dialogueManager = FindObjectOfType<DialogueManager>();
         thisColl = GetComponent<Collider>();
+        choiceDialogue.isDialogueFinished = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -36,7 +37,6 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
         if (choiceDialogue.isDialogueFinished)
         {
             StartCoroutine(WaitForEnding());
-            Destroy(this);
         }
     }
 
