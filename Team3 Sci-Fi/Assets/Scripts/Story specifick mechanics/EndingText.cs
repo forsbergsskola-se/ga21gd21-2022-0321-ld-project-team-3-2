@@ -10,6 +10,7 @@ public class EndingText : MonoBehaviour
 
     [SerializeField] private TMP_Text[] text;
     [SerializeField] private Animator anim;
+    [SerializeField] private Animator gameLogoAnim;
     private EventInstance typingSounds; 
     [TextArea(3, 10)] public string[] storyText = new string[10];
     private int index;
@@ -40,7 +41,8 @@ public class EndingText : MonoBehaviour
 
         yield return new WaitForSeconds(5);
         anim.SetTrigger("Fade Out");
+        yield return new WaitForSeconds(3);
         
-        //PLAY GAME NAME
+
     }
 }

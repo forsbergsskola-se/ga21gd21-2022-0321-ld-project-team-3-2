@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 386096424}
   - component: {fileID: 386096423}
   - component: {fileID: 386096422}
-  - component: {fileID: 386096421}
+  - component: {fileID: 386096426}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -143,42 +143,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &386096421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386096420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 249577cf209910642bd5c7ea1ab14795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text:
-  - {fileID: 2092103711}
-  - {fileID: 896558824}
-  - {fileID: 507909455}
-  - {fileID: 1191252661}
-  - {fileID: 517611451}
-  - {fileID: 670141837}
-  - {fileID: 1263688092}
-  - {fileID: 1595987018}
-  anim: {fileID: 585150835}
-  storyText:
-  - "The end of H\xE1ron Degalon meant the end of the DPIA. \r"
-  - "A rescue team from Fangl ventured to Pintagli in an attempt to save any possible
-    survivors.\r"
-  - "All they found was ruins and corpses. \r"
-  - "Next to R\xF3hans body was a crater, and he was from that day forward remembered
-    as a traitor and a terrorist.\r"
-  - "The War of a Thousand Stars continued for decades to come, finally leading to
-    the fall of Fangl.\r"
-  - "The Krierans would destabilize and eventually die out completely.  \r"
-  - "There were no winners, nor losers.\r"
-  - "There was only misery and death.\r"
-  index: 0
-  waitForSeconds: 0.015
 --- !u!114 &386096422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +217,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1420862614}
+  - {fileID: 1680947165}
   - {fileID: 585150834}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -262,6 +227,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &386096426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386096420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c0842d62b63ad45a88c4e967397589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text:
+  - {fileID: 2092103711}
+  - {fileID: 896558824}
+  - {fileID: 507909455}
+  - {fileID: 1191252661}
+  - {fileID: 517611451}
+  - {fileID: 670141837}
+  - {fileID: 1263688092}
+  - {fileID: 1595987018}
+  anim: {fileID: 585150835}
+  gameLogoAnim: {fileID: 1680947162}
+  storyText:
+  - "As the bomb exploded, R\xF3han threw himself behind a rocky ledge.\r"
+  - "Kahir and H\xE1ron were ripped to pieces, and the hub was almost completely
+    wrecked.\r"
+  - "When R\xF3han woke up, his legs were torn off.\r"
+  - "He crawled his way towards the ruined hub. Within it, he found a camera. \r"
+  - "He stturned it on, told his story, and took his last breaths before turning
+    the recording off.\r"
+  - "A rescue team from Fangl ventured to Pintagli in an attempt to save any possible
+    survivors.\r"
+  - "All they found was ruins and corpses. \r"
+  - "One of the members discovered the camera holding R\xF3han\u2019s story. \r"
+  storyTextTwo:
+  - "It was brought back to Fangl in secret and spread throughout the Fangl population.\r"
+  - "It caused an outbreak, leading to months of demonstrations. \r"
+  - "The Fangl government ran out of means to stop their own people.\r"
+  - 'They capitulated and worked towards a peaceful end of the War of a Thousand
+    Stars. '
+  - 'Kriera would then leave them alone, with the cost being a huge sum of money
+    and resources. '
+  - "Fangl approved the deal, and the war was ended.\r"
+  - "The once rivaling planets once again became allies, and would prosper for millenia
+    to come.\r"
+  - "R\xF3han was remembered as a peace symbol, and as a hero.\r"
+  - 
+  - 
+  waitForSeconds: 0.03
 --- !u!1 &507909454
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,7 +587,7 @@ RectTransform:
   - {fileID: 1263688094}
   - {fileID: 1595987020}
   m_Father: {fileID: 386096425}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1631,6 +1646,137 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -319}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1680947162 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5113683673715965592, guid: aea9bc8e726deee42a595bcf3d079b9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1699592860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1680947165 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1699592860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1699592860
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 386096425}
+    m_Modifications:
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1440
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906944549394339668, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Dead end logo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aea9bc8e726deee42a595bcf3d079b9a, type: 3}
 --- !u!1 &2067564468
 GameObject:
   m_ObjectHideFlags: 0
