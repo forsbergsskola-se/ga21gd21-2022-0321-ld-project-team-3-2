@@ -121,6 +121,7 @@ public class PlayerHealthManager : MonoBehaviour
     IEnumerator DeathAnim()
     {
         anim.SetTrigger("Die");
+        isHurtSoundPlaying = false;
         hurtSound.stop(STOP_MODE.IMMEDIATE);
         FMODUnity.RuntimeManager.PlayOneShot("event:/Player/Player death");
         yield return new WaitForSeconds(2f);
