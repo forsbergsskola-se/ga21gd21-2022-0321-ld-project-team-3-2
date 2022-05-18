@@ -31,7 +31,7 @@ public class AlwaysFollowPlayer : MonoBehaviour
 
         if (enterExitVehicleScript.inCar)
         {
-            transform.position = vehiclePos.position;
+            transform.position = vehiclePos.position + new Vector3(0,395,0);
         }
         else
         {
