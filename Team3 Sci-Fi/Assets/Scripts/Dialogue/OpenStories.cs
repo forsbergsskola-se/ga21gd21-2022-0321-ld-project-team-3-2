@@ -60,12 +60,14 @@ public class OpenStories : MonoBehaviour
             isReading = true;
             interact.HideInteractMessage();
             anim.SetTrigger("StoriesIn");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Zoop");
             StartCoroutine(TypeSentence(storyText));
         }
         else if (Input.GetKeyDown(KeyCode.E) && isReading)
         {
             isReading = false;
             movement.enabled = true;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Zoop");
             Cursor.lockState = CursorLockMode.Locked;
             mouse.enabled = true;
             anim.SetTrigger("StoriesOut");

@@ -42,7 +42,7 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
 
     IEnumerator WaitForEnding()
     {
-        //blackScreenAnim.SetTrigger("EndFade");
+        blackScreenAnim.SetTrigger("EndFade");
         yield return new WaitForSeconds(2f);
         
         if (qm.hasBomb)
@@ -54,7 +54,7 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/Endings/Gunz");
         }
 
-        SceneManager.LoadSceneAsync(endSceneToLoadIndex);
+        SceneManager.LoadScene(endSceneToLoadIndex);
     }
     
     

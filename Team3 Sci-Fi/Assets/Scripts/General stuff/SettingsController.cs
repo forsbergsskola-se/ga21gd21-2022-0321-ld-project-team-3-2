@@ -82,12 +82,14 @@ public class SettingsController : MonoBehaviour
             inMenu = false;
             fpsView.enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Zoop");
             SettingsAnim.SetTrigger("CloseMenu");
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && inMenu && inSettings)
         {
             inSettings = false;
             OptionsMenuAnim.SetTrigger("CloseSettings");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Zoop");
             SettingsAnim.SetTrigger("OpenState");
         }
     }
@@ -99,7 +101,7 @@ public class SettingsController : MonoBehaviour
         pauseSnapshot.start();
         // do sound snapshot
         
-        
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Zoop");
         
         // bring up options
         inMenu = true;
@@ -141,6 +143,7 @@ public class SettingsController : MonoBehaviour
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Clicks");
         //Close options and open new object
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Zoop");
         SettingsAnim.SetTrigger("SettingsTime");
         OptionsMenuAnim.SetTrigger("OpenSettings");
         inSettings = true;
