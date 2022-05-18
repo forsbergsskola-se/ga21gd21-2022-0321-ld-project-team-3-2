@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5050911334889187737
 Transform:
@@ -57,6 +57,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fence_low-textured
+      objectReference: {fileID: 0}
+    - target: {fileID: 2496841695280999229, guid: 05ec2f9ae97fda54988fc9926b265e57,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2732447022003299336, guid: 05ec2f9ae97fda54988fc9926b265e57,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3021142288486887815, guid: 05ec2f9ae97fda54988fc9926b265e57,
         type: 3}
@@ -117,6 +127,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3325112874869864486, guid: 05ec2f9ae97fda54988fc9926b265e57,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05ec2f9ae97fda54988fc9926b265e57, type: 3}

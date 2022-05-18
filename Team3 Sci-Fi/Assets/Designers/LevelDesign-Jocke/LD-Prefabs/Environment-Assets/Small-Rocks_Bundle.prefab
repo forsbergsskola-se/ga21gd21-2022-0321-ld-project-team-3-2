@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1381786749967493547
 Transform:
@@ -114,6 +114,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_rock1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8775233041393048736, guid: b6379849e006b634d8c6e0c846cc69ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6379849e006b634d8c6e0c846cc69ac, type: 3}
 --- !u!4 &8257495657709343444 stripped
@@ -198,6 +203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_rock4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944732855967958199, guid: 3a8eae3484074844fb66255db4d1c8c7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a8eae3484074844fb66255db4d1c8c7, type: 3}
@@ -284,6 +294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_rock5 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1951951816367851843, guid: 8f4d609340f1cda4f99b0e59218cd81b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4d609340f1cda4f99b0e59218cd81b, type: 3}
 --- !u!4 &367485479866178668 stripped
@@ -369,6 +384,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_rock5 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1951951816367851843, guid: 8f4d609340f1cda4f99b0e59218cd81b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4d609340f1cda4f99b0e59218cd81b, type: 3}
 --- !u!4 &3738040616835476307 stripped
@@ -388,6 +408,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_rock3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165206783785969651, guid: 5f8e9c8dfb1cbca4aa7c0ebcdc505032,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 6828836145348246857, guid: 5f8e9c8dfb1cbca4aa7c0ebcdc505032,
         type: 3}
@@ -604,6 +629,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_rock1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8775233041393048736, guid: b6379849e006b634d8c6e0c846cc69ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6379849e006b634d8c6e0c846cc69ac, type: 3}
 --- !u!4 &3161637137900615296 stripped
@@ -693,6 +723,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_rock5 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951951816367851843, guid: 8f4d609340f1cda4f99b0e59218cd81b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4d609340f1cda4f99b0e59218cd81b, type: 3}
@@ -784,6 +819,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_rock5 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1951951816367851843, guid: 8f4d609340f1cda4f99b0e59218cd81b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4d609340f1cda4f99b0e59218cd81b, type: 3}
 --- !u!4 &7071791012973102166 stripped
@@ -869,6 +909,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Small_rock5 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1951951816367851843, guid: 8f4d609340f1cda4f99b0e59218cd81b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4d609340f1cda4f99b0e59218cd81b, type: 3}
 --- !u!4 &7106488392727814832 stripped
@@ -948,6 +993,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Small_rock1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8775233041393048736, guid: b6379849e006b634d8c6e0c846cc69ac,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6379849e006b634d8c6e0c846cc69ac, type: 3}
