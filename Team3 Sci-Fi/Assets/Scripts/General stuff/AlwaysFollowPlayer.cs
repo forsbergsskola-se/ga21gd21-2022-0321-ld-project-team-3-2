@@ -22,20 +22,22 @@ public class AlwaysFollowPlayer : MonoBehaviour
     {
         
        
-        playerElevation = playerPos.position.y;
+        playerElevation = transform.position.y;
         elevationParameter = playerElevation - mapLowestPoint;
         
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("YX", elevationParameter);
-        
-
-
         if (enterExitVehicleScript.inCar)
         {
-            transform.position = vehiclePos.position + new Vector3(0,395,0);
+            transform.position = vehiclePos.position;
         }
         else
         {
             transform.position = playerPos.position;
         }
+        
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("YX", elevationParameter);
+        
+
+
+       
     }
 }
