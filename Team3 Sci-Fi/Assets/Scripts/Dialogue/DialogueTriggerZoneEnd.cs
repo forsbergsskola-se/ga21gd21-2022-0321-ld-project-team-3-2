@@ -54,7 +54,7 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/Endings/Gunz");
         }
 
-        SceneManager.LoadSceneAsync(endSceneToLoadIndex);
+        SceneManager.LoadScene(endSceneToLoadIndex);
     }
     
     
