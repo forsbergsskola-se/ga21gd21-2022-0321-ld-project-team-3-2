@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using FMOD.Studio;
-
+using UnityEngine.SceneManagement;
 public class Ending4Text : MonoBehaviour
 {
 
@@ -75,5 +75,7 @@ public class Ending4Text : MonoBehaviour
         yield return new WaitForSeconds(2);
         gameLogoAnim.SetTrigger("PlayLogo");
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Logo");
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(0);
     }
 }
