@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Designers/LevelDesign-Jocke/Level design.unity
     guid: a351efc720a5afc48983b3d5b1ff11bb
+  - enabled: 1
+    path: Assets/Designers/LevelDesign-Jocke/Ending 1.unity
+    guid: 5fe0c682bd55a7f4fa2fc554733ff7c4
+  - enabled: 1
+    path: Assets/Designers/LevelDesign-Jocke/Ending 2.unity
+    guid: c31d4575933d59641bf756a229088186
+  - enabled: 1
+    path: Assets/Designers/LevelDesign-Jocke/Ending 3.unity
+    guid: e029a4fb1de058641a0dbbbcbd18209b
+  - enabled: 1
+    path: Assets/Designers/LevelDesign-Jocke/Ending 4.unity
+    guid: fcdc6bbec59f39749a37d28cf74dbce8
   m_configObjects: {}
