@@ -55,7 +55,7 @@ public class Ending4Text : MonoBehaviour
     
     IEnumerator TypeSentenceTwo (string[] sentence)
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
         for (int i = 0; i < text.Length; i++)
         {
             text[i].text = "";
@@ -72,7 +72,7 @@ public class Ending4Text : MonoBehaviour
 
         yield return new WaitForSeconds(5);
         anim.SetTrigger("Fade Out");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         gameLogoAnim.SetTrigger("PlayLogo");
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Logo");
     }

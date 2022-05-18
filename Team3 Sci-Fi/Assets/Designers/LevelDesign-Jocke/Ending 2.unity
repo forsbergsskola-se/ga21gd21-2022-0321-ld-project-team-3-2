@@ -165,6 +165,7 @@ MonoBehaviour:
   - {fileID: 1263688092}
   - {fileID: 1595987018}
   anim: {fileID: 585150835}
+  gameLogoAnim: {fileID: 715277458}
   storyText:
   - "The War of a Thousand Stars raged on with new strategies.\r"
   - "The propaganda used against the Kriera evolved, and millions of artificial Krierans
@@ -250,6 +251,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1420862614}
+  - {fileID: 715277459}
   - {fileID: 585150834}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -569,7 +571,7 @@ RectTransform:
   - {fileID: 1263688094}
   - {fileID: 1595987020}
   m_Father: {fileID: 386096425}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -732,6 +734,137 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -90}
   m_SizeDelta: {x: 1500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &715277457
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 386096425}
+    m_Modifications:
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1440
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7906944549394339668, guid: aea9bc8e726deee42a595bcf3d079b9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Dead end logo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aea9bc8e726deee42a595bcf3d079b9a, type: 3}
+--- !u!95 &715277458 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5113683673715965592, guid: aea9bc8e726deee42a595bcf3d079b9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 715277457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &715277459 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4575145784593899042, guid: aea9bc8e726deee42a595bcf3d079b9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 715277457}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &896558823
 GameObject:
   m_ObjectHideFlags: 0

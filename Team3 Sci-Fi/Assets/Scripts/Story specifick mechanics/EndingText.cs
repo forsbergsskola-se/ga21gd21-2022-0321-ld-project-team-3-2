@@ -41,7 +41,9 @@ public class EndingText : MonoBehaviour
 
         yield return new WaitForSeconds(5);
         anim.SetTrigger("Fade Out");
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
+        gameLogoAnim.SetTrigger("PlayLogo");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ui/Logo");
         
 
     }
