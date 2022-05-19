@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     public bool jumpOn;
     [SerializeField] private float jumpForce;
     [SerializeField] private Animator anim;
+    public bool cantMove;
 
     
     void Update()
@@ -37,19 +38,23 @@ public class Movement : MonoBehaviour
         
         Vector3 move = transform.right * x + transform.forward * z;
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (!cantMove)
         {
-            controller.Move(move * sprintSpeed * Time.deltaTime);
-            if (move.magnitude > 0.1f)
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                anim.speed = 1.75f;
+                controller.Move(move * sprintSpeed * Time.deltaTime);
+                if (move.magnitude > 0.1f)
+                {
+                    anim.speed = 1.75f;
+                }
+            }
+            else
+            {
+                controller.Move(move * speed * Time.deltaTime);
+                anim.speed = 1f;
             }
         }
-        else
-        {
-            controller.Move(move * speed * Time.deltaTime);
-            anim.speed = 1f;
-        }
+        
 
         if (move.magnitude > 0.1f)
         {

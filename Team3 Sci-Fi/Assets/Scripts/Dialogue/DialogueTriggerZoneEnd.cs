@@ -13,9 +13,11 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
     public Animator blackScreenAnim;
     private QuestManager qm;
     private FMOD.Studio.EventInstance pauseSnapshot;
+    private Movement move;
     
     void Start()
     {
+        move = FindObjectOfType<Movement>();
         pauseSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Esq M");
         qm = FindObjectOfType<QuestManager>();
         dialogueManager = FindObjectOfType<DialogueManager>();
@@ -28,6 +30,7 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
         dialogueManager.StartDialogue(choiceDialogue);
         choiceDialogue.talking = true;
         thisColl.enabled = false;
+        move.cantMove = true;
     }
 
     void Update()
@@ -36,7 +39,6 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
         {
             dialogueManager.DisplayNextSentenceChoice();
         }
-
         if (choiceDialogue.isDialogueFinished)
         {
             StartCoroutine(WaitForEnding());
