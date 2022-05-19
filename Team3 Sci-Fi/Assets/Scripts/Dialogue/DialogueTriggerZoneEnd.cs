@@ -12,8 +12,11 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
     public int endSceneToLoadIndex;
     public Animator blackScreenAnim;
     private QuestManager qm;
+    private FMOD.Studio.EventInstance pauseSnapshot;
+    
     void Start()
     {
+        pauseSnapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Esq M");
         qm = FindObjectOfType<QuestManager>();
         dialogueManager = FindObjectOfType<DialogueManager>();
         thisColl = GetComponent<Collider>();
@@ -53,7 +56,8 @@ public class DialogueTriggerZoneEnd : MonoBehaviour
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/Endings/Gunz");
         }
-
+        Cursor.lockState = CursorLockMode.None;
+        pauseSnapshot.start();
         SceneManager.LoadScene(endSceneToLoadIndex);
     }
     
