@@ -19,7 +19,6 @@ public class CheckPointTriggerCollider : MonoBehaviour
     {
         gameProgress.currentCheckpoint = CheckPointNum;
         //maybe add visual indication that the checkpoint is reached
-        Debug.Log("Checkpoint " + CheckPointNum + " Reached");
         thisColl.enabled = false;
     }
 }

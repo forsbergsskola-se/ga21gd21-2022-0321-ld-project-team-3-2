@@ -13,7 +13,6 @@ public class Puzzle2Timer : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         StartCoroutine(StartTimer());
-        Debug.Log("Timer Started");
         thisColl.enabled = false;
     }
 
