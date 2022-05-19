@@ -9,6 +9,8 @@ using UnityEngine;
         [SerializeField] private GameObject Kahir;
         [SerializeField] private GameObject pos1;
         [SerializeField] private GameObject pos2;
+        [SerializeField] private BoxCollider haronColl;
+        [SerializeField] private BoxCollider kahirColl;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -16,6 +18,8 @@ using UnityEngine;
             Haron.transform.rotation = pos1.transform.rotation;
             Kahir.transform.position = pos2.transform.position;
             Kahir.transform.rotation = pos2.transform.rotation;
+            haronColl.enabled = false;
+            kahirColl.enabled = false;
             
             if (qm.hasBomb && qm.killedHabitant)
             {
